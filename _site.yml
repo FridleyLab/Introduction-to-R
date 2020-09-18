@@ -1,0 +1,16 @@
+name: "introduction-to-r"
+title: "Introduction to R"
+description: |
+  Introduction to R
+output_dir: "docs"
+exclude: ["README.Rmd", "README.md"]
+base_url: https://FridleyLab.github.io/Introduction-to-R/
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - icon: fab fa-github
+      href: https://github.com/FridleyLab/Introduction-to-R/
+output: distill::distill_article

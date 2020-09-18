@@ -1,0 +1,18 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Introduction to R",
+    "description": "Welcome to the course page for Introduction to R!",
+    "author": [
+      {
+        "name": "Garrick Aden-Buie",
+        "url": "https://www.garrickadenbuie.com"
+      }
+    ],
+    "date": "2020-09-18",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-09-18T11:08:30-04:00",
+    "input_file": "welcome.utf8.md"
+  }
+]

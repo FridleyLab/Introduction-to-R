@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Introduction to R</title>
+    <link>https://FridleyLab.github.io/Introduction-to-R/</link>
+    <atom:link href="https://FridleyLab.github.io/Introduction-to-R/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Introduction to R
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome to Introduction to R</title>
+      <dc:creator>Garrick Aden-Buie</dc:creator>
+      <link>https://FridleyLab.github.io/Introduction-to-R/posts/welcome</link>
+      <description>Welcome to the course page for Introduction to R!</description>
+      <guid>https://FridleyLab.github.io/Introduction-to-R/posts/welcome</guid>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
