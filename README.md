@@ -76,9 +76,9 @@ you used R but are new to the `tidyverse` framework?
 ## Materials
 
 Materials will be made available on
-[github](https://github.com/rstudio-conf-2020/build-tidy-tools). If you
-are using an organization-issued laptop, you may want to verify before
-you arrive that you can access GitHub.
+[github](https://github.com/FridleyLab/Introduction-to-R/). If you are
+using an organization-issued laptop, you may want to verify before you
+arrive that you can access GitHub.
 
 ## Schedule
 
