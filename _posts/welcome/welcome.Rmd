@@ -1,0 +1,64 @@
+---
+title: "Welcome to Introduction to R"
+description: |
+  Welcome to the course page for Introduction to R!
+author:
+  - name: Garrick Aden-Buie 
+    url: https://www.garrickadenbuie.com
+    affiliation: Collaborative Data Services, Moffitt Cancer Center
+    affiliation_url: https://moffitt.org
+date: 10-23-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+
+Learn more about creating blogs with Distill at:
+<https://rstudio.github.io/distill/blog.html>.
+
+Create a new post by running
+
+```{r eval=FALSE}
+library(distill)
+
+create_post("Topic for Week X", draft = TRUE)
+```
+
+When your topic post is complete, remove the `draft: true` from the post's YAML metadata.
+
+## Install ggplot2
+
+We're going to work with the ggplot2 package. Install and load it:
+
+```{r eval=FALSE}
+install.packages("ggplot2")
+```
+
+```{r}
+library(ggplot2)
+```
+
+## Our data
+
+```{r echo=FALSE}
+write.csv(mtcars, "mtcars.csv")
+```
+
+Download the data for this lesson [here](mtcars.csv).
+
+## Slides
+
+Here are [the slides for today's lesson](../../slides/00_slide-starter.html).
+
+## Scripts For Today's Lesson
+
+Here's an R Script for our lesson: [plumber.R](plumber-demo-script.R).
