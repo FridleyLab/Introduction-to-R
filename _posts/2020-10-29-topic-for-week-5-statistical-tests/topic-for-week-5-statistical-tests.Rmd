@@ -1,0 +1,29 @@
+---
+title: "Topic for Week 5: Statistical tests"
+description: |
+  Statistical tests.
+author:
+  - name: Garrick Aden-Buie
+    url: https://www.garrickadenbuie.com
+date: 10-29-2020
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+THis is where stuff will go.
+R code for statistical tests and what not? ? 
+
+? 
+
+? 
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
