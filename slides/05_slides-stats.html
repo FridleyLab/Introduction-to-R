@@ -298,6 +298,8 @@ The .bg-orange.white[Pearson product-moment correlation coefficient], also known
 ```r
 Rclassdata$log_DUOXA1_exp &lt;- log(Rclassdata$DUOXA1_exp+1)
 Rclassdata$log_DUOX1_exp &lt;- log(Rclassdata$DUOX1_exp+1)
+Rclassdata$log_BUB1_exp &lt;- log(Rclassdata$BUB1_exp+1)
+Rclassdata$log_C10orf32_exp &lt;- log(Rclassdata$C10orf32_exp+1)
 
 r1&lt;-Rclassdata %&gt;% correlation::cor_test("DUOXA1_exp", 
                                           "DUOX1_exp", 
@@ -310,57 +312,15 @@ r2&lt;-Rclassdata %&gt;% correlation::cor_test("log_DUOXA1_exp",
 r3&lt;-Rclassdata %&gt;% correlation::cor_test("BUB1_exp",
                                           "C10orf32_exp",
                                           method = c("pearson") )
+r4&lt;-Rclassdata %&gt;% correlation::cor_test("log_BUB1_exp",
+                                          "log_C10orf32_exp",
+                                          method = c("pearson") )
  
-r4&lt;-Rclassdata %&gt;% correlation::cor_test("AAMP_exp",
+ 
+r5&lt;-Rclassdata %&gt;% correlation::cor_test("AAMP_exp",
                                           "A1CF_exp",
                                           method = c("pearson") )
 ```
-
----
-
-
-```r
-ggplot(Rclassdata) + aes(DUOXA1_exp,  DUOX1_exp ) + geom_point()
-```
-
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-10-1.png" width="100%" /&gt;
-
----
-
-
-```r
-ggplot(Rclassdata) + aes(BUB1_exp,  C10orf32_exp ) + geom_point()
-```
-
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-11-1.png" width="100%" /&gt;
----
-
-
-```r
-ggplot(Rclassdata) + aes(log(BUB1_exp),  log(C10orf32_exp) ) + geom_point()
-```
-
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-12-1.png" width="100%" /&gt;
-
----
-
-
-```r
-ggplot(Rclassdata) + aes(AAMP_exp,  A1CF_exp ) + geom_point()
-```
-
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-13-1.png" width="100%" /&gt;
-
----
-
-
-```r
-ggplot(Rclassdata) + aes(log(AAMP_exp),  log(A1CF_exp) ) + geom_point()
-```
-
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-14-1.png" width="100%" /&gt;
-
-
 ---
  
 ## Correlation 
@@ -368,11 +328,11 @@ ggplot(Rclassdata) + aes(log(AAMP_exp),  log(A1CF_exp) ) + geom_point()
 
 
 ```r
- knitr::kable(bind_rows(r1,r2,r3,r4), format = 'html') %&gt;%
-  kable_styling(font_size = 10)
+ knitr::kable(bind_rows(r1,r2,r3,r4,r5), format = 'html') %&gt;%
+  kable_styling(font_size = 12)
 ```
 
-&lt;table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;"&gt;
+&lt;table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style="text-align:left;"&gt; Parameter1 &lt;/th&gt;
@@ -429,6 +389,19 @@ ggplot(Rclassdata) + aes(log(AAMP_exp),  log(A1CF_exp) ) + geom_point()
    &lt;td style="text-align:right;"&gt; 5481 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; log_BUB1_exp &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; log_C10orf32_exp &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.6646712 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.95 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.6791943 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.6496278 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -65.8503100 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5479 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000000 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Pearson &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5481 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
    &lt;td style="text-align:left;"&gt; AAMP_exp &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; A1CF_exp &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 0.0046396 &lt;/td&gt;
@@ -443,6 +416,47 @@ ggplot(Rclassdata) + aes(log(AAMP_exp),  log(A1CF_exp) ) + geom_point()
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+---
+
+
+```r
+ggplot(Rclassdata) + aes(DUOXA1_exp,  DUOX1_exp ) + geom_point() + 
+         annotate(geom="text", x=10, y=250000, label=paste("r = ",round(r1$r,2), sep=""),  color="red")
+```
+
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-11-1.png" width="100%" /&gt;
+
+---
+
+
+```r
+ggplot(Rclassdata) + aes(BUB1_exp,  C10orf32_exp ) + geom_point()+ 
+         annotate(geom="text", x=1000, y=4000, label=paste("r = ",round(r3$r,2), sep=""),  color="red")
+```
+
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-12-1.png" width="100%" /&gt;
+---
+
+
+```r
+ggplot(Rclassdata) + aes(log(BUB1_exp),  log(C10orf32_exp) ) + geom_point() + 
+         annotate(geom="text", x=0, y=8, label=paste("r = ",round(r3$r,2), sep=""),  color="red")
+```
+
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-13-1.png" width="100%" /&gt;
+
+---
+
+
+```r
+ggplot(Rclassdata) + aes(AAMP_exp,  A1CF_exp ) + geom_point() + 
+         annotate(geom="text", x=0, y=4000, label=paste("r = ",round(r5$r,2), sep=""),  color="red")
+```
+
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-14-1.png" width="100%" /&gt;
+
+ 
 
 ---
 
@@ -714,10 +728,10 @@ dplyr::starwars %&gt;% dplyr::slice_sample(n = 4)
 ## # A tibble: 4 x 14
 ##   name  height  mass hair_color skin_color eye_color birth_year sex  
 ##   &lt;chr&gt;  &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;
-## 1 Lobot    175    79 none       light      blue              37 male 
-## 2 Jar ~    196    66 none       orange     orange            52 male 
-## 3 Tarf~    234   136 brown      brown      blue              NA male 
-## 4 Wat ~    193    48 none       green, gr~ unknown           NA male 
+## 1 Jar ~    196    66 none       orange     orange            52 male 
+## 2 Ric ~    183    NA brown      fair       blue              NA &lt;NA&gt; 
+## 3 Eeth~    171    NA black      brown      brown             NA male 
+## 4 Yara~    264    NA none       white      yellow            NA male 
 ## # ... with 6 more variables: gender &lt;chr&gt;, homeworld &lt;chr&gt;,
 ## #   species &lt;chr&gt;, films &lt;list&gt;, vehicles &lt;list&gt;, starships &lt;list&gt;
 ```
@@ -916,8 +930,8 @@ DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4
 ```
 
 ```{=html}
-&lt;div id="htmlwidget-6644b1a321a0ea8c2b9a" style="width:100%;height:auto;" class="datatables html-widget"&gt;&lt;/div&gt;
-&lt;script type="application/json" data-for="htmlwidget-6644b1a321a0ea8c2b9a"&gt;{"x":{"filter":"none","fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"&lt;table class=\"display\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt; &lt;\/th&gt;\n      &lt;th&gt;mpg&lt;\/th&gt;\n      &lt;th&gt;cyl&lt;\/th&gt;\n      &lt;th&gt;disp&lt;\/th&gt;\n      &lt;th&gt;hp&lt;\/th&gt;\n      &lt;th&gt;drat&lt;\/th&gt;\n      &lt;th&gt;wt&lt;\/th&gt;\n      &lt;th&gt;qsec&lt;\/th&gt;\n      &lt;th&gt;vs&lt;\/th&gt;\n      &lt;th&gt;am&lt;\/th&gt;\n      &lt;th&gt;gear&lt;\/th&gt;\n      &lt;th&gt;carb&lt;\/th&gt;\n    &lt;\/tr&gt;\n  &lt;\/thead&gt;\n&lt;\/table&gt;","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}&lt;/script&gt;
+&lt;div id="htmlwidget-e14690db4d99d885821f" style="width:100%;height:auto;" class="datatables html-widget"&gt;&lt;/div&gt;
+&lt;script type="application/json" data-for="htmlwidget-e14690db4d99d885821f"&gt;{"x":{"filter":"none","fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"&lt;table class=\"display\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt; &lt;\/th&gt;\n      &lt;th&gt;mpg&lt;\/th&gt;\n      &lt;th&gt;cyl&lt;\/th&gt;\n      &lt;th&gt;disp&lt;\/th&gt;\n      &lt;th&gt;hp&lt;\/th&gt;\n      &lt;th&gt;drat&lt;\/th&gt;\n      &lt;th&gt;wt&lt;\/th&gt;\n      &lt;th&gt;qsec&lt;\/th&gt;\n      &lt;th&gt;vs&lt;\/th&gt;\n      &lt;th&gt;am&lt;\/th&gt;\n      &lt;th&gt;gear&lt;\/th&gt;\n      &lt;th&gt;carb&lt;\/th&gt;\n    &lt;\/tr&gt;\n  &lt;\/thead&gt;\n&lt;\/table&gt;","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}&lt;/script&gt;
 ```
 
 
@@ -956,7 +970,7 @@ gt_table
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#gerdbakmlz .gt_table {
+#bgqnzyfcob .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -981,7 +995,7 @@ gt_table
   border-left-color: #D3D3D3;
 }
 
-#gerdbakmlz .gt_heading {
+#bgqnzyfcob .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -993,7 +1007,7 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#gerdbakmlz .gt_title {
+#bgqnzyfcob .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1003,7 +1017,7 @@ gt_table
   border-bottom-width: 0;
 }
 
-#gerdbakmlz .gt_subtitle {
+#bgqnzyfcob .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1013,13 +1027,13 @@ gt_table
   border-top-width: 0;
 }
 
-#gerdbakmlz .gt_bottom_border {
+#bgqnzyfcob .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gerdbakmlz .gt_col_headings {
+#bgqnzyfcob .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1034,7 +1048,7 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#gerdbakmlz .gt_col_heading {
+#bgqnzyfcob .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1054,7 +1068,7 @@ gt_table
   overflow-x: hidden;
 }
 
-#gerdbakmlz .gt_column_spanner_outer {
+#bgqnzyfcob .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1066,15 +1080,15 @@ gt_table
   padding-right: 4px;
 }
 
-#gerdbakmlz .gt_column_spanner_outer:first-child {
+#bgqnzyfcob .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gerdbakmlz .gt_column_spanner_outer:last-child {
+#bgqnzyfcob .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gerdbakmlz .gt_column_spanner {
+#bgqnzyfcob .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1086,7 +1100,7 @@ gt_table
   width: 100%;
 }
 
-#gerdbakmlz .gt_group_heading {
+#bgqnzyfcob .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1108,7 +1122,7 @@ gt_table
   vertical-align: middle;
 }
 
-#gerdbakmlz .gt_empty_group_heading {
+#bgqnzyfcob .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1123,15 +1137,15 @@ gt_table
   vertical-align: middle;
 }
 
-#gerdbakmlz .gt_from_md &gt; :first-child {
+#bgqnzyfcob .gt_from_md &gt; :first-child {
   margin-top: 0;
 }
 
-#gerdbakmlz .gt_from_md &gt; :last-child {
+#bgqnzyfcob .gt_from_md &gt; :last-child {
   margin-bottom: 0;
 }
 
-#gerdbakmlz .gt_row {
+#bgqnzyfcob .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1150,7 +1164,7 @@ gt_table
   overflow-x: hidden;
 }
 
-#gerdbakmlz .gt_stub {
+#bgqnzyfcob .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1162,7 +1176,7 @@ gt_table
   padding-left: 12px;
 }
 
-#gerdbakmlz .gt_summary_row {
+#bgqnzyfcob .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1172,7 +1186,7 @@ gt_table
   padding-right: 5px;
 }
 
-#gerdbakmlz .gt_first_summary_row {
+#bgqnzyfcob .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1182,7 +1196,7 @@ gt_table
   border-top-color: #D3D3D3;
 }
 
-#gerdbakmlz .gt_grand_summary_row {
+#bgqnzyfcob .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1192,7 +1206,7 @@ gt_table
   padding-right: 5px;
 }
 
-#gerdbakmlz .gt_first_grand_summary_row {
+#bgqnzyfcob .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1202,11 +1216,11 @@ gt_table
   border-top-color: #D3D3D3;
 }
 
-#gerdbakmlz .gt_striped {
+#bgqnzyfcob .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gerdbakmlz .gt_table_body {
+#bgqnzyfcob .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1215,7 +1229,7 @@ gt_table
   border-bottom-color: #D3D3D3;
 }
 
-#gerdbakmlz .gt_footnotes {
+#bgqnzyfcob .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1229,13 +1243,13 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#gerdbakmlz .gt_footnote {
+#bgqnzyfcob .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#gerdbakmlz .gt_sourcenotes {
+#bgqnzyfcob .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1249,46 +1263,46 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#gerdbakmlz .gt_sourcenote {
+#bgqnzyfcob .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#gerdbakmlz .gt_left {
+#bgqnzyfcob .gt_left {
   text-align: left;
 }
 
-#gerdbakmlz .gt_center {
+#bgqnzyfcob .gt_center {
   text-align: center;
 }
 
-#gerdbakmlz .gt_right {
+#bgqnzyfcob .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gerdbakmlz .gt_font_normal {
+#bgqnzyfcob .gt_font_normal {
   font-weight: normal;
 }
 
-#gerdbakmlz .gt_font_bold {
+#bgqnzyfcob .gt_font_bold {
   font-weight: bold;
 }
 
-#gerdbakmlz .gt_font_italic {
+#bgqnzyfcob .gt_font_italic {
   font-style: italic;
 }
 
-#gerdbakmlz .gt_super {
+#bgqnzyfcob .gt_super {
   font-size: 65%;
 }
 
-#gerdbakmlz .gt_footnote_marks {
+#bgqnzyfcob .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 &lt;/style&gt;
-&lt;div id="gerdbakmlz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"&gt;&lt;table class="gt_table"&gt;
+&lt;div id="bgqnzyfcob" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"&gt;&lt;table class="gt_table"&gt;
   &lt;thead class="gt_header"&gt;
     &lt;tr&gt;
       &lt;th colspan="12" class="gt_heading gt_title gt_font_normal" style&gt;Data About Cars&lt;/th&gt;

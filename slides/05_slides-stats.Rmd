@@ -267,6 +267,8 @@ The .bg-orange.white[Pearson product-moment correlation coefficient], also known
 
 Rclassdata$log_DUOXA1_exp <- log(Rclassdata$DUOXA1_exp+1)
 Rclassdata$log_DUOX1_exp <- log(Rclassdata$DUOX1_exp+1)
+Rclassdata$log_BUB1_exp <- log(Rclassdata$BUB1_exp+1)
+Rclassdata$log_C10orf32_exp <- log(Rclassdata$C10orf32_exp+1)
 
 r1<-Rclassdata %>% correlation::cor_test("DUOXA1_exp", 
                                           "DUOX1_exp", 
@@ -279,64 +281,64 @@ r2<-Rclassdata %>% correlation::cor_test("log_DUOXA1_exp",
 r3<-Rclassdata %>% correlation::cor_test("BUB1_exp",
                                           "C10orf32_exp",
                                           method = c("pearson") )
+r4<-Rclassdata %>% correlation::cor_test("log_BUB1_exp",
+                                          "log_C10orf32_exp",
+                                          method = c("pearson") )
  
-r4<-Rclassdata %>% correlation::cor_test("AAMP_exp",
+ 
+r5<-Rclassdata %>% correlation::cor_test("AAMP_exp",
                                           "A1CF_exp",
                                           method = c("pearson") )
  
  
 ```
-
----
-
-```{r  comment=NA}
-
-ggplot(Rclassdata) + aes(DUOXA1_exp,  DUOX1_exp ) + geom_point()
-
-```
-
----
-
-```{r  comment=NA}
-
-ggplot(Rclassdata) + aes(BUB1_exp,  C10orf32_exp ) + geom_point()
-
-```
----
-
-```{r  comment=NA}
-
-ggplot(Rclassdata) + aes(log(BUB1_exp),  log(C10orf32_exp) ) + geom_point()
-
-```
-
----
-
-```{r  comment=NA}
-
-ggplot(Rclassdata) + aes(AAMP_exp,  A1CF_exp ) + geom_point()
-
-```
-
----
-
-```{r  comment=NA}
-
-ggplot(Rclassdata) + aes(log(AAMP_exp),  log(A1CF_exp) ) + geom_point()
-
-```
-
-
 ---
  
 ## Correlation 
  
 
 ```{r comment=NA}
- knitr::kable(bind_rows(r1,r2,r3,r4), format = 'html') %>%
-  kable_styling(font_size = 10)
+ knitr::kable(bind_rows(r1,r2,r3,r4,r5), format = 'html') %>%
+  kable_styling(font_size = 12)
 
 ```
+
+---
+
+```{r  comment=NA}
+
+ggplot(Rclassdata) + aes(DUOXA1_exp,  DUOX1_exp ) + geom_point() + 
+         annotate(geom="text", x=10, y=25000, label=paste("r = ",round(r1$r,2), sep=""),  color="red")
+
+```
+
+---
+
+```{r  comment=NA}
+
+ggplot(Rclassdata) + aes(BUB1_exp,  C10orf32_exp ) + geom_point()+ 
+         annotate(geom="text", x=1000, y=4000, label=paste("r = ",round(r3$r,2), sep=""),  color="red")
+
+```
+---
+
+```{r  comment=NA}
+
+ggplot(Rclassdata) + aes(log(BUB1_exp),  log(C10orf32_exp) ) + geom_point() + 
+         annotate(geom="text", x=0, y=8, label=paste("r = ",round(r3$r,2), sep=""),  color="red")
+
+```
+
+---
+
+```{r  comment=NA}
+
+ggplot(Rclassdata) + aes(AAMP_exp,  A1CF_exp ) + geom_point() + 
+         annotate(geom="text", x=0, y=4000, label=paste("r = ",round(r5$r,2), sep=""),  color="red")
+
+```
+
+ 
 
 ---
 
