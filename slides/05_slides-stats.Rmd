@@ -35,6 +35,16 @@ knitr::opts_chunk$set(
   hiline = TRUE
 )
 options(width = 70)
+
+#Load data...
+  #load(file = "Z:/Projects/Fridley_Brooke/2813_R_Programming_Course_2020/data/alldata.RData")
+   load(file = "Z:/Projects/Fridley_Brooke/2813_R_Programming_Course_2020/data/Rclassdata.RData")
+  
+  library(easystats)
+  library(tidyverse)
+  library(kableExtra)
+   library(ggplot2)
+  
 ```
 
 name: title
@@ -106,23 +116,291 @@ or to force either to be shown
 
 ---
 
-## What you might learn about
-
-Fisher’s and Chi square tests, correlations, two-sample tests
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
+## What you will learn about
+ 
+ 
 [Link to another page](another-page).
+ 
+ 
+.w-half[
 
-There should be whitespace between paragraphs.
+- Chi square and Fisher’s test
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+- Correlations
+
+- Two-sample tests (t-test, wilcoxon test, anova [for more than 2 groups])
+
+]
+
+---
+
+## Review of tables
+ 
+
+```{r comment=NA}
+
+ table(Rclassdata$radiation_therapy, Rclassdata$vital_status, 
+       useNA = "always") 
+   
+```
+ 
+ 
+---
+
+## Review of tables
+ 
+
+```{r comment=NA}
+
+table(Rclassdata$radiation_therapy, Rclassdata$vital_status) 
+   
+```
+
+ 
+---
+
+
+# Pearson’s chi-squared test
+ 
+The chi squared test is a non-parametric test that can be applied to contingency tables with various dimensions. The name of the test originates from the chi-squared distribution, which is the distribution for the squares of independent standard normal variables. This is the distribution of the test statistic of the chi squared test, which is defined by the sum of chi-square values x2i,j for all pairs of cells arising from the difference between a cell’s observed value and the expected value, normalized by the expected value.
+ 
+$\chi ^{2}$ = $\sum$ $\frac{(O_{i} - E_{i})^{2}}{E_{i}}$ 
+
+
+*   $\chi ^{2}$ = chi square statistic
+*   $O_{i}$ = observed value
+*   $E_{i}$ = expected value
+
+
+
 
 ---
 
 
+## Pearson’s chi-squared test
+ 
+The null hypothesis of the Chi-Square test is that no relationship exists on the categorical variables in the population; they are independent.
+
+```{r comment=NA}
+
+  chisq.test(
+    table(Rclassdata$radiation_therapy, Rclassdata$vital_status )
+    )
+```
+
+
 ---
 
+## Pearson’s chi-squared test
+ 
+ 
+```{r comment=NA}
+
+ 
+table(Rclassdata$smoking,Rclassdata$radiation_therapy)
+```
+
+---
+
+## Pearson’s chi-squared test
+ 
+ 
+```{r comment=NA}
+
+ 
+chisq.test(
+  table(Rclassdata$smoking,Rclassdata$radiation_therapy)
+  )
+```
+ 
+ 
+ 
+---
+
+
+
+## Fisher’s exact test
+ 
+Fisher's exact test is practically applied only in analysis of small samples but actually it is valid for all sample sizes. While the chi-squared test relies on an approximation, Fisher's exact test is one of exact tests. Especially when more than 20% of cells have expected frequencies < 5, we need to use Fisher's exact test because applying approximation method is inadequate. Fisher's exact test assesses the null hypothesis of independence applying hypergeometric distribution of the numbers in the cells of the table. Many packages provide the results of Fisher's exact test for 2 × 2 contingency tables 
+ 
+---
+ 
+
+##  Fisher’s exact test
+ 
+
+```{r comment=NA}
+ table(Rclassdata$radiation_therapy, Rclassdata$vital_status )
+
+```
+
+
+---
+
+
+##  Fisher’s exact test
+ 
+
+```{r comment=NA}
+fisher.test(
+    table(Rclassdata$radiation_therapy, Rclassdata$vital_status )  )
+```
+ 
+ 
+---
+ 
+# Correlation 
+ 
+A correlation coefficient is a numerical measure of some type of correlation, meaning a statistical relationship between two variables.  
+
+Several types of correlation coefficient exist, each with their own definition and own range of usability and characteristics. They all assume values in the range from −1 to +1, where ±1 indicates the strongest possible agreement and 0 no disagreement.
+
+The .bg-orange.white[Pearson product-moment correlation coefficient], also known as r, R, or Pearson's r, is a measure of the strength and direction of the linear relationship between two variables that is defined as the covariance of the variables divided by the product of their standard deviations.  Pearson's r is the best-known and most commonly used type of correlation coefficient.  
+ 
+
+---
+ 
+## Correlation 
+ 
+
+```{r  comment=NA}
+
+Rclassdata$log_DUOXA1_exp <- log(Rclassdata$DUOXA1_exp+1)
+Rclassdata$log_DUOX1_exp <- log(Rclassdata$DUOX1_exp+1)
+
+r1<-Rclassdata %>% correlation::cor_test("DUOXA1_exp", 
+                                          "DUOX1_exp", 
+                                          method = c("pearson") )
+
+r2<-Rclassdata %>% correlation::cor_test("log_DUOXA1_exp",
+                                          "log_DUOX1_exp",
+                                          method = c("pearson") )
+ 
+r3<-Rclassdata %>% correlation::cor_test("BUB1_exp",
+                                          "C10orf32_exp",
+                                          method = c("pearson") )
+ 
+r4<-Rclassdata %>% correlation::cor_test("AAMP_exp",
+                                          "A1CF_exp",
+                                          method = c("pearson") )
+ 
+ 
+```
+
+---
+
+```{r  comment=NA}
+
+ggplot(Rclassdata) + aes(DUOXA1_exp,  DUOX1_exp ) + geom_point()
+
+```
+
+---
+
+```{r  comment=NA}
+
+ggplot(Rclassdata) + aes(BUB1_exp,  C10orf32_exp ) + geom_point()
+
+```
+---
+
+```{r  comment=NA}
+
+ggplot(Rclassdata) + aes(log(BUB1_exp),  log(C10orf32_exp) ) + geom_point()
+
+```
+
+---
+
+```{r  comment=NA}
+
+ggplot(Rclassdata) + aes(AAMP_exp,  A1CF_exp ) + geom_point()
+
+```
+
+---
+
+```{r  comment=NA}
+
+ggplot(Rclassdata) + aes(log(AAMP_exp),  log(A1CF_exp) ) + geom_point()
+
+```
+
+
+---
+ 
+## Correlation 
+ 
+
+```{r comment=NA}
+ knitr::kable(bind_rows(r1,r2,r3,r4), format = 'html') %>%
+  kable_styling(font_size = 10)
+
+```
+
+---
+
+# Two sample tests
+
+---
+
+## Wilcoxon test 
+
+The Wilcoxon signed-rank test is a non-parametric statistical hypothesis test used to compare two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student's t-test (also known as "t-test for matched pairs" or "t-test for dependent samples") when the distribution of the difference between two samples' means cannot be assumed to be normally distributed.  A Wilcoxon signed-rank test is a nonparametric test that can be used to determine whether two dependent samples were selected from populations having the same distribution.
+
+---
+
+## Wilcoxon test 
+```{r comment=NA}
+wilcox.test(Rclassdata$BUB1_exp, y = Rclassdata$A1CF_exp,
+            alternative = c("two.sided" ) )
+
+ 
+```
+
+---
+
+## T-tests
+ 
+A t-test is a method used to determine if there 
+is a significant difference between the means 
+of two groups based on a sample of data.
+
+The test relies on a set of assumptions for it
+to be interpreted properly and with validity.
+Among these assumptions, the data must be randomly
+sampled from the population of interest and 
+that the data variables follow a normal
+distribution.
+
+---
+
+## T-test
+```{r comment=NA}
+
+t.test( Rclassdata$BUB1_exp, y = Rclassdata$A1CF_exp, 
+        alternative = c("two.sided"))
+ 
+```
+
+---
+
+## T-test
+
+Fun Fact  The t-test was developed by a chemist
+working for the Guinness brewing company as a 
+simple way to measure the consistent quality of
+stout.  It was further developed and adapted,
+and now refers to any test of a statistical
+hypothesis in which the statistic being tested
+for is expected to correspond to a t-distribution
+if the null hypothesis is supported. 
+
+--- 
+
+     
+---
+ 
 ## Typography
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

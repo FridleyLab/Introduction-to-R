@@ -3,8 +3,7 @@ title: "Topic for Week 5: Statistical tests"
 description: |
   Statistical tests.
 author:
-  - name: Garrick Aden-Buie
-    url: https://www.garrickadenbuie.com
+  - name: Zachary Thompson 
 date: 10-29-2020
 output:
   distill::distill_article:
@@ -16,24 +15,21 @@ draft: true
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-THis is where stuff will go.
-R code for statistical tests and what not? ? 
+This week is an introduction to simple statistical tests such as Chi sqare and Fisher's test for contingency tables. Correlations and two sample tests. 
 
-THIs is ONLY A TEST !!! !!!
-THIs is ONLY A TEST !!! !!!
-AGAIN AND AGAIN! x2
-THIs is ONLY A TEST !!! !!!
-THIs is ONLY A TEST !!! !!!
-THIs is ONLY A TEST !!! !!!
-THIs is ONLY A TEST !!! !!!
+ Enjoy!
 
 
-? 
-
-? THIS IS ANOTHER TEST 
-? yet another test 12/7/2020
-
-Distill is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>.....
+## Slides
+ getwd() 
+ 
+```{r eval=FALSE, include=FALSE}
+#  print(old<-getwd() )
+# list.files("../slides")
+# list.files("./../slides")
+# list.files("././slides")
+# list.files("../../slides")
+#  print(getwd() )
+```
+Here are [the slides for today's lesson](../../slides/05_slides-stats.html).
 
