@@ -1,6 +1,6 @@
 ---
-title: "LeaRning about Statistics -YEAH!!!"
-subtitle: "Heck YA! "
+title: "Lea.orange[R]ning about Statistics -YEAH!!!"
+subtitle: "STATISTICAL TESTS! "
 author: 
   - Zachary Thompson 
 institute: "Moffitt Cancer Center"
@@ -255,7 +255,7 @@ A correlation coefficient is a numerical measure of some type of correlation, me
 
 Several types of correlation coefficient exist, each with their own definition and own range of usability and characteristics. They all assume values in the range from −1 to +1, where ±1 indicates the strongest possible agreement and 0 no disagreement.
 
-The .bg-orange.white[Pearson product-moment correlation coefficient], also known as r, R, or Pearson's r, is a measure of the strength and direction of the linear relationship between two variables that is defined as the covariance of the variables divided by the product of their standard deviations.  Pearson's r is the best-known and most commonly used type of correlation coefficient.  
+The .bg-orange.white[Pearson product-moment correlation coefficient], also known as r or Pearson's r, is a measure of the strength and direction of the linear relationship between two variables that is defined as the covariance of the variables divided by the product of their standard deviations.  Pearson's r is the best-known and most commonly used type of correlation coefficient.  
  
 
 ---
