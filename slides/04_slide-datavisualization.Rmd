@@ -1144,4 +1144,4 @@ ggplot(
 ```
 ---
 
-`r chunk_reveal("ggplotflipbook", widths = c(50, 50))`
+`r chunk_reveal("ggplotflipbook", widths = c(50, 50), chunk_option = "fig.height = 9")`
