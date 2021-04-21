@@ -460,33 +460,6 @@ p2 <- ggplot(
 layer_data(p1, i = 1)
 ```
 ---
-> Every `geom` has a default `stat`, and every `stat` has a default `geom`
-
-We can generally use geoms and stats interchangeably
-
-.pull-left[
-```{r, eval = FALSE}
-ggplot(
-  data = pancancer,
-  mapping = aes(x = stage_collapsed)) +  
-  geom_bar(stat = "count") #<<
-```
-]
-
-.pull-right[
-```{r eval = FALSE}
-ggplot(
-  data = pancancer,
-  mapping = aes(x = stage_collapsed)) +  
-  stat_count(geom = "bar") #<<
-```
-]
-
-These two codes generate the same bar plot
-
-Typically we can use geoms without specifying stats but we might need to explicitly specify stats to override the default stat or to override the default mapping from transformed variables to aesthetics
-
----
 ### [stat catalogue](https://ggplot2.tidyverse.org/reference/index.html#section-layers)
 
 ```{r, echo = FALSE}
@@ -698,7 +671,9 @@ drop_na(pancancer, weight, height) %>%
   ggplot(
     mapping = aes(x = weight, y = height)) +  
   geom_point() +
-  facet_wrap(~ tumor_tissue_site, ncol = 2)
+  # facet_wrap(~ tumor_tissue_site, ncol = 2) 
+  facet_wrap(vars(tumor_tissue_site), ncol = 2)
+
 ```
 ]
 
@@ -749,136 +724,6 @@ Two types of coordinate systems:
   * `coord_map()`, `coord_quickmap()`, `coord_sf()`: map projections
   * `coord_polar()`: polar coordinates
   * `coord_trans()`: apply arbitrary transformations to x and y positions, after the data has been processed by the `stat`
-
----
-#### Zooming into a plot with `coord_cartesian()`
-
-.panelset[
-.panel[.panel-name[R Code]
-
-```{r zoomin, echo = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(
-    mapping = aes(x = weight, y = height)) +  
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
-  ggpubr::stat_regline_equation(label.x = 120, label.y = 135)
-```
-]
-
-.panel[.panel-name[Plot] 
-
-```{r ref.label = "zoomin", echo = FALSE, fig.height = 3}
-```
-]
-]
-
-Say, we want to zoom into plot with weight between 60 and 100 kgs
-
-
----
-Setting `limits` arg in `scale_x_continuous()`
-
-.panelset[
-.panel[.panel-name[R Code]
-
-```{r zoomin2, echo = TRUE, warning = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(
-    mapping = aes(x = weight, y = height)) +  
-  geom_point() +
-  scale_x_continuous(limits = c(60, 100)) + #<<
-  geom_smooth(method = "lm", se = FALSE) +
-  ggpubr::stat_regline_equation(label.x = 80, label.y = 135)
-```
-
-
-]
-
-.panel[.panel-name[Plot] 
-
-```{r ref.label = "zoomin2", echo = FALSE}
-```
-]
-]
-
-.blue[*any data outside of the limits is discarded*]
----
-Setting `xlim` arg in `coord_cartesian()`
-
-.panelset[
-.panel[.panel-name[R Code]
-
-```{r zoomin3, echo = TRUE, warning = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(
-    mapping = aes(x = weight, y = height)) +  
-  geom_point() +
-  coord_cartesian(xlim = c(60, 100)) + #<<
-  geom_smooth(method = "lm", se = FALSE) +
-  ggpubr::stat_regline_equation(label.x = 80, label.y = 135)
-```
-]
-
-.panel[.panel-name[Plot] 
-
-```{r ref.label = "zoomin3", echo = FALSE}
-```
-]
-]
-
-.blue[*we use all the data but only the region of the plot we want is displayed*]
-
----
-#### Flipping the axes with `coord_flip()`
-
-Exchanging axes rotates the plot 90 degrees, but the smooth is fit to the rotated data
-
-
-.panelset[
-.panel[.panel-name[R Code]
-
-```{r coord_flip, echo = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(
-    mapping = aes(y = weight, x = height)) +  #<<
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
-  ggpubr::stat_regline_equation(label.x = 130, label.y = 160)
-```
-]
-
-.panel[.panel-name[Plot] 
-
-```{r ref.label = "coord_flip", echo = FALSE}
-```
-]
-]
-
-
----
-`coord_flip()` fits the smooth to the original data, and then rotates the output
-
-.panelset[
-.panel[.panel-name[R Code]
-
-```{r coord_flip2, echo = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(
-    mapping = aes(x = weight, y = height)) +  
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
-  ggpubr::stat_regline_equation(label.x = 160, label.y = 130) +
-  coord_flip() #<<
-```
-]
-
-.panel[.panel-name[Plot] 
-
-```{r ref.label = "coord_flip2", echo = FALSE}
-```
-]
-]
 
 ---
 ### Theme layer
