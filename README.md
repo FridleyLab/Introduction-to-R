@@ -7,11 +7,11 @@
 
 -----
 
-:calendar: Summer 2021
+:calendar: Mondays June 7 - July 19, 2021
 
-:alarm\_clock: TBA
+:alarm_clock: 3:00 pm 
 
-:office: TBA
+:office: via Zoom (link coming soon) 
 
 :computer: [Moffitt](https://moffitt.org/)
 
@@ -49,10 +49,10 @@ Feel free to ask questions in the [GitHub Issues](https://github.com).
 
 ## Overview
 
-This is a XXX week course designed to introduce future users to R and
-Rstudio. We will cover data cleaning using the `tidyverse`, creating
-visuals with `ggplot`, bsic statistical analysis and writing documents
-with `Rmarkdown`. In the end you should be able to:
+This is a six week course designed to introduce future users to R and Rstudio.
+We will cover data cleaning using the `tidyverse`, creating visuals with `ggplot`,
+basic statistical analysis and writing documents with `Rmarkdown`. In the end 
+you should be able to: 
 
 <!--
 Each instructor should provide a one sentence summary of what participants
@@ -73,6 +73,41 @@ you used R but are new to the `tidyverse` framework?
 
 ## Learning objectives
 
+Introduction to R/Rstudio and Rmarkdown
+
+  - Get familiar with the R and Rstudio environment
+  - Understand basic R code structure (packages, data structures)
+  - Create and render `Rmarkdown` documents in multiple formats 
+    
+Data import and manipulation - Part I
+
+  - Import various data types 
+  - Explain the fundamentals of "tidy data" and the `tidyverse`
+  - Clean data sets using `dplyr` verbs
+    
+Data manipulation and cleaning - Part II
+
+  - Merge data sets
+  - Transform data  
+    
+Visualization 
+
+  - Understand the principles of `ggplot2`
+  - Determine appropriate visualizations 
+  - Plot - `geom_smooth` to see a model over the data 
+    
+Basic statistics 
+
+  - ttest, correlation and chisq 
+  - Model data 
+  - Report findings from R output 
+    
+Final coding project 
+
+  - Organize projects and name objects in a uniform manner
+  - Create a reproducible workflow
+  - Setting up your own R installation 
+
 ## Materials
 
 Materials will be made available on
@@ -89,9 +124,8 @@ Add links to personal websites and double check personal info
 * add small blurbs/pictures for each instructor? 
 -->
 
-This course is taught by members of Moffitt faculty including Jordan
-Creed, a data analyst in the Department of Biostatistics, Garrick
-Aden-Buie, a scientific programmer with Data Science Core, Zachary
+This course is taught by members of Moffitt staff including Jordan
+Creed, a data analyst in the Department of Health Informatics, Zachary
 Thompson and Ram Thappa, biostatisticians in the Bioinformatics and
 Biostatistics Core.
 
