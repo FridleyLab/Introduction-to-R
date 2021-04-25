@@ -1,0 +1,1044 @@
+"bcr_patient_barcode","acronym","tobacco_smoking_history","race","ethnicity","radiation_therapy","vital_status","age_at_initial_pathologic_diagnosis","gender","stage","weight","height","tumor_tissue_site","karnofsky_performance_score"
+"TCGA-3Z-A93Z","KIRC","Current Reformed Smoker, Duration Not Specified","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",69,"MALE","Stage I",NA,NA,"Kidney",100
+"TCGA-4P-AA8J","HNSC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",66,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-6D-AA2E","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",68,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3306","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",67,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3307","KIRC",NA,NA,NA,NA,"Alive",66,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-A3-3308","KIRC",NA,"WHITE",NA,NA,"Alive",77,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-A3-3311","KIRC",NA,NA,NA,NA,"Dead",57,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3313","KIRC",NA,"BLACK OR AFRICAN AMERICAN",NA,NA,"Dead",59,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3316","KIRC",NA,"WHITE",NA,NA,"Alive",57,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-A3-3317","KIRC",NA,NA,NA,NA,"Alive",67,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-A3-3319","KIRC",NA,"WHITE",NA,NA,"Alive",70,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3320","KIRC",NA,"WHITE",NA,NA,"Alive",52,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3322","KIRC",NA,"WHITE",NA,NA,"Alive",51,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3323","KIRC",NA,"WHITE",NA,NA,"Alive",53,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3324","KIRC",NA,"WHITE",NA,NA,"Alive",51,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3325","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Dead",52,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3326","KIRC",NA,"WHITE",NA,NA,"Alive",47,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3328","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",79,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3329","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",75,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3331","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",86,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3335","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",41,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-A3-3343","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",79,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-A3-3346","KIRC",NA,"WHITE",NA,"NO","Dead",68,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3347","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",76,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-A3-3349","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",34,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3351","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",42,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-A3-3352","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Dead",74,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-A3-3357","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",62,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-A3-3358","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",57,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3359","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",82,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3362","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",60,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3363","KIRC",NA,"ASIAN",NA,NA,"Alive",50,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-A3-3365","KIRC",NA,"WHITE",NA,NA,"Alive",46,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3367","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",72,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3370","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",48,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3372","KIRC",NA,"WHITE",NA,NA,"Alive",64,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-A3-3373","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",54,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3374","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",51,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3376","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",51,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3378","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",60,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3380","KIRC",NA,NA,"HISPANIC OR LATINO",NA,"Alive",54,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3382","KIRC",NA,"WHITE",NA,NA,"Alive",69,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3383","KIRC",NA,"WHITE",NA,NA,"Alive",52,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3385","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",46,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-3387","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",49,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-A6NI","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",47,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-A6NJ","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",57,"FEMALE","Stage I",NA,NA,"Kidney",100
+"TCGA-A3-A6NL","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",49,"FEMALE","Stage I",NA,NA,"Kidney",90
+"TCGA-A3-A6NN","KIRC","Current Reformed Smoker, Duration Not Specified","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",78,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-A8CQ","KIRC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",59,"FEMALE","Stage I",NA,NA,"Kidney",90
+"TCGA-A3-A8OU","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",74,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-A8OV","KIRC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",75,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-A3-A8OW","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",37,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-A3-A8OX","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",65,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3425","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",68,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3426","KIRC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",37,"MALE","Stage III",NA,NA,"Kidney",0
+"TCGA-AK-3427","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",65,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3428","KIRC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",62,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-AK-3429","KIRC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",54,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-AK-3431","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",62,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-AK-3433","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",48,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-AK-3434","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",72,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3436","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",40,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-AK-3440","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",58,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3443","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",45,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-AK-3444","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",80,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3445","KIRC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",69,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-AK-3447","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",83,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-AK-3450","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",85,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3451","KIRC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",48,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-AK-3453","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",58,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-AK-3454","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",84,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3455","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",71,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-AK-3456","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",48,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-AK-3458","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",48,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3460","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",58,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3461","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",72,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AK-3465","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",71,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AS-3777","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",63,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-AS-3778","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",35,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-4688","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",46,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4690","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",65,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4691","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",55,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4693","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",72,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4694","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",72,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4696","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",58,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4697","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",46,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4698","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",75,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4699","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",74,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4700","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",60,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4701","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",66,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4703","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",51,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4706","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",61,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4707","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4710","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",75,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4712","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",76,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4713","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",76,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4714","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",81,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4718","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",57,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4810","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",47,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4811","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",48,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4813","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",68,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4814","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",58,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4815","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",65,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4816","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",49,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B0-4817","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",81,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4818","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",68,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B0-4819","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",60,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4821","KIRC",NA,"ASIAN","NOT HISPANIC OR LATINO",NA,"Dead",68,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4822","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",78,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B0-4823","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",88,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-4824","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",49,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-4827","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",77,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4828","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",79,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4833","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",82,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-4834","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",49,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-4836","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",61,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4837","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-4838","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",69,"FEMALE","Stage I",NA,NA,"Kidney",90
+"TCGA-B0-4839","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",80,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-4841","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4842","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",73,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4843","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",57,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4844","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",60,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4845","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",70,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4846","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",52,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4847","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",60,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-4848","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",54,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4849","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",51,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-4852","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",78,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B0-4945","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",75,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5075","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",77,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5077","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",77,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5080","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-5081","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",79,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5083","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5084","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",33,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-5085","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",76,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5088","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",53,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5092","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",53,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-5094","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",62,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-5095","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",81,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5096","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",72,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5097","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",59,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5098","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Dead",53,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5099","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",88,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5100","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Dead",72,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5102","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",74,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5104","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",90,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5106","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",64,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5107","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",65,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-5108","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",54,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5109","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",69,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5110","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",71,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5113","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",69,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5115","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",43,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-5116","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",52,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5117","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",40,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5119","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5120","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",72,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5121","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",56,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5399","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",46,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5400","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",59,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5402","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",64,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-5690","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",53,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5691","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",66,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5692","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",66,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5693","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",47,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5694","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",71,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5695","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5696","KIRC",NA,"WHITE","HISPANIC OR LATINO","NO","Alive",69,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5697","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",50,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5698","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",77,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5699","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",53,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5700","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",77,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5701","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",65,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5702","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",71,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5703","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",73,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5705","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",65,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5706","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",45,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B0-5707","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",39,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5709","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",62,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5710","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",57,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B0-5711","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",50,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5712","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",68,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B0-5713","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",75,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B0-5812","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",53,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B2-3923","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",59,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B2-3924","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",73,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B2-4098","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Dead",72,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B2-4099","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",83,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B2-4101","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",52,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B2-4102","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B2-5633","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",56,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B2-5635","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",74,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B2-5636","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",79,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B2-5639","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","YES","Dead",46,"MALE","Stage IV",NA,NA,"Kidney",70
+"TCGA-B2-5641","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",79,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B2-A4SR","KIRC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",61,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B4-5377","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",68,"FEMALE","Stage IV",NA,NA,"Kidney",90
+"TCGA-B4-5378","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",62,"MALE","Stage I",NA,NA,"Kidney",90
+"TCGA-B4-5832","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",65,"MALE","Stage III",NA,NA,"Kidney",80
+"TCGA-B4-5834","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",59,"MALE","Stage I",NA,NA,"Kidney",90
+"TCGA-B4-5835","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",64,"FEMALE","Stage I",NA,NA,"Kidney",100
+"TCGA-B4-5836","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"FEMALE","Stage I",NA,NA,"Kidney",90
+"TCGA-B4-5838","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",52,"MALE","Stage IV",NA,NA,"Kidney",80
+"TCGA-B4-5843","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",45,"MALE","Stage I",NA,NA,"Kidney",90
+"TCGA-B4-5844","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"FEMALE","Stage II",NA,NA,"Kidney",80
+"TCGA-B8-4143","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",66,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B8-4146","KIRC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",41,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-4148","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",63,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-4151","KIRC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","NO","Alive",51,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B8-4153","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",74,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B8-4154","KIRC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",73,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-4619","KIRC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",58,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-4620","KIRC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",70,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B8-4621","KIRC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",63,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-4622","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",57,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-B8-5158","KIRC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",56,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B8-5159","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-5162","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",62,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B8-5163","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",63,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B8-5164","KIRC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",65,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B8-5165","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",43,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-5545","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",42,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-5546","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",38,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-5549","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",53,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-5550","KIRC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",71,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B8-5551","KIRC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",65,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-5552","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",41,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-5553","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",67,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-A54D","KIRC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",69,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-B8-A54E","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","HISPANIC OR LATINO","NO","Alive",62,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-A54F","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",49,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-A54G","KIRC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",50,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-A54H","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN",NA,"NO","Alive",69,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B8-A54I","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",48,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-A54J","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",60,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-B8-A54K","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",61,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-A7U6","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",54,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-B8-A8YJ","KIRC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN",NA,"NO","Alive",60,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BA-4074","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",69,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-4075","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",49,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BA-4076","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",39,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-4077","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",45,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-4078","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",83,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-5149","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-5151","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",72,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-5152","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-5153","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",51,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BA-5555","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",54,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-5556","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",58,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-BA-5557","HNSC","Lifelong Non-smoker",NA,"HISPANIC OR LATINO","YES","Alive",41,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BA-5558","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",65,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-5559","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",71,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-6868","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",53,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-BA-6869","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",62,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BA-6870","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",60,"FEMALE","Stage IVC",NA,NA,"Head and Neck",NA
+"TCGA-BA-6871","HNSC","Current reformed smoker for < or = 15 years","WHITE",NA,"NO","Dead",75,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-6872","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-6873","HNSC","Current smoker","WHITE","HISPANIC OR LATINO","NO","Alive",28,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-7269","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",61,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BA-A4IF","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-A4IG","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",77,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-A4II","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",46,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-BA-A6D8","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN",NA,"YES","Alive",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-A6DA","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",41,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-A6DB","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",24,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-BA-A6DD","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",44,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-A6DE","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",70,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-BA-A6DG","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",49,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-A6DI","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",62,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BA-A6DJ","HNSC","Current reformed smoker for < or = 15 years","ASIAN","NOT HISPANIC OR LATINO","YES","Dead",62,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BA-A6DL","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",59,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BA-A8YP","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",50,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-BB-4217","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",68,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-4223","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",48,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-4224","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",52,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-4225","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",73,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-4227","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",66,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-4228","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",50,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BB-7861","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",56,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BB-7862","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-7863","HNSC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","NO","Alive",43,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BB-7864","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",61,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-7866","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",40,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BB-7870","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",58,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-7871","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",64,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-7872","HNSC","Lifelong Non-smoker","ASIAN","NOT HISPANIC OR LATINO","YES","Alive",63,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-BB-8596","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",69,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-8601","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",84,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BB-A5HU","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-A5HY","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",64,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-A5HZ","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",65,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BB-A6UM","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",52,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-BB-A6UO","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",61,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-BP-4158","KIRC",NA,"WHITE",NA,NA,"Alive",69,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4159","KIRC",NA,"WHITE",NA,NA,"Dead",70,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4160","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",67,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4161","KIRC",NA,"WHITE",NA,NA,"Alive",74,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4162","KIRC",NA,"WHITE",NA,NA,"Alive",65,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4163","KIRC",NA,"WHITE",NA,NA,"Alive",60,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4164","KIRC",NA,"WHITE",NA,NA,"Dead",51,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4165","KIRC",NA,"WHITE",NA,NA,"Alive",64,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4166","KIRC",NA,"WHITE",NA,NA,"Alive",69,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4167","KIRC",NA,"WHITE",NA,NA,"Alive",59,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4169","KIRC",NA,"WHITE",NA,NA,"Dead",76,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-4170","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Dead",72,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4173","KIRC",NA,"WHITE",NA,NA,"Alive",47,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-4174","KIRC",NA,"WHITE",NA,NA,"Alive",49,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-4176","KIRC",NA,"WHITE",NA,NA,"Alive",64,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4177","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",65,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4325","KIRC",NA,"WHITE",NA,NA,"Alive",64,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4326","KIRC",NA,"WHITE",NA,NA,"Dead",53,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4327","KIRC",NA,"WHITE",NA,NA,"Dead",75,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-4329","KIRC",NA,"WHITE",NA,NA,"Dead",75,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4330","KIRC",NA,"BLACK OR AFRICAN AMERICAN","HISPANIC OR LATINO",NA,"Alive",60,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4331","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",52,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4332","KIRC",NA,"WHITE",NA,NA,"Alive",36,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4334","KIRC",NA,"WHITE",NA,NA,"Dead",56,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4335","KIRC",NA,"WHITE",NA,NA,"Dead",65,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-BP-4337","KIRC",NA,"WHITE",NA,NA,"Dead",76,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4338","KIRC",NA,"WHITE",NA,NA,"Alive",43,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4340","KIRC",NA,"WHITE",NA,NA,"Dead",70,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4341","KIRC",NA,"WHITE",NA,NA,"Dead",67,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4342","KIRC",NA,"WHITE",NA,NA,"Dead",79,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-4343","KIRC",NA,"WHITE",NA,NA,"Dead",64,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4344","KIRC",NA,"WHITE",NA,NA,"Alive",75,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4345","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",62,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4346","KIRC",NA,"WHITE",NA,NA,"Dead",57,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4347","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",74,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4349","KIRC",NA,"WHITE",NA,NA,"Alive",68,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4351","KIRC",NA,"WHITE",NA,NA,"Alive",51,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4352","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",74,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-BP-4353","KIRC",NA,"WHITE",NA,NA,"Dead",61,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4354","KIRC",NA,"WHITE",NA,NA,"Dead",40,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-BP-4355","KIRC",NA,"WHITE",NA,NA,"Dead",59,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4756","KIRC",NA,"ASIAN",NA,NA,"Alive",62,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4758","KIRC",NA,"WHITE",NA,NA,"Alive",40,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4759","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",50,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4760","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",69,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4761","KIRC",NA,"WHITE",NA,NA,"Alive",57,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4762","KIRC",NA,"WHITE",NA,NA,"Dead",42,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4763","KIRC",NA,"WHITE",NA,NA,"Dead",79,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4765","KIRC",NA,"WHITE",NA,NA,"Alive",43,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4766","KIRC",NA,"WHITE",NA,NA,"Alive",43,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4768","KIRC",NA,"WHITE",NA,NA,"Alive",72,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4769","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",63,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4770","KIRC",NA,"WHITE",NA,NA,"Dead",73,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-BP-4771","KIRC",NA,"WHITE",NA,NA,"Dead",62,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-BP-4774","KIRC",NA,"WHITE",NA,NA,"Alive",57,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4775","KIRC",NA,"WHITE",NA,NA,"Alive",55,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4776","KIRC",NA,"WHITE",NA,NA,"Alive",52,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4777","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",46,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4781","KIRC",NA,"WHITE",NA,NA,"Alive",78,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4782","KIRC",NA,"WHITE",NA,NA,"Alive",55,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4784","KIRC",NA,"WHITE",NA,NA,"Alive",67,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4787","KIRC",NA,"WHITE",NA,NA,"Dead",59,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-BP-4789","KIRC",NA,"WHITE",NA,NA,"Alive",48,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4790","KIRC",NA,"WHITE",NA,NA,"Dead",76,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4795","KIRC",NA,"WHITE",NA,NA,"Alive",74,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4797","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",34,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4798","KIRC",NA,"WHITE",NA,NA,"Dead",74,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4799","KIRC",NA,"WHITE",NA,NA,"Dead",70,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4801","KIRC",NA,"WHITE",NA,NA,"Alive",57,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4803","KIRC",NA,"WHITE",NA,NA,"Alive",79,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4804","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",59,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4807","KIRC",NA,"WHITE",NA,NA,"Alive",42,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4959","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",49,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4960","KIRC",NA,"WHITE",NA,NA,"Alive",46,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-4961","KIRC",NA,"WHITE",NA,NA,"Alive",47,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4962","KIRC",NA,"WHITE",NA,NA,"Alive",58,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-4963","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",63,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4964","KIRC",NA,"WHITE",NA,NA,"Alive",54,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4965","KIRC",NA,"WHITE",NA,NA,"Alive",46,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4967","KIRC",NA,"WHITE",NA,NA,"Alive",76,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4968","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",40,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4969","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",63,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4970","KIRC",NA,"ASIAN",NA,NA,"Alive",44,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4971","KIRC",NA,"WHITE",NA,NA,"Alive",40,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4972","KIRC",NA,"WHITE",NA,NA,"Alive",43,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4973","KIRC",NA,"WHITE",NA,NA,"Alive",47,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4974","KIRC",NA,"WHITE",NA,NA,"Dead",58,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-BP-4975","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",40,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4976","KIRC",NA,"WHITE",NA,NA,"Alive",77,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4977","KIRC",NA,"WHITE",NA,NA,"Alive",57,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4981","KIRC",NA,"WHITE",NA,NA,"Dead",75,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4982","KIRC",NA,"WHITE",NA,NA,"Alive",42,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4983","KIRC",NA,"ASIAN",NA,NA,"Alive",67,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4985","KIRC",NA,"WHITE",NA,NA,"Dead",72,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4986","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",75,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4987","KIRC",NA,"ASIAN",NA,NA,"Alive",41,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4988","KIRC",NA,"WHITE",NA,NA,"Dead",72,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4989","KIRC",NA,"WHITE",NA,NA,"Alive",58,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-4991","KIRC",NA,"WHITE",NA,NA,"Alive",54,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4992","KIRC",NA,"WHITE",NA,NA,"Alive",66,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4993","KIRC",NA,"WHITE",NA,NA,"Alive",58,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4994","KIRC",NA,"WHITE",NA,NA,"Alive",54,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4995","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",68,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4998","KIRC",NA,"ASIAN",NA,NA,"Alive",49,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-4999","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",56,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5000","KIRC",NA,"WHITE",NA,NA,"Alive",40,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5001","KIRC",NA,"WHITE",NA,NA,"Alive",43,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5004","KIRC",NA,"WHITE",NA,NA,"Alive",53,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5006","KIRC",NA,"WHITE",NA,NA,"Alive",61,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5007","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",45,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-5008","KIRC",NA,"WHITE",NA,NA,"Alive",46,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5009","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",52,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5010","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-5168","KIRC",NA,"WHITE",NA,NA,"Dead",75,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5169","KIRC",NA,"WHITE",NA,NA,"Alive",70,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5170","KIRC",NA,"WHITE",NA,NA,"Alive",55,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5173","KIRC",NA,"WHITE",NA,NA,"Dead",75,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5174","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",45,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5175","KIRC",NA,"WHITE",NA,NA,"Alive",60,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5176","KIRC",NA,"WHITE",NA,NA,"Dead",78,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5177","KIRC",NA,"WHITE",NA,NA,"Alive",46,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5178","KIRC",NA,"WHITE",NA,NA,"Dead",71,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-BP-5180","KIRC",NA,"WHITE",NA,NA,"Alive",53,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5181","KIRC",NA,"WHITE",NA,NA,"Alive",58,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5182","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",56,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5183","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",57,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-5184","KIRC",NA,"WHITE",NA,NA,"Alive",54,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5185","KIRC",NA,"WHITE",NA,NA,"Alive",56,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5186","KIRC",NA,"WHITE",NA,NA,"Alive",50,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5187","KIRC",NA,"WHITE",NA,NA,"Alive",54,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5189","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",60,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5190","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",61,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5191","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",79,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-5192","KIRC",NA,"WHITE",NA,NA,"Alive",59,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5194","KIRC",NA,"WHITE",NA,NA,"Alive",39,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5195","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",75,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5196","KIRC",NA,"WHITE",NA,NA,"Alive",53,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-BP-5198","KIRC",NA,"WHITE",NA,NA,"Alive",72,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-BP-5199","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",58,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-5200","KIRC",NA,"WHITE",NA,NA,"Alive",44,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-BP-5201","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",63,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-BP-5202","KIRC",NA,"WHITE",NA,NA,"Alive",75,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-C9-A47Z","HNSC","Lifelong Non-smoker","ASIAN","NOT HISPANIC OR LATINO","NO","Dead",72,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-C9-A480","HNSC","Lifelong Non-smoker","ASIAN","NOT HISPANIC OR LATINO","YES","Alive",45,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CJ-4634","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",60,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4635","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",48,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4636","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",51,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4637","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Dead",52,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4638","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",46,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4639","KIRC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","NO","Alive",49,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CJ-4640","KIRC","Current reformed smoker for < or = 15 years","WHITE","HISPANIC OR LATINO","NO","Alive",49,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4641","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",55,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4642","KIRC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",47,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CJ-4643","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",67,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CJ-4644","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",48,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4868","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",42,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4869","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",49,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4870","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",58,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4871","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",63,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4872","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",51,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4873","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",85,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4874","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",73,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4875","KIRC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",67,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4876","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",57,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CJ-4878","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",71,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4881","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",41,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4882","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",57,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4884","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",72,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4885","KIRC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",64,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4886","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",42,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4887","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",48,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4888","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",59,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4889","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",63,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4890","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",72,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4891","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",57,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4892","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",65,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4893","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",76,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4894","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",58,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4895","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",62,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4897","KIRC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","NO","Alive",79,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4899","KIRC",NA,"ASIAN","NOT HISPANIC OR LATINO",NA,"Alive",42,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4900","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",69,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4901","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",47,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4902","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",61,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4903","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",50,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4904","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",60,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4905","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",62,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4907","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",58,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4908","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",38,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4912","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Alive",61,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CJ-4916","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",69,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-4918","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",64,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-4920","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",64,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-4923","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-5671","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",51,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-5672","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",84,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-5675","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",70,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CJ-5676","KIRC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","NO","Alive",47,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-5677","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",54,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-5678","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Dead",62,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-5679","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",73,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-5680","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",65,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-5681","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",44,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-5682","KIRC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",60,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-5683","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",78,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-5684","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",61,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CJ-5686","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",59,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-5689","KIRC",NA,"WHITE","HISPANIC OR LATINO",NA,"Dead",90,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-6027","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",77,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-6028","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",58,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CJ-6030","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",65,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-6031","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",54,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CJ-6032","KIRC","Current reformed smoker for > 15 years","WHITE","HISPANIC OR LATINO","NO","Alive",63,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CJ-6033","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",54,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CN-4722","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CN-4723","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4725","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",60,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CN-4726","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",68,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4727","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4728","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4729","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",73,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CN-4730","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",62,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4731","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",63,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4733","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CN-4734","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",70,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CN-4735","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",52,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4736","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",70,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CN-4737","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",19,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4738","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",53,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4739","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",71,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4740","HNSC","Current reformed smoker for < or = 15 years","WHITE",NA,"YES","Dead",79,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4741","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",75,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-4742","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",48,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-5355","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",64,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-5356","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",56,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CN-5358","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",60,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CN-5359","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-5360","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",68,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-5361","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",80,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-5363","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Dead",48,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CN-5364","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",55,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-5365","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",38,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CN-5366","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",51,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-5367","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",60,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-5369","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",90,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-5370","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",78,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CN-5373","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",55,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CN-5374","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",56,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6010","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",53,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6011","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",57,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6012","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",66,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6013","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6016","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",64,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6017","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",55,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6018","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",85,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6019","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",61,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6020","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",58,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CN-6021","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CN-6022","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",49,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6023","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",73,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6024","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",66,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6988","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6989","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",64,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6992","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",61,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6994","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6995","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",78,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6996","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",58,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6997","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",66,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-6998","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",53,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A497","HNSC","Current reformed smoker for < or = 15 years",NA,"NOT HISPANIC OR LATINO","NO","Alive",63,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CN-A498","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",61,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CN-A499","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",60,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CN-A49A","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",60,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CN-A49B","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",71,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CN-A49C","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A63T","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A63U","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",50,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A63V","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A63W","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",48,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A641","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A642","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",57,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CN-A6UY","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",57,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A6V1","HNSC","Lifelong Non-smoker","WHITE",NA,"NO","Alive",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A6V3","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",61,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A6V6","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CN-A6V7","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",40,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5323","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",82,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5324","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",59,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5325","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",65,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5326","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5327","HNSC","Lifelong Non-smoker","ASIAN","NOT HISPANIC OR LATINO","YES","Alive",61,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5329","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",46,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5330","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",69,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5331","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",73,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5332","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",87,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5333","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",74,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-5334","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",87,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6218","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",52,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6219","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",50,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6220","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",69,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6221","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",79,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6222","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",63,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6223","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",69,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6224","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",52,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6225","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",65,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6227","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",77,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6228","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",71,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-6229","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-7063","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",59,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CQ-7065","HNSC","Lifelong Non-smoker","ASIAN","NOT HISPANIC OR LATINO","NO","Alive",40,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-7067","HNSC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",75,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CQ-7068","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",80,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-7069","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",77,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-7071","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",76,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CQ-7072","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",51,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-A4C6","HNSC","Current reformed smoker for < or = 15 years","ASIAN","NOT HISPANIC OR LATINO","NO","Alive",63,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-A4C7","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",88,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CQ-A4C9","HNSC","Current smoker","[Not Evaluated]",NA,"YES","Alive",56,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CQ-A4CA","HNSC","Current smoker","[Not Evaluated]",NA,"NO","Alive",NA,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-A4CB","HNSC","Current smoker","[Not Evaluated]",NA,"NO","Alive",59,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CQ-A4CD","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",69,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CQ-A4CE","HNSC","Lifelong Non-smoker","[Not Evaluated]",NA,"NO","Alive",76,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CQ-A4CG","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",78,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CQ-A4CH","HNSC","Lifelong Non-smoker","ASIAN","NOT HISPANIC OR LATINO","YES","Dead",58,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CR-5243","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",51,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-5247","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",48,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CR-5248","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",53,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-5249","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",35,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CR-5250","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",71,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CR-6467","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",59,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CR-6470","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",38,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CR-6471","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",58,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6472","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",59,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CR-6473","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",68,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6474","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",51,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6477","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",56,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6478","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",66,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6480","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",53,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6481","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6482","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",62,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6484","HNSC","Lifelong Non-smoker","ASIAN","NOT HISPANIC OR LATINO","YES","Alive",67,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6487","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",50,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CR-6488","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",68,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CR-6491","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-6492","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",78,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CR-6493","HNSC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Dead",69,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7364","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",66,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CR-7365","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7367","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",52,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7368","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",54,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7369","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7370","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",72,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CR-7371","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",45,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CR-7372","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",45,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CR-7373","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",66,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7374","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",67,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CR-7376","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",83,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CR-7377","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",58,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7379","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",78,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7380","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",58,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CR-7382","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",49,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7383","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",79,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CR-7385","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",42,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7386","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",69,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7388","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",70,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7389","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",55,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CR-7390","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7391","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",36,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CR-7392","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",67,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7393","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",26,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CR-7394","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",70,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7395","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",80,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CR-7397","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",44,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7398","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",53,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CR-7399","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",60,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CR-7401","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",64,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CR-7402","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",68,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CR-7404","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",53,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5430","HNSC","Current reformed smoker for > 15 years","WHITE","HISPANIC OR LATINO","YES","Alive",61,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5431","HNSC","Current reformed smoker for < or = 15 years","WHITE","HISPANIC OR LATINO","YES","Dead",73,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5432","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",68,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-5434","HNSC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5435","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",57,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5436","HNSC","Current smoker",NA,"HISPANIC OR LATINO","NO","Dead",65,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5439","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",62,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5440","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",52,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5441","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",58,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5442","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",76,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5443","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",63,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-5444","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",64,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5966","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",63,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5970","HNSC","Current reformed smoker for < or = 15 years","WHITE","HISPANIC OR LATINO",NA,"Dead",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5971","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5973","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",62,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-5976","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",50,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5977","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",66,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-5978","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Dead",53,"FEMALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CV-5979","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",26,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6003","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",50,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6433","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",57,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-6436","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",62,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6441","HNSC","Current reformed smoker for < or = 15 years","WHITE","HISPANIC OR LATINO","NO","Dead",60,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6933","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",53,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6934","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",66,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6935","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6936","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",68,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6937","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",71,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-6938","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",87,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-6939","HNSC","Lifelong Non-smoker","WHITE",NA,NA,"Dead",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6940","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",80,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6941","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",51,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6942","HNSC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","NO","Alive",73,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-6943","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",74,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6945","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",41,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6948","HNSC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",79,"FEMALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CV-6950","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",64,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6951","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",57,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6952","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",65,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6953","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",80,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6954","HNSC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN",NA,"YES","Dead",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-6955","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",74,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-6956","HNSC","Current smoker","WHITE","HISPANIC OR LATINO","NO","Dead",67,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6959","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",48,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6960","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN",NA,"NO","Dead",49,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-6961","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",61,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-6962","HNSC","Current reformed smoker for < or = 15 years","WHITE","HISPANIC OR LATINO","YES","Dead",65,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7089","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",74,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7090","HNSC",NA,"WHITE","NOT HISPANIC OR LATINO","YES","Alive",39,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7091","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",54,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CV-7095","HNSC","Current reformed smoker for > 15 years",NA,"HISPANIC OR LATINO","NO","Dead",87,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7097","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",53,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7099","HNSC","Current reformed smoker for > 15 years","WHITE",NA,"NO","Dead",85,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7100","HNSC","Current reformed smoker for > 15 years","WHITE",NA,NA,"Dead",66,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-7101","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",80,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7102","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",76,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7103","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",49,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7104","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",61,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7177","HNSC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",82,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7178","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",64,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7180","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",34,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7183","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",53,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7235","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",67,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7236","HNSC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",77,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7238","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",69,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7242","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",60,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7243","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",50,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-7245","HNSC","Current reformed smoker for < or = 15 years","WHITE","HISPANIC OR LATINO",NA,"Alive",62,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7247","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",55,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-7248","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Dead",63,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7250","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",64,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7252","HNSC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",62,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7253","HNSC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",58,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7254","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",55,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7255","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",32,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7261","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",57,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7263","HNSC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN",NA,NA,"Dead",64,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7406","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",49,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7407","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",67,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7409","HNSC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",43,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CV-7410","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",61,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-7411","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",64,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7413","HNSC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Dead",74,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7414","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",78,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7415","HNSC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7416","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",29,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7418","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",62,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7421","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",76,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7422","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",60,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7423","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",65,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7424","HNSC","Current reformed smoker for < or = 15 years","ASIAN","NOT HISPANIC OR LATINO",NA,"Dead",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7425","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",77,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-7427","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",73,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7428","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7429","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",55,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7430","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7432","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",79,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7433","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",49,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7434","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",64,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7435","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",57,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7437","HNSC","Lifelong Non-smoker",NA,NA,NA,"Dead",77,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7438","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",87,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CV-7440","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",38,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-7446","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",66,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-7568","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",48,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45O","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",57,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45P","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",82,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45Q","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",69,"FEMALE","Stage IVC",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45R","HNSC","Current reformed smoker for < or = 15 years","WHITE","HISPANIC OR LATINO","YES","Alive",46,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45T","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",64,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45U","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45V","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",87,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45W","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",75,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45X","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45Y","HNSC","Current reformed smoker for < or = 15 years","AMERICAN INDIAN OR ALASKA NATIVE","HISPANIC OR LATINO","YES","Dead",61,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A45Z","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",75,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-A460","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",72,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-A461","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",65,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-A463","HNSC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","NO","Dead",82,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A464","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",48,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-A465","HNSC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","NO","Dead",24,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CV-A468","HNSC","Current smoker",NA,"HISPANIC OR LATINO","YES","Dead",42,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6JD","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",82,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6JE","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",78,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6JM","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",85,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6JN","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",53,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6JO","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",69,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6JT","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",65,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6JU","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",61,"FEMALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6JY","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",69,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6JZ","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",68,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6K0","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",58,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6K1","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",65,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CV-A6K2","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",79,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CW-5580","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",73,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CW-5581","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",44,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CW-5583","KIRC",NA,"WHITE",NA,NA,"Alive",51,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CW-5584","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",74,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CW-5585","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",51,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CW-5587","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",62,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CW-5588","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",78,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CW-5589","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",52,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CW-5590","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",51,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CW-5591","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",56,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CW-6087","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",61,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CW-6088","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",60,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CW-6090","KIRC",NA,"WHITE",NA,NA,"Alive",68,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CW-6093","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",73,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CW-6097","KIRC",NA,"WHITE",NA,NA,"Dead",32,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CX-7082","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",82,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CX-7085","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",77,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-CX-7086","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",53,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-CX-7219","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CX-A4AQ","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-CZ-4853","KIRC",NA,"WHITE",NA,NA,"Alive",82,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CZ-4854","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",68,"MALE","Stage I",NA,NA,"Kidney",100
+"TCGA-CZ-4856","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",62,"FEMALE","Stage I",NA,NA,"Kidney",90
+"TCGA-CZ-4857","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",56,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CZ-4858","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",39,"MALE","Stage II",NA,NA,"Kidney",100
+"TCGA-CZ-4859","KIRC",NA,"WHITE",NA,NA,"Alive",59,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CZ-4860","KIRC",NA,"WHITE",NA,NA,"Dead",60,"MALE","Stage IV",NA,NA,"Kidney",100
+"TCGA-CZ-4861","KIRC",NA,"WHITE",NA,NA,"Dead",63,"MALE","Stage II",NA,NA,"Kidney",100
+"TCGA-CZ-4862","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",46,"MALE","Stage I",NA,NA,"Kidney",100
+"TCGA-CZ-4863","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",51,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CZ-4864","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",86,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CZ-4865","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",70,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CZ-4866","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",79,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CZ-5451","KIRC",NA,"WHITE",NA,NA,"Alive",74,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CZ-5452","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",69,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CZ-5453","KIRC","Current Reformed Smoker, Duration Not Specified","WHITE",NA,NA,"Dead",67,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CZ-5454","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CZ-5455","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",63,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CZ-5456","KIRC",NA,"WHITE",NA,NA,"Alive",57,"MALE","Stage II",NA,NA,"Kidney",90
+"TCGA-CZ-5457","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",62,"MALE","Stage III",NA,NA,"Kidney",100
+"TCGA-CZ-5458","KIRC",NA,"WHITE",NA,NA,"Alive",43,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CZ-5459","KIRC",NA,"WHITE",NA,NA,"Alive",63,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CZ-5460","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",55,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CZ-5461","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",52,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CZ-5462","KIRC",NA,"WHITE",NA,NA,"Dead",83,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CZ-5463","KIRC",NA,"WHITE",NA,NA,"Alive",76,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CZ-5464","KIRC",NA,"WHITE",NA,NA,"Alive",69,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CZ-5465","KIRC","Lifelong Non-smoker",NA,NA,NA,"Dead",76,"FEMALE","Stage III",NA,NA,"Kidney",100
+"TCGA-CZ-5466","KIRC",NA,NA,NA,NA,"Alive",67,"MALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CZ-5467","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",86,"FEMALE","Stage III",NA,NA,"Kidney",NA
+"TCGA-CZ-5468","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Dead",84,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CZ-5469","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",41,"MALE","Stage II",NA,NA,"Kidney",90
+"TCGA-CZ-5470","KIRC",NA,NA,NA,NA,"Alive",72,"FEMALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CZ-5982","KIRC",NA,"WHITE",NA,NA,"Alive",59,"FEMALE","Stage I",NA,NA,"Kidney",100
+"TCGA-CZ-5984","KIRC",NA,"WHITE",NA,NA,"Alive",51,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CZ-5985","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",58,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-CZ-5986","KIRC",NA,"WHITE",NA,NA,"Alive",61,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CZ-5987","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",60,"MALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-CZ-5988","KIRC",NA,"WHITE",NA,NA,"Alive",38,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-CZ-5989","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",60,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-D6-6515","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",82,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-D6-6516","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",69,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-D6-6517","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",59,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-D6-6823","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",50,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-D6-6824","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-D6-6825","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",73,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-D6-6826","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",64,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-D6-6827","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",55,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-D6-8568","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",62,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-D6-8569","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",52,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-D6-A4Z9","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-D6-A4ZB","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",61,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-D6-A6EK","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",67,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-D6-A6EM","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",65,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-D6-A6EN","HNSC","Current Reformed Smoker, Duration Not Specified","WHITE","NOT HISPANIC OR LATINO","YES","Alive",71,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-D6-A6EO","HNSC","Current Reformed Smoker, Duration Not Specified","WHITE","NOT HISPANIC OR LATINO","YES","Alive",44,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-D6-A6EP","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",62,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-D6-A6EQ","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",57,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-D6-A6ES","HNSC",NA,"WHITE","NOT HISPANIC OR LATINO","YES","Alive",50,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-D6-A74Q","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-DQ-5624","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",43,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-DQ-5625","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",52,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-DQ-5629","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",64,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-DQ-5630","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",73,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-DQ-5631","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",52,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-DQ-7588","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",66,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-DQ-7589","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",70,"MALE","Stage IVC",NA,NA,"Head and Neck",NA
+"TCGA-DQ-7590","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",51,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-DQ-7591","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",62,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-DQ-7592","HNSC","Current smoker","AMERICAN INDIAN OR ALASKA NATIVE","NOT HISPANIC OR LATINO","YES","Alive",57,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-DQ-7593","HNSC","Current smoker","WHITE",NA,"YES","Alive",58,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-DQ-7594","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",47,"MALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-DQ-7595","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",53,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-DQ-7596","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",48,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-DV-5565","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",59,"MALE","Stage I",NA,NA,"Kidney",90
+"TCGA-DV-5566","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",67,"FEMALE","Stage I",NA,NA,"Kidney",100
+"TCGA-DV-5567","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",40,"FEMALE","Stage I",NA,NA,"Kidney",100
+"TCGA-DV-5568","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",26,"MALE","Stage I",NA,NA,"Kidney",100
+"TCGA-DV-5569","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",29,"FEMALE","Stage I",NA,NA,"Kidney",100
+"TCGA-DV-5573","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",41,"MALE","Stage I",NA,NA,"Kidney",100
+"TCGA-DV-5574","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO","NO","Alive",37,"MALE","Stage I",NA,NA,"Kidney",100
+"TCGA-DV-5575","KIRC",NA,"WHITE","NOT HISPANIC OR LATINO",NA,"Alive",52,"FEMALE","Stage I",NA,NA,"Kidney",100
+"TCGA-DV-5576","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Dead",55,"FEMALE","Stage I",NA,NA,"Kidney",100
+"TCGA-DV-A4VX","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",59,"MALE","Stage IV",NA,NA,"Kidney",80
+"TCGA-DV-A4VZ","KIRC",NA,"BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",53,"MALE","Stage I",NA,NA,"Kidney",90
+"TCGA-DV-A4W0","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",55,"MALE","Stage I",NA,NA,"Kidney",90
+"TCGA-EU-5904","KIRC",NA,"WHITE",NA,NA,"Alive",47,"FEMALE","Stage I",NA,NA,"Kidney",90
+"TCGA-EU-5905","KIRC",NA,"WHITE",NA,NA,"Alive",67,"FEMALE","Stage I",NA,NA,"Kidney",90
+"TCGA-EU-5906","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",55,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-EU-5907","KIRC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",81,"MALE","Stage III",NA,NA,"Kidney",90
+"TCGA-F7-7848","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",47,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-F7-8298","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",58,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-F7-8489","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",48,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-F7-A50G","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",66,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-F7-A50I","HNSC","Current smoker","WHITE",NA,NA,"Alive",72,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-F7-A50J","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",67,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-F7-A61S","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",62,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-F7-A61V","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",54,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-F7-A61W","HNSC","Current smoker","ASIAN","NOT HISPANIC OR LATINO",NA,"Alive",51,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-F7-A620","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",47,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-F7-A622","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",75,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-F7-A623","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",70,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-F7-A624","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",73,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-G6-A5PC","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",54,"FEMALE","Stage IV",NA,NA,"Kidney",NA
+"TCGA-G6-A8L6","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",55,"MALE","Stage IV",NA,NA,"Kidney",90
+"TCGA-G6-A8L7","KIRC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",81,"FEMALE","Stage I",NA,NA,"Kidney",80
+"TCGA-G6-A8L8","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",62,"FEMALE","Stage I",NA,NA,"Kidney",60
+"TCGA-GK-A6C7","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",76,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-H7-7774","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",75,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-H7-8501","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",54,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-H7-8502","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",50,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-H7-A6C4","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",35,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-H7-A6C5","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",65,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-H7-A76A","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",57,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HD-7229","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HD-7753","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",62,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-HD-7754","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",69,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HD-7831","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",74,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HD-7832","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",52,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HD-7917","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",62,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-HD-8224","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",63,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HD-8634","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",51,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-HD-8635","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",61,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-HD-A4C1","HNSC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO",NA,"Alive",41,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HD-A633","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",74,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HD-A634","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Dead",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HD-A6HZ","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO",NA,"Alive",79,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-HD-A6I0","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-HL-7533","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",65,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-IQ-7630","HNSC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","YES","Alive",49,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-IQ-7631","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",60,"FEMALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-IQ-7632","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",68,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-IQ-A61E","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",55,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-IQ-A61G","HNSC","Current reformed smoker for < or = 15 years","WHITE","HISPANIC OR LATINO","YES","Alive",57,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-IQ-A61H","HNSC","Current reformed smoker for < or = 15 years","WHITE","HISPANIC OR LATINO","NO","Alive",76,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-IQ-A61I","HNSC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",63,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-IQ-A61J","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",54,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-IQ-A6SG","HNSC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","YES","Alive",61,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-IQ-A6SH","HNSC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",55,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-KU-A66T","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",53,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-KU-A6H7","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",55,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-KU-A6H8","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",41,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-MM-A563","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",41,"MALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-MM-A564","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",68,"MALE","Stage II",NA,NA,"Kidney",NA
+"TCGA-MM-A84U","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",58,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-MT-A51W","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",52,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-MT-A51X","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",30,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-MT-A67A","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",85,"FEMALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-MT-A67D","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",55,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-MT-A67F","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",60,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-MT-A7BN","HNSC","Lifelong Non-smoker","WHITE",NA,"YES","Alive",74,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-MW-A4EC","KIRC","Lifelong Non-smoker","BLACK OR AFRICAN AMERICAN","HISPANIC OR LATINO","NO","Alive",72,"FEMALE","Stage I",NA,NA,"Kidney",NA
+"TCGA-MZ-A5BI","HNSC",NA,"WHITE","HISPANIC OR LATINO","NO","Dead",53,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-MZ-A6I9","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",68,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-MZ-A7D7","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",51,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A5Q6","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",49,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A5QA","HNSC","Lifelong Non-smoker",NA,NA,"YES","Alive",41,"MALE","Stage I",NA,NA,"Head and Neck",NA
+"TCGA-P3-A5QF","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",49,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A6SX","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",67,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-P3-A6T0","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",47,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A6T2","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",45,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A6T3","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",49,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A6T4","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",54,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A6T5","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Dead",79,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A6T6","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",53,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A6T7","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",55,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-P3-A6T8","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",54,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-QK-A64Z","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",79,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-QK-A652","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",60,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-QK-A6IF","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",61,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-QK-A6IG","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Dead",69,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-QK-A6IH","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",65,"FEMALE","Stage IVB",NA,NA,"Head and Neck",NA
+"TCGA-QK-A6II","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",52,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-QK-A6IJ","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",71,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-QK-A6V9","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",56,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-QK-A6VB","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",66,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-QK-A6VC","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",62,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-QK-A8Z8","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",60,"FEMALE","Stage IVC",NA,NA,"Head and Neck",NA
+"TCGA-QK-A8Z9","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-QK-A8ZA","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Dead",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-QK-A8ZB","HNSC","Current reformed smoker for > 15 years","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",68,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-QK-AA3K","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",60,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-RS-A6TO","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",82,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-RS-A6TP","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",58,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-T2-A6WX","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",73,"FEMALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-T2-A6WZ","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Dead",53,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-T2-A6X0","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",49,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-T2-A6X2","HNSC","Current reformed smoker for > 15 years","WHITE","NOT HISPANIC OR LATINO","NO","Alive",82,"MALE","Stage III",NA,NA,"Head and Neck",NA
+"TCGA-T3-A92M","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","YES","Alive",52,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-T3-A92N","HNSC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Dead",79,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-T7-A92I","KIRC","Current smoker","BLACK OR AFRICAN AMERICAN","NOT HISPANIC OR LATINO","NO","Alive",47,"FEMALE","Stage I",NA,NA,"Kidney",100
+"TCGA-TN-A7HI","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",56,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-TN-A7HJ","HNSC","Lifelong Non-smoker","WHITE","NOT HISPANIC OR LATINO","YES","Alive",51,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-TN-A7HL","HNSC","Current reformed smoker for < or = 15 years","WHITE","NOT HISPANIC OR LATINO","YES","Alive",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A718","HNSC","Current smoker","WHITE",NA,NA,"Alive",62,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A719","HNSC","Current smoker",NA,NA,"NO","Alive",54,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-UF-A71A","HNSC","Current reformed smoker for > 15 years","WHITE",NA,"NO","Dead",67,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A71B","HNSC","Current smoker","WHITE",NA,"YES","Alive",50,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A71D","HNSC","Current smoker","WHITE",NA,"YES","Alive",54,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7J9","HNSC","Current smoker","WHITE",NA,"YES","Alive",75,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JA","HNSC","Current smoker","WHITE",NA,"YES","Alive",66,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JC","HNSC","Current smoker","WHITE",NA,"YES","Dead",42,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JD","HNSC","Current smoker",NA,NA,"YES","Dead",71,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JF","HNSC","Current smoker","WHITE",NA,"YES","Alive",80,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JH","HNSC","Current reformed smoker for < or = 15 years","BLACK OR AFRICAN AMERICAN",NA,"YES","Alive",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JJ","HNSC","Current smoker",NA,NA,"YES","Alive",68,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JK","HNSC","Current reformed smoker for < or = 15 years",NA,NA,"YES","Dead",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JO","HNSC","Lifelong Non-smoker","WHITE",NA,"YES","Dead",79,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JS","HNSC","Current smoker","WHITE",NA,"YES","Dead",59,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JT","HNSC","Lifelong Non-smoker","WHITE",NA,"YES","Dead",72,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UF-A7JV","HNSC","Lifelong Non-smoker","WHITE",NA,"NO","Dead",62,"FEMALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-UP-A6WW","HNSC","Lifelong Non-smoker","WHITE","HISPANIC OR LATINO","YES","Alive",58,"MALE","Stage IVA",NA,NA,"Head and Neck",NA
+"TCGA-WA-A7GZ","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Dead",58,"MALE","Stage II",NA,NA,"Head and Neck",NA
+"TCGA-WA-A7H4","HNSC","Current smoker","WHITE","NOT HISPANIC OR LATINO","NO","Alive",69,"MALE","Stage II",NA,NA,"Head and Neck",NA
