@@ -139,7 +139,7 @@ class: inverse center middle
 ---
 class: inverse center middle
 
-# Data cleaning: dplyr &amp; tidyr
+# Data cleaning with dplyr 
 
 ---
 ## `dplyr` verbs and syntax &lt;img src="02_slides-import_files/figure-html/dplyr-logo.png" width="10%" align="right"/&gt;
@@ -191,24 +191,18 @@ Operations can be chained together with the pipe operator (`%&gt;%`)
 *   `%in%` : in the set 
 
 ---
+## `dplyr` helpers &lt;img src="02_slides-import_files/figure-html/dplyr-logo.png" width="10%" align="right"/&gt;
+
+`n()` the number of rows 
+
+`n_distinct()` the number of unique values for a variable
+
+`group_by()` collects observations by a common value
+
+---
 
 &lt;img src="02_slides-import_files/figure-html/dplyr-cheatsheet.png" width="75%" class="center"/&gt;
 
----
-## `tidyr` actions &lt;img src="02_slides-import_files/figure-html/tidyr-logo.png" width="10%" align="right"/&gt;
-
-`pivot_longer()` and `pivot_wider()` reshape data 
-* `pivot_wider(tibble_name, id_cols = variable1, names_from = variable2, values_from = variable3)`
-
-`separate()`, `extract()` and `unite()` split and combine character columns
-* `separate(tibble_name, variable1, into = c("new_variable1", "new_variable2"), sep = "-")`
-
-`drop_na()`, `complete()`, `fill()`, and `replace_na()` format missing values
-* `drop_na(tibble_name)`
-
----
-
-&lt;img src="02_slides-import_files/figure-html/tidyr-cheatsheet.png" width="75%" class="center"/&gt;
 
 &lt;style type="text/css"&gt;
 .blank { 
