@@ -1,0 +1,56 @@
+---
+title: "My super cool document"
+author: 
+  - Jordan Creed
+output: html_document
+---
+
+```{r setup}
+library(tidyverse)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Formatted text:
+
+-   *italics*
+-   **bold**
+-   `code`
+-   [links](https://www.tidyverse.org/)
+
+```{r}
+# example code chunk 
+
+x <- seq(0,10,2)
+x
+```
+
+Sequential lines will be
+rendered as
+a
+ single line.
+ 
+### Activity 1
+
+Write a few sentences introducing yourself and add a picture of your favorite
+animal below.
+
+Then re-render your document. 
+
+### Activity 2
+
+Add a parameter to this report changing a few elements in the sentences you
+wrote for activity one. This should make it so that you just need to 
+change parameters (hint found in YAML) in order to create a new introduction
+paragraph. 
+
+### Activity 3
+
+The are of a circle is equal to $\pi r^{2}$. Write a code chunk that calculates
+the area of circles with radi of 748, 35, 2.986, and write a summary sentence,
+with the answers included. 
+
+### Activity 4
+
+Change the output this document to output a PDF document and word document. 
+
