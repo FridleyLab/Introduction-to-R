@@ -32,7 +32,8 @@ knitr::opts_chunk$set(
   echo = TRUE,
   message = FALSE, 
   warning = FALSE, 
-  hiline = TRUE
+  hiline = TRUE,
+   comment = NA 
 )
 options(width = 70)
 
@@ -43,7 +44,14 @@ options(width = 70)
   library(easystats)
   library(tidyverse)
   library(kableExtra)
-   library(ggplot2)
+  library(ggplot2)
+  library(janitor)
+  library(gridExtra)
+  library(broom)
+   
+   Rclassdata %>% filter(acronym %in% c("KIRC","HNSC")) -> tcga
+
+   
   
 ```
 
@@ -61,6 +69,11 @@ xaringanExtra::use_xaringan_extra(c(
   # "panelset"
 ))
 ```
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
 
 <!-- Title Slide -->
 <!-- <div class="talk-logo"></div> -->
@@ -116,21 +129,18 @@ or to force either to be shown
 
 ---
 
-## What you will learn about
+## What you will learn to run
  
- 
-[Link to another page](another-page).
- 
- 
-.w-half[
-
+  
+- Review of tables with janitor package
+  
 - Chi square and Fisher’s test
 
 - Correlations
 
-- Two-sample tests (t-test, wilcoxon test, anova [for more than 2 groups])
+- Two-sample tests (t-test, wilcoxon test)
 
-]
+- Simple linear regression
 
 ---
 
@@ -139,8 +149,7 @@ or to force either to be shown
 
 ```{r comment=NA}
 
- table(Rclassdata$radiation_therapy, Rclassdata$vital_status, 
-       useNA = "always") 
+janitor::tabyl(tcga, radiation_therapy, vital_status )
    
 ```
  
@@ -152,74 +161,159 @@ or to force either to be shown
 
 ```{r comment=NA}
 
-table(Rclassdata$radiation_therapy, Rclassdata$vital_status) 
-   
+janitor::tabyl(tcga, radiation_therapy, vital_status, 
+               show_na = FALSE )
+
 ```
 
+---
+
+## Review of tables
+```{r comment=NA}
+
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE )
+```
+
+
+---
+
+## Review of tables
+```{r comment=NA}
+
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col"))
+```
+
+---
+
+## Review of tables
+```{r comment=NA}
+
+
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col")) %>% 
+  adorn_percentages(denominator = "col") 
+```
+
+---
+
+## Review of tables
+```{r comment=NA}
+
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col")) %>% 
+  adorn_percentages(denominator = "col") %>% 
+  adorn_pct_formatting(digits = 0)  
+
+```
+
+---
+
+## Review of tables
+```{r comment=NA}
+
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col")) %>% 
+  adorn_percentages(denominator = "col") %>% 
+  adorn_pct_formatting(digits = 0) %>% 
+  adorn_ns(position = "front") 
+ 
+```
+
+ 
  
 ---
 
 
 # Pearson’s chi-squared test
  
-The chi squared test is a non-parametric test that can be applied to contingency tables with various dimensions. The name of the test originates from the chi-squared distribution, which is the distribution for the squares of independent standard normal variables. This is the distribution of the test statistic of the chi squared test, which is defined by the sum of chi-square values x2i,j for all pairs of cells arising from the difference between a cell’s observed value and the expected value, normalized by the expected value.
+The chi squared test is a non-parametric test that can be applied to contingency tables with various dimensions. The name of the test originates from the chi-squared distribution, which is the distribution for the squares of independent standard normal variables. This is the distribution of the test statistic of the chi squared test, which is defined by the sum of chi-square values for all cells arising from the difference between a cell’s observed value and the expected value, normalized by the expected value.
  
-$\chi ^{2}$ = $\sum$ $\frac{(O_{i} - E_{i})^{2}}{E_{i}}$ 
+$\chi ^{2}$ = $\sum_{ij}$ $\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}$ 
 
 
 *   $\chi ^{2}$ = chi square statistic
-*   $O_{i}$ = observed value
-*   $E_{i}$ = expected value
-
-
-
-
----
-
-
-## Pearson’s chi-squared test
- 
-The null hypothesis of the Chi-Square test is that no relationship exists on the categorical variables in the population; they are independent.
-
-```{r comment=NA}
-
-  chisq.test(
-    table(Rclassdata$radiation_therapy, Rclassdata$vital_status )
-    )
-```
+*   $O_{ij}$ = observed value
+*   $E_{ij}$ = expected value
 
 
 ---
-
 ## Pearson’s chi-squared test
  
- 
-```{r comment=NA}
+The null hypothesis of the Chi-Square test is that no relationship exists between the categorical variables in the population; they are independent.
 
  
-table(Rclassdata$smoking,Rclassdata$radiation_therapy)
+```{r chisqtest, echo=FALSE ,  include=TRUE}
+ tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col")) %>% 
+  adorn_percentages(denominator = "col") %>% 
+  adorn_pct_formatting(digits = 0)   %>% 
+  adorn_ns(position = "front") 
+ 
+
+ 
 ```
+ 
+
 
 ---
 
 ## Pearson’s chi-squared test
  
- 
-```{r comment=NA}
+The null hypothesis of the Chi-Square test is that no relationship exists between the categorical variables in the population; they are independent.
 
  
-chisq.test(
-  table(Rclassdata$smoking,Rclassdata$radiation_therapy)
-  )
+
+```{r chisqtest1, eval=TRUE,  include=TRUE}
+ 
+tcga %>% tabyl( smoking, gender , show_na = FALSE ) %>%
+  chisq.test()
+
 ```
  
+The p-value is very low so we reject the null hyposthesis that there is no association between the variables. 
+
+---
+
+## Pearson’s chi-squared test
  
+  More women are never smokers and more men are current smokers. 
+ 
+.panelset[
+.panel[.panel-name[R Code]
+
+```{r geombar, echo = TRUE, fig.show = "hide"}
+ggplot(tcga %>% filter(!is.na(smoking)),
+       aes(x = gender, fill = smoking )) +  
+  geom_bar(position = "fill") +
+  labs(y = "proportion")
+
+```
+]
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "geombar", echo = FALSE}
+```
+]
+]
+ 
+
+
+
+
  
 ---
 
 
 
-## Fisher’s exact test
+# Fisher’s exact test
  
 Fisher's exact test is practically applied only in analysis of small samples but actually it is valid for all sample sizes. While the chi-squared test relies on an approximation, Fisher's exact test is one of exact tests. Especially when more than 20% of cells have expected frequencies < 5, we need to use Fisher's exact test because applying approximation method is inadequate. Fisher's exact test assesses the null hypothesis of independence applying hypergeometric distribution of the numbers in the cells of the table. Many packages provide the results of Fisher's exact test for 2 × 2 contingency tables 
  
@@ -230,7 +324,12 @@ Fisher's exact test is practically applied only in analysis of small samples but
  
 
 ```{r comment=NA}
- table(Rclassdata$radiation_therapy, Rclassdata$vital_status )
+ tcga %>% 
+  tabyl( gender, vital_status , show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col")) %>% 
+  adorn_percentages(denominator = "col") %>% 
+  adorn_pct_formatting(digits = 0) %>% 
+  adorn_ns(position = "front") 
 
 ```
 
@@ -240,129 +339,370 @@ Fisher's exact test is practically applied only in analysis of small samples but
 
 ##  Fisher’s exact test
  
+  Since the p-value is 0.1285 we fail to reject the null hyposthesis. 
 
 ```{r comment=NA}
-fisher.test(
-    table(Rclassdata$radiation_therapy, Rclassdata$vital_status )  )
+tcga  %>% tabyl( gender, vital_status , show_na = FALSE ) %>% 
+  fisher.test()
+
 ```
  
+---
  
+## Fisher’s exact test: Bar graph
+  
+
+```{r geombar2, echo = TRUE }
+ggplot(tcga %>% filter(!is.na(vital_status)), 
+       aes(x = gender, fill = vital_status )) +  
+       geom_bar(position = "fill") + labs(y = "proportion")
+
+```
+ 
+
+
 ---
  
 # Correlation 
  
 A correlation coefficient is a numerical measure of some type of correlation, meaning a statistical relationship between two variables.  
 
-Several types of correlation coefficient exist, each with their own definition and own range of usability and characteristics. They all assume values in the range from −1 to +1, where ±1 indicates the strongest possible agreement and 0 no disagreement.
+Several types of correlation coefficient exist, each with their own definition and own range of usability and characteristics. They all assume values in the range from −1 to +1, where ±1 indicates the strongest possible agreement and 0 no agreement.
 
-The .bg-orange.white[Pearson product-moment correlation coefficient], also known as r or Pearson's r, is a measure of the strength and direction of the linear relationship between two variables that is defined as the covariance of the variables divided by the product of their standard deviations.  Pearson's r is the best-known and most commonly used type of correlation coefficient.  
+ Pearson
  
+ Spearman
+ 
+---
+ 
+## Pearson Correlation 
+
+ The .bg-orange.white[Pearson product-moment correlation coefficient], also known as r or Pearson's r, is a measure of the strength and direction of the linear relationship between two variables that is defined as the covariance of the variables divided by the product of their standard deviations.  Pearson's r is the best-known and most commonly used type of correlation coefficient. A relationship is linear when a change in one variable is associated with a proportional change in the other variable.
+ 
+$r_{xy}$ = $\frac{ \sum_{i = 1}^{n}  (x_{i}-  \overline{x} )(y_{i}- \overline{y})}{\sqrt(\sum_{i = 1}^{n}  (x_{i}-  \overline{x} )^{2})\sqrt(\sum_{i = 1}^{n}  (y_{i}-  \overline{y} )^{2})}$ 
+
+*   n is the sample size
+*   $x_{i}$ and $y_{i}$  are the individual sample points indexed with i
+*   $\overline{x} = \frac{1}{n}\sum_{i = 1}^{n} x_{i}$ is the smaple mean of x (similarly y)
+
+
 
 ---
  
-## Correlation 
+## Pearson Correlation 
  
 
 ```{r  comment=NA}
 
-Rclassdata$log_DUOXA1_exp <- log(Rclassdata$DUOXA1_exp+1)
-Rclassdata$log_DUOX1_exp <- log(Rclassdata$DUOX1_exp+1)
-Rclassdata$log_BUB1_exp <- log(Rclassdata$BUB1_exp+1)
-Rclassdata$log_C10orf32_exp <- log(Rclassdata$C10orf32_exp+1)
-
-r1<-Rclassdata %>% correlation::cor_test("DUOXA1_exp", 
+ 
+r1 <- tcga %>% correlation::cor_test("DUOXA1_exp", 
                                           "DUOX1_exp", 
-                                          method = c("pearson") )
-
-r2<-Rclassdata %>% correlation::cor_test("log_DUOXA1_exp",
-                                          "log_DUOX1_exp",
-                                          method = c("pearson") )
+                                          method = c("pearson") ) 
  
-r3<-Rclassdata %>% correlation::cor_test("BUB1_exp",
+r2 <- tcga %>% correlation::cor_test("BUB1_exp",
                                           "C10orf32_exp",
-                                          method = c("pearson") )
-r4<-Rclassdata %>% correlation::cor_test("log_BUB1_exp",
-                                          "log_C10orf32_exp",
-                                          method = c("pearson") )
+                                          method = c("pearson") ) 
  
- 
-r5<-Rclassdata %>% correlation::cor_test("AAMP_exp",
-                                          "A1CF_exp",
+r3 <- tcga %>% correlation::cor_test("BRAF_exp", 
+                                          "DTL_exp", 
                                           method = c("pearson") )
- 
  
 ```
+
 ---
  
-## Correlation 
+## Pearson Correlation 
  
 
 ```{r comment=NA}
- knitr::kable(bind_rows(r1,r2,r3,r4,r5), format = 'html') %>%
+ knitr::kable(bind_rows(r1,r2,r3 ), format = 'html', digits = 3) %>%
   kable_styling(font_size = 12)
 
 ```
 
----
 
-```{r  comment=NA}
 
-ggplot(Rclassdata) + aes(DUOXA1_exp,  DUOX1_exp ) + geom_point() + 
-         annotate(geom="text", x=10, y=25000, label=paste("r = ",round(r1$r,2), sep=""),  color="red")
-
-```
 
 ---
 
-```{r  comment=NA}
+## Pearson Correlation Scatter Plot
 
-ggplot(Rclassdata) + aes(BUB1_exp,  C10orf32_exp ) + geom_point()+ 
-         annotate(geom="text", x=1000, y=4000, label=paste("r = ",round(r3$r,2), sep=""),  color="red")
+.panelset[
+.panel[.panel-name[R Code]
+
+```{r geom, echo = TRUE, fig.show = "hide"}
+ggplot(tcga) + 
+  aes(DUOXA1_exp, DUOX1_exp) + 
+  geom_point() + 
+  annotate(geom = "text", x = 10, y = 25000, 
+           label = paste("r = ", round(r1$r, 2), sep = ""),
+           color = "red")
 
 ```
+]
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "geom", echo = FALSE}
+```
+]
+]
+ 
+
+
+
+
 ---
 
-```{r  comment=NA}
+## Pearson Correlation Scatter Plot
+  
+.panelset[
+.panel[.panel-name[R Code]
 
-ggplot(Rclassdata) + aes(log(BUB1_exp),  log(C10orf32_exp) ) + geom_point() + 
-         annotate(geom="text", x=0, y=8, label=paste("r = ",round(r3$r,2), sep=""),  color="red")
+```{r geom2, echo = TRUE, fig.show = "hide"}
+
+ggplot(tcga) + 
+  aes(BUB1_exp, C10orf32_exp) + 
+  geom_point() + 
+  annotate(geom = "text", x = 1000, y = 4000, 
+           label = paste("r = ", round(r2$r, 2), sep = ""),
+           color = "red")
+ 
 
 ```
+]
 
----
+.panel[.panel-name[Plot]
 
-```{r  comment=NA}
-
-ggplot(Rclassdata) + aes(AAMP_exp,  A1CF_exp ) + geom_point() + 
-         annotate(geom="text", x=0, y=4000, label=paste("r = ",round(r5$r,2), sep=""),  color="red")
-
+```{r ref.label = "geom2", echo = FALSE}
 ```
+]
+]
 
  
 
+---
+
+## Pearson Correlation Scatter Plot
+  
+.panelset[
+.panel[.panel-name[R Code]
+
+```{r geom3, echo = TRUE, fig.show = "hide"}
+ggplot(tcga) + 
+  aes(BRAF_exp, DTL_exp) + 
+  geom_point() + 
+  annotate(geom = "text", x = 0, y = 1100, 
+           label = paste("r = ", round(r3$r, 2), sep = ""),  
+           color = "red")
+ 
+
+ 
+
+```
+]
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "geom3", echo = FALSE}
+```
+]
+]
+
+ 
+
+
+```{r  comment=NA}
+
+
+```
+ 
+
+
+
+
+---
+
+## Correllation Matrix 
+ 
+
+```{r comment=NA}
+tcga %>% 
+  select(DUOXA1_exp, DUOX1_exp, BUB1_exp, BRAF_exp, DTL_exp ) %>%
+  cor() %>% round(.,2)
+
+```
+
+
+---
+
+
+## Spearman Correlation 
+
+The Spearman correlation evaluates the monotonic relationship between two continuous or ordinal variables. It is a nonparametric measure of rank correlation (statistical dependence between the rankings of two variables). In a monotonic relationship, the variables tend to change together, but not necessarily at a constant rate. The Spearman correlation coefficient is based on the ranked values for each variable rather than the raw data.
+ 
+
+
+---
+
+
+
+## Spearman Correlation example of monotonic relationship
+
+
+ 
+```{r echo=FALSE, comment=NA}
+ 
+
+x <- seq(10,20,.25)
+y <- (x-15)^3 + 100
+pdata <-  data.frame(x,y)
+ 
+ggplot(pdata, aes(x,y)) + geom_point()  
+
+```
+
+
+---
+
+
+ 
+
+## Spearman Correlation 
+ 
+
+```{r  comment=NA}
+
+ 
+r1 <- tcga %>% correlation::cor_test("DUOXA1_exp", 
+                                          "DUOX1_exp", 
+                                          method = c("spearman") ) 
+ 
+r2 <- tcga %>% correlation::cor_test("BUB1_exp",
+                                          "C10orf32_exp",
+                                          method = c("spearman") ) 
+ 
+r3 <- tcga %>% correlation::cor_test("BRAF_exp", 
+                                          "DTL_exp", 
+                                          method = c("spearman") )
+ 
+```
+
+---
+ 
+## Spearman Correlation 
+ 
+
+```{r comment=NA}
+ knitr::kable(bind_rows(r1, r2, r3), format = 'html', digits = 3) %>%
+  kable_styling(font_size = 12)
+
+```
+
+
+ 
 ---
 
 # Two sample tests
 
+
+- Mann Whitney U Test (Wilcoxon Rank Sum Test) 
+
+- T - test
+
 ---
 
-## Wilcoxon test 
+## Mann Whitney U Test (Wilcoxon Rank Sum Test) 
 
-The Wilcoxon signed-rank test is a non-parametric statistical hypothesis test used to compare two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student's t-test (also known as "t-test for matched pairs" or "t-test for dependent samples") when the distribution of the difference between two samples' means cannot be assumed to be normally distributed.  A Wilcoxon signed-rank test is a nonparametric test that can be used to determine whether two dependent samples were selected from populations having the same distribution.
+ 
+A popular non-parametric test to compare outcomes between two independent groups is the Mann Whitney U test. The Mann Whitney U test, sometimes called the Mann Whitney Wilcoxon Test or the Wilcoxon Rank Sum Test, is used to test whether two samples are likely to derive from the same population (i.e., that the two populations have the same shape). 
+
+It can also be used on related samples or matched samples to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student's t-test when the distribution of the difference between two samples' means cannot be assumed to be normally distributed.   
+
+
 
 ---
 
-## Wilcoxon test 
+## Wilcoxon test: Histograms
+  
+.panelset[
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "wilcoxonhists", echo = FALSE}
+```
+]
+
+.panel[.panel-name[R Code]
+
+```{r wilcoxonhists, echo = TRUE, fig.show = "hide"}
+mplot <- ggplot(tcga %>% filter(gender == "MALE"), 
+                aes(x = BUB1_exp )) +
+  geom_histogram(  colour = "black", position = "dodge") +
+  ggtitle("Males") 
+
+wplot <- ggplot(tcga  %>% filter(gender == "FEMALE"), 
+                aes(x = BUB1_exp)) +
+  geom_histogram(  colour= "black", position = "dodge")  +
+  ggtitle("Females") 
+  
+grid.arrange(mplot,wplot, ncol=2) 
+ 
+
+```
+]
+]
+
+
+
+---
+ 
+## Wilcoxon test visulize boxplots gender
+  
+.panelset[
+.panel[.panel-name[R Code]
+
+
+```{r wilcoxonboxplots, echo = TRUE, fig.show = "hide"}
+  
+ggplot(tcga , aes(gender, BUB1_exp, fill = gender))  +
+  geom_boxplot() +
+  scale_fill_manual( values = c("yellow", "blue")) + 
+  theme(legend.position = "none") +
+  labs(title = "BUB1 expression" , x = "Gender", y = "expression")  
+
+```
+]
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "wilcoxonboxplots", echo = FALSE}
+```
+]
+]
+
+
+
+
+---
+
+
+## Wilcoxon test gender
 ```{r comment=NA}
-wilcox.test(Rclassdata$BUB1_exp, y = Rclassdata$A1CF_exp,
-            alternative = c("two.sided" ) )
-
+ 
+ wilcox.test(BUB1_exp ~ gender, data = tcga,
+                   alternative = c("two.sided"))
+ 
  
 ```
 
+The p-value is very low so we reject the null hypostheis of no difference (0 location shift). 
+
+
+
 ---
 
-## T-tests
+## T-test
  
 A t-test is a method used to determine if there 
 is a significant difference between the means 
@@ -375,472 +715,245 @@ sampled from the population of interest and
 that the data variables follow a normal
 distribution.
 
+
 ---
 
-## T-test
+## T-test assumptions
+
+1. The data are continuous (not discrete).
+
+2. The data follow the normal probability distribution.
+
+3. The variances of the two populations are equal. (If not, the Aspin-Welch Unequal-Variance test is used.)
+
+4. The two samples are independent. There is no relationship between the individuals in one sample as compared to the other (as there is in the paired t-test). 
+
+5. Both samples are simple random samples from their respective populations. Each individual in the population has an equal probability of being selected in the sample.
+ 
+
+
+---
+
+## T-test formula
+
+Test Statistic (equal variances):
+
+ 
+$T  = \frac{\overline{x}_{1} - \overline{x}_{2}}{S_{p}\sqrt(1/N_{1} + 1/N_{2})}$ 
+
+where:
+$S^{2}_{p}$ = $\frac{(N_{1}-1)s^{2}_{1} + (N_{1}-1)s^{2}_{1}}{N_{1}+N_{2}-2}$
+
+ 
+
+---
+ 
+## T-test visulize boxplots
+
+.panelset[
+.panel[.panel-name[R Code]
+
+```{r t2boxplots, echo = TRUE, fig.show = "hide"}
+  
+ggplot(tcga , aes(gender, PTEN_exp, fill = gender))  +
+  geom_boxplot() +
+  scale_fill_manual( values = c("yellow", "blue")) + 
+  theme(legend.position = "none") +
+  labs(title = "PTEN expression" , x = "Gender", y = "expression")  
+
+```
+]
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "t2boxplots", echo = FALSE}
+```
+]
+]
+
+
+
+
+
+
+
+---
+
+## T-test remove extreme observations
+
+```{r comment=NA}
+print(dim(tcga))
+tcga <- tcga %>% filter(PTEN_exp < 4000)  
+print(dim(tcga))
+```
+
+
+
+ 
+---
+ 
+## T-test Visualize data Histograms
+  
+.panelset[
+.panel[.panel-name[R Code]
+
+
+```{r t2hist, echo = TRUE, fig.show = "hide"}
+  ggplot(tcga, aes(x=PTEN_exp, fill=gender)) +
+  scale_fill_manual( values = c("red", "blue")) + 
+  geom_histogram( alpha=0.6, position="identity")
+ 
+```
+]
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "t2hist", echo = FALSE}
+```
+]
+]
+
+
+
+
+---
+
+
+## T-test R call
+
 ```{r comment=NA}
 
-t.test( Rclassdata$BUB1_exp, y = Rclassdata$A1CF_exp, 
+
+t.test( tcga$PTEN_exp ~ tcga$gender, 
         alternative = c("two.sided"))
  
 ```
 
+
+
 ---
 
-## T-test
+## Simple Linear Regression
+ 
+ A linear regression is a statistical model that analyzes the
+ relationship between a response variable (often called y) and 
+ one or more variables (often called predictor or
+ explanatory variables). Simple linear regression is the case when 
+ there is only one predictor variable. 
 
-Fun Fact  The t-test was developed by a chemist
-working for the Guinness brewing company as a 
-simple way to measure the consistent quality of
-stout.  It was further developed and adapted,
-and now refers to any test of a statistical
-hypothesis in which the statistic being tested
-for is expected to correspond to a t-distribution
-if the null hypothesis is supported. 
 
---- 
 
-     
+---
+
+## Simple Linear Regression Assumptions
+ 
+- Linearity: The relationship between X and the mean of Y is linear.
+
+- Homoscedasticity: The variance of residual is the same for any value of X.
+
+- Independence: Observations are independent of each other.
+
+- Normality: For any fixed value of X, Y is normally distributed
+
+
 ---
  
-## Typography
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](another-page).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
----
-
-.flex[
-.w-third[
-#### Foreground Colors
-
-- .blue[blue]
-
-- .blue-medium[blue-medium]
-
-- .blue-light[blue-light]
-
-- .green[green]
-
-- .yellow[yellow]
-
-- .orange[orange]
-
-- .pink[pink]
-
-- .red[red]
-
-- .moffitt-gray[moffitt-gray]
-]
-
-.w-third[
-#### Background Colors
-
-- .bg-blue.white[blue]
-
-- .bg-blue-medium[blue-medium]
-
-- .bg-blue-light[blue-light]
-
-- .bg-green[green]
-
-- .bg-yellow[yellow]
-
-- .bg-orange.white[orange]
-
-- .bg-pink[pink]
-
-- .bg-red.white[red]
-
-- .bg-moffitt-gray[moffitt-gray]
-]
-
-.w-third[
-#### Color Classes
-
-- Foreground  
-  `.blue[...]`
+## Simple Linear Regression Examples
+ 
+ Examples: 
   
-- Background  
-  `.bg-blue[...]`
-]
-]
+ Tempature conversion: $F = \frac{9}{5} C + 32$ 
+
+ In general: $Y$ = $\beta_0$ + $\beta_1$ X
+ 
+ where $\beta_0$ is the intercept, and $\beta_1$ is the regression coefficient for the predictor.
 
 ---
 
-# Big Topic or Inverse Slides `#`
-
-## Slide Headings `##`
-
-### Sub-slide Headings `###`
-
-#### Bold Call-Out `####`
-
-This is a normal paragraph text. Only use header levels 1-4.
-
-##### Possible, but not recommended `#####`
-
-###### Definitely don't use h6 `######`
-
----
-class: inverse center middle
-
-# Topic Changing Interstitial
-
---
-
-```
-class: inverse center middle
-```
-
----
-layout: true
-
-## Slide Classes
-
----
-class: no-logo
-
-This slide doesn't have a logo.
-
-```
----
-class: no-logo
-
-This slide doesn't have a logo.
-```
-
----
-class: no-border
-
-This slide doesn't have a bottom border.
-
-```
----
-class: no-border
-
-This slide doesn't have a bottom border.
-```
-
----
-class: hide-count
-
-This slide doesn't have a slide count.
-
-```
----
-class: hide-count
-
-This slide doesn't doesn't have a slide count.
-```
-
----
-layout: true
-
-## Blocks
-
----
-
-### Blockquote
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
----
-
-### Code Blocks
-
-#### R Code
-
-```{r eval=FALSE}
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
-
-#### JavaScript
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+## Simple Linear Regression Scatterplot
+ 
+```{r echo=FALSE, comment=NA}
+ 
+ggplot(tcga) + 
+  aes(DUOXA1_exp, DUOX1_exp ) + 
+  geom_point() + 
+  annotate(geom = "text", x = 10, y = 25000, 
+           label = paste("r = ", round(r1$r,2), sep = ""),
+           color = "red")
 ```
 
 ---
 
-### More R Code
+#### Base R output 
 
-```{r}
-library(dplyr)
-dplyr::starwars %>% dplyr::slice_sample(n = 4)
-```
+mod <- lm(DUOX1_exp ~  DUOXA1_exp, data = tcga)
+print(summary(mod))
 
----
+ ```{r echo=FALSE, comment=NA}
 
-```{r message=TRUE}
-cli::cli_alert_success("It worked!")
-```
+mod <- lm(DUOX1_exp ~  DUOXA1_exp, data = tcga)
 
---
+print(summary(mod))
 
-```{r message=TRUE}
-message("Just a friendly message")
-```
-
---
-
-```{r warning=TRUE}
-warning("This could be bad...")
-```
-
---
-
-```{r error=TRUE}
-stop("I hope you're sitting down for this")
-```
-
-
----
-layout: true
-
-## Tables
-
----
-
-```{r}
-tibble::as_tibble(mtcars)
-```
-
----
-
-```{r}
-knitr::kable(head(mtcars), format = 'html')
-```
-
----
-
-```{r}
-DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
 ```
 
 
 ---
 
-A demo table using [gt](https://gt.rstudio.com/), prepared here and shown in the next two slides.
+#### Broom output 
 
-```{r}
-library(gt) #<<
-library(tidyr)
 
-gt_table <- mtcars %>%
-  tibble::rownames_to_column("car") %>%
-  separate(car, c("make", "model"), sep = " ", extra = "merge") %>% 
-  group_by(make) %>%
-  filter(n() > 1) %>%
-  slice(1:2) %>%
-  gt() %>%  #<<
-  tab_header(title = "Data About Cars")
+```{r  comment=NA}
+
+mod <- lm(DUOX1_exp ~  DUOXA1_exp, data = tcga)
+
+tidy(mod)
+
+```
+ 
+ 
+
+---
+ 
+#### Kable and Broom output 
+
+```{r comment=NA}
+ knitr::kable(tidy(mod), format = 'html', digits = 3) %>%
+  kable_styling(font_size = 22)
+
+``` 
+ 
+---
+
+## Simple Linear Regression 
+```{r echo=FALSE, comment=NA}
+ 
+ggplot(tcga, aes(DUOXA1_exp, DUOX1_exp )) + 
+  geom_point() + 
+  annotate(geom = "text", x = 10, y = 25000, 
+           label = paste("r = ", round(r1$r,2), sep = ""),
+           color = "red") + 
+   geom_smooth(method = 'lm')
+
 ```
 
 ---
 
-.flex[
-.w-20.mr3[
-```{r gt_table1, eval=FALSE}
-gt_table
-```
-]
-.w-80[
-```{r ref.label="gt_table1", echo=FALSE}
-```
-]
-]
-
-
----
-
-.flex[
-.w-40.mr3[
-```{r gt_table2, eval=FALSE}
-as_raw_html(gt_table)
-```
-]
-.w-60[
-```{r ref.label="gt_table2", echo=FALSE}
-```
-]
-]
-
----
-layout: true
-
-## Lists
-
----
-
-.pull-left[
-#### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-]
-
-.pull-right[
-
-#### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-]
-
----
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
----
-
-### Nesting an ol in ul in an ol
-
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-  1. level 4 item (ol)
-  1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-
----
-layout: false
-
-## Plots
-
-```{r plot-example}
-library(ggplot2)
-ggplot(mpg) + aes(hwy, cty, color = class) + geom_point()
+## Simple Linear Regression 
+ 
+ The regression coefficient (slope of the line) is 3.03 which means that for every unit increase
+ in DUOXA1 the DUOX1 gene expression is increased by 3. 
+ 
+ $DUOX1$ = $84.9$ + $3.03DUOXA1$
+ 
+ ```{r echo=FALSE, comment=NA}
+ knitr::kable(tidy(mod), format = 'html', digits = 3) %>%   kable_styling(font_size = 22)
 ```
 
 ---
 
-## Custom plot theme
+## Thank you! 
+  
+  - The end
 
-If [moffittdocs](https://github.com/Moffitt-Health-Informatics/moffittdocs) is available...
-
-```{r}
-plot_theme <- if (requireNamespace("moffittdocs", quietly = TRUE)) {
-  moffittdocs::theme_moffitt() + theme(plot.margin = margin())
-} else {
-  theme_minimal()
-}
-```
-
----
-
-## Custom plot theme
-
-```{r plot-example-themed}
-g <- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point()
-g + plot_theme
-```
-
----
-
-## Square image
-
-.w-50.center[
-![](https://octodex.github.com/images/labtocat.png)
-]
-
-.footnote[Uses `.w-50[...]`]
-
----
-
-### Wide image
-
-![](https://guides.github.com/activities/hello-world/branching.png)
-
-.footnote[Wide images scale to 100% slide width]
-
----
-
-## Two images
-
-.pull-left[
-![](https://octodex.github.com/images/motherhubbertocat.png)
-]
-
-.pull-right[
-![](https://octodex.github.com/images/dinotocat.png)
-]
-
----
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
----
-class: inverse center middle
-
-# Slide Extras
-
----
-
-## Includes xaringanExtra
-
-Uncomment the extensions in the `xaringan-extras` chunk to enable.
-
-```{r eval=FALSE}
-xaringanExtra::use_xaringan_extra(c(
-  "tile_view"
-  # "editable",
-  # "animate",
-  # "panelset"
-))
-```
-
-Press <kbd>O</kbd> to open Tile .b[O]verview.
-
-[gadenbuie/xaringanExtra](https://github.com/gadenbuie/xaringanExtra)
