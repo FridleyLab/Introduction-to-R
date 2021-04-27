@@ -1,0 +1,18 @@
+---
+title: "Data warangling : part I"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Importing TCAG data 
+
+Import both TCGA data files using either the "Import Dataset" GUI or by writing
+commands. Then take a look at the data. 
+
+```{r}
+
+```
+
