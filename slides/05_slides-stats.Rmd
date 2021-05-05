@@ -948,6 +948,7 @@ ggplot(tcga, aes(DUOXA1_exp, DUOX1_exp )) +
  $DUOX1$ = $84.9$ + $3.03DUOXA1$
  
  ```{r echo=FALSE, comment=NA}
+ 
  knitr::kable(tidy(mod), format = 'html', digits = 3) %>%   kable_styling(font_size = 22)
 ```
 
