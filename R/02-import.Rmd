@@ -5,6 +5,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
 
 ## Importing TCAG data 
@@ -12,7 +13,34 @@ knitr::opts_chunk$set(echo = TRUE)
 Import both TCGA data files using either the "Import Dataset" GUI or by writing
 commands. Then take a look at the data. 
 
-```{r}
+## select()
 
-```
+Show the first 4 columns of the clinical data (hint there are multiple ways to do this)
 
+## filter()
+
+Filter clinical data to individuals who have kidney renal cell carcinoma (KIRC) 
+and were diagnosed over the age of 60.
+
+## summarize()
+
+## mutate()
+
+Create a new variable of the log of PTEN expression and call it pten_log
+
+## arrange()
+
+Order gene expression data by DNAH12 expression then DNAH10 expression
+
+## piping
+
+Piping allows you to combine steps - "and then" and avoids nesting functions or needing
+to create new data frames for each manipulation 
+
+## group_by()
+
+Allows you to apply the "verbs" on the object "by group"
+
+## case_when()
+
+Replaces the traditional `ifelse()`
