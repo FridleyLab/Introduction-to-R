@@ -4,7 +4,7 @@ subtitle: "Creating interactive documents"
 author: 
   - Jordan Creed
 institute: "Moffitt Cancer Center"
-date: '`r strftime(Sys.time(), "%B %d, %Y")`'
+date: 'June 09, 2021'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -192,6 +192,11 @@ REPRODUCIBLE!
 3 elements: YAML header, formatted text, code 
 
 ---
+## Rmarkdown
+
+<img src="01_slides-rmarkdown_files/figure-html/rmarkdown-diagram.png" width="100%" class="center"/>
+
+---
 ## YAML
 
 Located at the top of your file and enclosed by `---`
@@ -237,4 +242,8 @@ Output can be modified by chunk options placed inside `{}`
 
 To get started:
 
-* Place notes here for logging into rstudio cloud and opening the first rmarkdown
+* Create an account with [RStudio Cloud](https://login.rstudio.cloud/register)
+* Log in
+* To your right you should see "Introduction To R Programming Class (2021)" -
+click on it 
+* Under "Projects" press "Start" beside "Lab One"
