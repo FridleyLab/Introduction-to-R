@@ -39,8 +39,9 @@ options(width = 70)
 
 #Load data...
   #load(file = "Z:/Projects/Fridley_Brooke/2813_R_Programming_Course_2020/data/alldata.RData")
-   load(file = "Z:/Projects/Fridley_Brooke/2813_R_Programming_Course_2020/data/Rclassdata.RData")
+  #load(file = "Z:/Projects/Fridley_Brooke/2813_R_Programming_Course_2020/data/Rclassdata.RData")
   
+  #library(here)
   library(easystats)
   library(tidyverse)
   library(kableExtra)
@@ -49,10 +50,40 @@ options(width = 70)
   library(gridExtra)
   library(broom)
    
-   Rclassdata %>% filter(acronym %in% c("KIRC","HNSC")) -> tcga
+   #Rclassdata %>% filter(acronym %in% c("KIRC","HNSC")) -> tcga
 
    
-  
+#MERGE and making smoking variable 
+clinical <- read.csv(file = "F:\\myGitRepo\\Introduction-to-R\\data\\tcga-clinical.csv", header = TRUE)
+geneexp <- read.csv(file = "F:\\myGitRepo\\Introduction-to-R\\data\\tcga-gene-exp.csv", header = TRUE)
+# 
+# intersect(names(clinical), names(geneexp))
+# 
+# dim(clinical)
+# dim(geneexp)
+#  
+tcga <- left_join(clinical, geneexp, by = "bcr_patient_barcode")
+#dim(tcga)
+
+
+
+tcga <- tcga %>% mutate(
+  smoking = tobacco_smoking_history,
+  smoking = case_when(
+    tobacco_smoking_history %in% c(
+      "Current reformed smoker for < or = 15 years",
+      "Current reformed smoker for > 15 years",
+      "Current Reformed Smoker, Duration Not Specified"
+    ) ~ "Former",
+    tobacco_smoking_history %in% c("Current smoker") ~ "Current",
+    tobacco_smoking_history %in% c("Lifelong Non-smoker") ~ "Never",
+    is.na(tobacco_smoking_history) ~ NA_character_
+  )
+)
+
+#table(tcga$smoking, useNA = "always")
+
+
 ```
 
 name: title
@@ -770,22 +801,6 @@ ggplot(tcga , aes(gender, PTEN_exp, fill = gender))  +
 ```
 ]
 ]
-
-
-
-
-
-
-
----
-
-## T-test remove extreme observations
-
-```{r comment=NA}
-print(dim(tcga))
-tcga <- tcga %>% filter(PTEN_exp < 4000)  
-print(dim(tcga))
-```
 
 
 
