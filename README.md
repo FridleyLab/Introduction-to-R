@@ -108,14 +108,16 @@ Final coding project
   - Create a reproducible workflow
   - Setting up your own R installation 
 
-## Materials
+## Materials/RStudio Cloud
 
 Materials will be made available on
-[github](https://github.com/FridleyLab/Introduction-to-R/). If you are
+[GitHub](https://github.com/FridleyLab/Introduction-to-R/). If you are
 using an organization-issued laptop, you may want to verify before you
-arrive that you can access GitHub.
+arrive that you can access GitHub. 
 
-## Schedule
+In this course, we will be using a version of RStudio available online. The class
+workspace can be accessed [here](https://rstudio.cloud/spaces/146648/join?access_code=lwgMkLa2E%2BSSKGUFRhilRqgJW1lz7OCF9pZVjhxf). Please create a user account before the first day of class 
+(or connect with either a GitHub account or Google account). 
 
 ## Schedule and Links
 
