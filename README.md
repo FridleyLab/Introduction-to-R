@@ -117,6 +117,21 @@ arrive that you can access GitHub.
 
 ## Schedule
 
+## Schedule and Links
+
+*   June 09 - `rmarkdown`
+    * [Zoom link](https://moffitt.zoom.us/j/95042034701)
+*   June 16 - Data import and wrangling part I
+    * [Zoom link](https://moffitt.zoom.us/j/99077101114)
+*   June 23 - Data import and wrangling part II
+    * [Zoom link](https://moffitt.zoom.us/j/92170925460)
+*   June 30 - Visualizations with `ggplot2`
+    * [Zoom link](https://moffitt.zoom.us/j/96225512559)
+*   July 07 - Basic statistics
+    * [Zoom link](https://moffitt.zoom.us/j/91931267792)
+*   July 17 - Best practices 
+    * [Zoom link](https://moffitt.zoom.us/j/96050438861)
+
 ## Instructors
 
 <!--

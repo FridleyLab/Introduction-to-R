@@ -18,7 +18,7 @@ Introduction to R
 
 -----
 
-:calendar: Mondays June 7 - July 19, 2021
+:calendar: Wednesday June 9 - July 14, 2021
 
 :alarm_clock: 3-4 pm
 
@@ -123,8 +123,20 @@ Final coding project
 
 Materials will be made available on [github](https://github.com/FridleyLab/Introduction-to-R/).  If you are using an organization-issued laptop, you may want to verify before you arrive that you can access GitHub.
 
-## Schedule
+## Schedule and Links
 
+*   June 09 - `rmarkdown`
+    * [Zoom link](https://moffitt.zoom.us/j/95042034701)
+*   June 16 - Data import and wrangling part I
+    * [Zoom link](https://moffitt.zoom.us/j/99077101114)
+*   June 23 - Data import and wrangling part II
+    * [Zoom link](https://moffitt.zoom.us/j/92170925460)
+*   June 30 - Visualizations with `ggplot2`
+    * [Zoom link](https://moffitt.zoom.us/j/96225512559)
+*   July 07 - Basic statistics
+    * [Zoom link](https://moffitt.zoom.us/j/91931267792)
+*   July 17 - Best practices 
+    * [Zoom link](https://moffitt.zoom.us/j/96050438861)
 
 ## Instructors
 
