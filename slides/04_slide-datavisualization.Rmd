@@ -162,7 +162,9 @@ library(tidyverse)
 library(flipbookr)
 library(ggdark)
 
-pancancer <- readRDS(here::here("slides", "data", "pancancer.RDS"))
+pancancer <- read_csv(here::here("data", "tcga-clinical.csv")) %>% 
+  mutate(stage = fct_collapse(
+    stage, "Stage IV" = c("Stage IV", "Stage IVA", "Stage IVB", "Stage IVC")))
 ```
 
 
@@ -624,9 +626,9 @@ ggplot(
   mapping = aes(x = weight, y = height, color = gender)) +  
   geom_point() +
   scale_x_continuous(
-    "Weights (lbs)", limits = c(40, 180), breaks = seq(40, 180, 20)) + 
+    "Weight (kg)", limits = c(40, 180), breaks = seq(40, 180, 20)) + 
   scale_y_continuous(
-    "Heights (cm)", limits = c(120, 200), breaks = seq(120, 200, 20)) + 
+    "Height (cm)", limits = c(120, 200), breaks = seq(120, 200, 20)) + 
   scale_color_discrete(
     "Sex", na.value = "red")
 ```
@@ -962,6 +964,7 @@ ggplot(
 ```{r ref.label = "setting", echo = FALSE, fig.height = 3.5, fig.width = 5}
 ```
 ]
+
 ---
 class: middle center
 
@@ -990,3 +993,16 @@ ggplot(
 ---
 
 `r chunk_reveal("ggplotflipbook", widths = c(50, 50), chunk_option = "fig.height = 9")`
+
+---
+## Useful resources
+
+- [ggplot2 cheatsheet](https://github.com/rstudio/cheatsheets/blob/master/data-visualization-2.1.pdf) from RStudio
+
+- [ggplot2 documentation](https://ggplot2.tidyverse.org/)
+
+- [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/), 3rd edition
+
+- [Data visualization chapter from R for Data Science book](https://r4ds.had.co.nz/data-visualisation.html)
+
+- [Gallery of code examples](https://r-charts.com/ggplot2/) of graphs made with `{ggplot2}` package
