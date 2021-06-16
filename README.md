@@ -11,7 +11,7 @@
 
 :alarm_clock: 3:00 pm 
 
-:office: via Zoom (link coming soon) 
+:office: via Zoom (see links below) 
 
 :computer: [Moffitt](https://moffitt.org/)
 
@@ -19,7 +19,8 @@
 
 ## Setup
 
-The course will be hosted through ….
+The course will be hosted through Zoom with video recordings posted on 
+Ponopto after. Links to recorded lectures will be emailed out after class.
 
 <!-- 
 * When you're done, put a green post-it on your computer. 
@@ -123,6 +124,7 @@ workspace can be accessed [here](https://rstudio.cloud/spaces/146648/join?access
 
 *   June 09 - `rmarkdown`
     * [Zoom link](https://moffitt.zoom.us/j/95042034701)
+    * [Ponopto lecture recording](https://moffitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8103b91c-cc09-4aba-8874-ad4201619398)
 *   June 16 - Data import and wrangling part I
     * [Zoom link](https://moffitt.zoom.us/j/99077101114)
 *   June 23 - Data import and wrangling part II
