@@ -1,0 +1,97 @@
+---
+title: "My super cool document"
+author: "Jordan Creed"
+output:
+  word_document: default
+  html_document: default
+params:
+  employee_name: Jordan
+  employee_department: Health Informatics
+---
+
+```{r setup}
+library(tidyverse)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Formatted text:
+
+-   *italics*
+-   **bold**
+-   `code`
+-   [links](https://www.tidyverse.org/)
+
+```{r}
+# example code chunk 
+
+x <- seq(0,10,2)
+x
+```
+
+Sequential lines will be
+rendered as
+a
+ single line.
+ 
+### Activity 1
+
+Write a few sentences introducing yourself and add a picture of your favorite
+animal below.
+
+Then re-render your document. 
+
+My name is Jordan and I work in Health Informatics at Moffitt Cancer Center!
+
+![](01-rmarkdown-image.jpeg){width=50%}
+
+<!-- Text inside of [] is a caption -->
+<!-- If you are outputting to a PDF and using an image hosted on the web than you will  -->
+<!-- most likely get an error. That is because when rmarkdown creates a PDF it uses latex -->
+<!-- which doesnt like images in this format (only local images). So you should download  -->
+<!-- the image locally and then use the image. Example R code for downloading a local image is shown below! -->
+
+```{r results = 'asis', out.width="40px"}
+download.file(
+  url = "http://www.online-image-editor.com//styles/2014/images/example_image.png",
+  destfile = "image.png",
+  mode = 'wb')
+knitr::include_graphics(path = "image.png")
+```
+
+### Activity 2
+
+Add a parameter to this report changing a few elements in the sentences you
+wrote for activity one. This should make it so that you just need to 
+change parameters (hint found in YAML) in order to create a new introduction
+paragraph. 
+
+My name is ``r params$employee_name`` and I work in 
+``r params$employee_department`` at Moffitt Cancer Center!
+
+<!-- You can change the parameters in the output by clicking the arrow beside  -->
+<!-- Knit at the top and select "Knit with parameters" and enter the parameter -->
+<!-- values and then select knit  -->
+
+<!-- render("01-rmarkdown.Rmd", params = list(employee_name = "Brooke")) -->
+
+### Activity 3
+
+The area of a circle is equal to $\pi r^{2}$. Write a code chunk that calculates
+the area of circles with radi of 748, 35, and 2.986, and write a summary sentence,
+with the answers included. 
+
+```{r}
+
+radius <- c(748, 35, 2.986)
+
+areas <- pi * radius^2
+
+```
+
+The rounded areas of these circles are `r round(areas)`
+
+### Activity 4
+
+Change the output this document to output a PDF document and word document. 
+
