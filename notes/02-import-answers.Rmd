@@ -1,0 +1,112 @@
+---
+title: "Data warangling : part I (answers)"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+
+# 5 basic verbs. also mutate_all, mutate_if, summarise_all, summarise_if
+# select: subset columns. comes with helper functions like starts_with, ends_width, contains, etc.
+# filter: subset rows
+# summarise: aggregates - british spelling
+# mutate: add column(s) to existing data
+# arrange: orders data "desc"
+```
+
+## Importing TCAG data 
+
+Import both TCGA data files using either the "Import Dataset" GUI or by writing
+commands. Then take a look at the data. 
+
+```{r}
+library(readr)
+clinical <- read_csv(here::here("data/tcga-clinical.csv"))
+gene_exp <- read_csv(here::here("data/tcga-gene-exp.csv"))
+
+# str(clinical)
+# glimpse(clinical)
+# head(clinical)
+# View(clinical)
+```
+
+## select()
+
+Show the first 4 columns of the clinical data (hint there are multiple ways to do this)
+
+```{r}
+clinical[, 1:4] # traditional method
+clinical[, c("bcr_patient_barcode", "acronym", "tobacco_smoking_history", "race")] # traditional method
+select(clinical, bcr_patient_barcode, acronym, tobacco_smoking_history, race) # no quotes around variable names
+select(clinical, bcr_patient_barcode:race)
+select(clinical, 1:4)
+select(clinical,-(5:14))
+
+```
+
+## filter()
+
+Filter clinical data to individuals who have kidney renal cell carcinoma (KIRC) 
+and were diagnosed over the age of 60.
+
+```{r}
+clinical[clinical$acronym == "KIRC" & clinical$age_at_initial_pathologic_diagnosis > 60,] # traditional method
+filter(clinical , acronym == "KIRC", age_at_initial_pathologic_diagnosis > 60)
+filter(clinical, acronym == "KIRC" & age_at_initial_pathologic_diagnosis > 60)
+```
+
+## summarize()
+
+```{r}
+
+mean(clinical$age_at_initial_pathologic_diagnosis, na.rm = TRUE) # traditional method
+summarise(clinical, mean(age_at_initial_pathologic_diagnosis, na.rm = TRUE))
+summarise(clinical, mean_age = mean(age_at_initial_pathologic_diagnosis, na.rm = TRUE))
+summarise(clinical, mean_age = mean(age_at_initial_pathologic_diagnosis, na.rm = TRUE),
+                    total_patients = n(),
+                    unique_cancers = n_distinct(acronym)
+)
+```
+
+## mutate()
+
+Create a new variable of the log of PTEN expression and call it pten_log
+
+```{r}
+
+```
+
+## arrange()
+
+Order gene expression data by DNAH12 expression then DNAH10 expression
+
+```{r}
+
+```
+
+## piping
+
+Piping allows you to combine steps - "and then" and avoids nesting functions or needing
+to create new data frames for each manipulation 
+
+```{r}
+
+```
+
+## group_by()
+
+Allows you to apply the "verbs" on the object "by group"
+
+```{r}
+
+```
+
+## case_when()
+
+Replaces the traditional `ifelse()`
+
+```{r}
+
+
+```
