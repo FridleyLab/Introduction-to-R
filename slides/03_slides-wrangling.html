@@ -4,7 +4,7 @@
     <title>Data wrangling</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jordan Creed" />
-    <meta name="date" content="2021-04-27" />
+    <meta name="date" content="2021-06-20" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
@@ -41,7 +41,7 @@ Jordan Creed&lt;br&gt;
 ]
 
 .talk-date.moffitt-gray[
-April 27, 2021
+June 20, 2021
 ]
 ]
 
@@ -136,7 +136,7 @@ sum(NA, 6, 12)
 ## [1] NA
 ```
 
-👩‍💻 `filter()` on missing values requires special treatment
+👨‍💻 `filter()` on missing values requires special treatment
 
 **FAILS:** `filter(data, variable == NA)`
 
@@ -148,40 +148,43 @@ sum(NA, 6, 12)
 `drop_na()`, `fill()`, and `replace_na()` format missing values
 * `drop_na(variable2)` : removes rows with NA for that column
 * `fill(variable2)` : fills in missing values with the previous value (up or down)
-* `replace_na(variable2)` : replaces `NA`s with a specified value
+* `replace_na(list(variable2 = "replacement value"))` : replaces `NA`s with a specified value
 
 ---
 ## `tidyr` actions &lt;img src="02_slides-import_files/figure-html/tidyr-logo.png" width="10%" align="right"/&gt;
 
 `separate()`, `extract()` and `unite()` split and combine character columns
 * `separate(tibble_name, variable1, into = c("new_variable1", "new_variable2"), sep = "-")`
+* `extract(tibble_name, variable1, regex="[[:alnum:]]+)")`
+    * `extract` uses regex which is outside the scope of this class - so we will not be covering this function
+* `unite(tibble_name, "combined_var_name", variable1, variable2, sep = ":")`
 
 ---
 
 &lt;img src="02_slides-import_files/figure-html/tidyr-cheatsheet.png" width="75%" class="center"/&gt;
 
----
-class: inverse center middle
+&lt;!-- --- --&gt;
+&lt;!-- class: inverse center middle --&gt;
 
-# Working with strings
+&lt;!-- # Working with strings --&gt;
 
----
-## `stringr` &lt;img src="https://raw.githubusercontent.com/tidyverse/stringr/master/man/figures/logo.png" width="10%" align="right"/&gt;
+&lt;!-- --- --&gt;
+&lt;!-- ## `stringr` &lt;img src="https://raw.githubusercontent.com/tidyverse/stringr/master/man/figures/logo.png" width="10%" align="right"/&gt; --&gt;
 
-`str_subset(x, pattern)` returns the elements matching the pattern
+&lt;!-- `str_subset(x, pattern)` returns the elements matching the pattern --&gt;
 
-`str_extract(x, pattern)` returns the text that matches
+&lt;!-- `str_extract(x, pattern)` returns the text that matches --&gt;
 
-`str_match(x, pattern)` returns part of the text defined in parentheses
+&lt;!-- `str_match(x, pattern)` returns part of the text defined in parentheses --&gt;
 
----
-## `stringr` &lt;img src="https://raw.githubusercontent.com/tidyverse/stringr/master/man/figures/logo.png" width="10%" align="right"/&gt;
+&lt;!-- --- --&gt;
+&lt;!-- ## `stringr` &lt;img src="https://raw.githubusercontent.com/tidyverse/stringr/master/man/figures/logo.png" width="10%" align="right"/&gt; --&gt;
 
-`str_detect(x, pattern)` returns logical value indicating if there is a match
+&lt;!-- `str_detect(x, pattern)` returns logical value indicating if there is a match --&gt;
 
-`str_count(x, pattern)` returns the number of matches
+&lt;!-- `str_count(x, pattern)` returns the number of matches --&gt;
 
-`str_locate(x, pattern)` returns the position of the match (start and end)
+&lt;!-- `str_locate(x, pattern)` returns the position of the match (start and end) --&gt;
 
 
 &lt;style type="text/css"&gt;
