@@ -105,6 +105,32 @@ or to force either to be shown
 -->
 
 ---
+
+## Homework Question 1: Which is "tidy"data 
+
+.pull-left[
+A)
+
+<img src="03_slides-wrangling_files/figure-html/data-a.png" height="135px" width="500px" />
+
+
+B) 
+
+<img src="03_slides-wrangling_files/figure-html/data-b.png" height="135px" width="500px" />
+]
+
+.pull-right[
+
+.accent-blue[C)]
+
+![](03_slides-wrangling_files/figure-html/answer.png)
+
+D) 
+
+![](03_slides-wrangling_files/figure-html/data-d.png)
+]
+
+---
 class: inverse center middle
 
 # Complex wrangling
