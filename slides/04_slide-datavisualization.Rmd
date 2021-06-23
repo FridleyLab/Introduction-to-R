@@ -162,9 +162,7 @@ library(tidyverse)
 library(flipbookr)
 library(ggdark)
 
-pancancer <- read_csv(here::here("data", "tcga-clinical.csv")) %>% 
-  mutate(stage = fct_collapse(
-    stage, "Stage IV" = c("Stage IV", "Stage IVA", "Stage IVB", "Stage IVC")))
+tcga_clinical <- read_csv(here::here("data", "tcga-clinical-viz.csv"))
 ```
 
 
@@ -178,7 +176,7 @@ xaringanExtra::use_panelset()
 .panel[.panel-name[R Code]
 
 ```{r ggplot, echo = TRUE, fig.show = "hide"}
-ggplot(data = pancancer) 
+ggplot(data = tcga_clinical) 
 ```
 ]
 
@@ -207,7 +205,7 @@ Each aesthetic can be mapped to a variable (or set to a constant value) by assoc
 
 ```{r aes, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight, y = height))  #<<
 ```
 ]
@@ -229,7 +227,7 @@ Geometric object or `geom` defines the visual object and determines the type of 
 
 ```{r geom, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight, y = height)) + 
   geom_point()  #<<
 ```
@@ -268,7 +266,7 @@ Aesthetic | Description
 
 ```{r aes_color, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight, 
                 y = height,
                 color = gender)) +  #<<
@@ -291,7 +289,7 @@ ggplot(
 
 ```{r aes_size, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight, 
                 y = height,
                 color = gender,
@@ -425,8 +423,8 @@ Transforms input variables to displayed values in plot (e.g. count number of obs
 
 ```{r statistics, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
-  mapping = aes(x = stage_collapsed)) +  
+  data = tcga_clinical,
+  mapping = aes(x = stage)) +  
   geom_bar() #<<
 ```
 ]
@@ -443,8 +441,8 @@ Under the hood, data is transformed or new value is calculated by `stat` argumen
 .pull-left[
 ```{r}
 p1 <- ggplot(
-  data = pancancer,
-  mapping = aes(x = stage_collapsed)) +  
+  data = tcga_clinical,
+  mapping = aes(x = stage)) +  
   geom_bar() #<<
 ```
 ]
@@ -452,8 +450,8 @@ p1 <- ggplot(
 .pull-right[
 ```{r eval = FALSE}
 p2 <- ggplot(
-  data = pancancer,
-  mapping = aes(x = stage_collapsed)) +  
+  data = tcga_clinical,
+  mapping = aes(x = stage)) +  
   geom_bar(stat = "count") #<<
 ```
 ]
@@ -571,14 +569,14 @@ Scale can be accessed by using function of form:
 
 
 - `scale_x_*()` 
-  * `scale_x_continuous()`, `scale_x_log10()`
+* `scale_x_continuous()`, `scale_x_log10()`
 - `scale_y_*()`
 - `scale_color_*()` 
-  * `scale_color_discrete()`
+* `scale_color_discrete()`
 - `scale_fill_*()`
 - `scale_shape_*()`
 - `scale_linetype_*()` 
-  * `scale_linetype_manual()`
+* `scale_linetype_manual()`
 - `scale_size_*()`
 - `scale_alpha_*()`
 
@@ -590,7 +588,7 @@ ggplot2 adds a default scale for each of the aesthetics used in the plot
 
 ```{r scales, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   aes(x = weight, y = height, color = gender)) +  
   geom_point() 
 ```
@@ -598,7 +596,7 @@ ggplot(
 ...is equivalent to 
 ```{r echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight, y = height, color = gender)) +  
   geom_point() +
   scale_x_continuous() + 
@@ -622,7 +620,7 @@ We can override the defaults by adding the `scale` function
 
 ```{r scales2, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight, y = height, color = gender)) +  
   geom_point() +
   scale_x_continuous(
@@ -652,7 +650,7 @@ Before {`ggplot2`} v3.0.0 the variables used for faceting could only be passed a
 
 ```{r eval = FALSE}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight, y = height)) +  
   geom_point() +
   # facet_grid(gender ~ tumor_tissue_site)
@@ -669,9 +667,9 @@ There are two types of facetting:
 .panel[.panel-name[R Code]
 
 ```{r facet-wrap, echo = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(
-    mapping = aes(x = weight, y = height)) +  
+ggplot(
+  data = tcga_clinical,
+  mapping = aes(x = weight, y = height)) +  
   geom_point() +
   # facet_wrap(~ tumor_tissue_site, ncol = 2) 
   facet_wrap(vars(tumor_tissue_site), ncol = 2)
@@ -694,9 +692,9 @@ drop_na(pancancer, weight, height) %>%
 .panel[.panel-name[R Code]
 
 ```{r facet-grid, echo = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(
-    mapping = aes(x = weight, y = height)) +  
+ggplot(
+  data = tcga_clinical,
+  mapping = aes(x = weight, y = height)) +  
   geom_point() +
   # facet_grid(gender ~ tumor_tissue_site)
   facet_grid(rows = vars(gender), cols = vars(tumor_tissue_site))
@@ -718,14 +716,14 @@ Coordinate system, `coord` for short, maps the position of objects onto the plan
 
 Two types of coordinate systems:
 - Linear coordinate systems that preserve the shape of geoms
-  * `coord_cartesian()`: the default Cartesian coordinate system, where the 2d position of an element is given by the combination of the x and y positions
-  * `coord_flip()`: Cartesian coordinate system with x and y axes flipped
-  * `coord_fixed()`: Cartesian coordinate system with a fixed aspect ratio
-  
+* `coord_cartesian()`: the default Cartesian coordinate system, where the 2d position of an element is given by the combination of the x and y positions
+* `coord_flip()`: Cartesian coordinate system with x and y axes flipped
+* `coord_fixed()`: Cartesian coordinate system with a fixed aspect ratio
+
 - Non-linear coordinate systems that can change the shape of geoms
-  * `coord_map()`, `coord_quickmap()`, `coord_sf()`: map projections
-  * `coord_polar()`: polar coordinates
-  * `coord_trans()`: apply arbitrary transformations to x and y positions, after the data has been processed by the `stat`
+* `coord_map()`, `coord_quickmap()`, `coord_sf()`: map projections
+* `coord_polar()`: polar coordinates
+* `coord_trans()`: apply arbitrary transformations to x and y positions, after the data has been processed by the `stat`
 
 ---
 ### Theme layer
@@ -749,9 +747,9 @@ rectangle | `element_rect()`
 .panel[.panel-name[R Code]
 
 ```{r theme, echo = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(
-    mapping = aes(x = weight, y = height, color = gender)) +  
+ggplot(
+  data = tcga_clinical,
+  mapping = aes(x = weight, y = height, color = gender)) +  
   geom_point() +
   facet_wrap(~ tumor_tissue_site, nrow = 1)
 ```
@@ -771,8 +769,9 @@ drop_na(pancancer, weight, height) %>%
 .panel[.panel-name[R Code]
 
 ```{r theme2, echo = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(mapping = aes(x = weight, y = height, color = gender)) +  
+ggplot(
+  data = tcga_clinical,
+  mapping = aes(x = weight, y = height, color = gender)) +  
   geom_point() +
   facet_wrap(~ tumor_tissue_site, nrow = 1) +
   theme(axis.title = element_text(size = 15, color = "gray80"),
@@ -804,9 +803,9 @@ We can avoid the `theme()` function by using built-in themes
 .panel[.panel-name[R Code]
 
 ```{r theme_builtin, echo = TRUE, fig.show = "hide"}
-drop_na(pancancer, weight, height) %>% 
-  ggplot(
-    mapping = aes(x = weight, y = height, color = gender)) +  
+ggplot(
+  data = tcga_clinical,
+  mapping = aes(x = weight, y = height, color = gender)) +  
   geom_point() +
   facet_wrap(~ tumor_tissue_site, nrow = 1) +
   theme_dark(base_size = 13)
@@ -837,7 +836,7 @@ Set a default theme for the rest of your plots using `theme_set()` at the top of
 inside `ggplot()` call
 ```{r echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight,   #<<
                 y = height,  #<<
                 color = gender)) +  #<<
@@ -851,7 +850,7 @@ ggplot(
 inside `geom_*()` layer
 ```{r echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer) + 
+  data = tcga_clinical) + 
   geom_point(    #<<
     mapping = aes(x = weight,   #<<
                   y = height,  #<<
@@ -869,7 +868,7 @@ However, when we start adding more layers, the distinction becomes more importan
 
 ```{r global_aes, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight,   #<<
                 y = height,    #<<
                 color = gender)) +     #<<
@@ -895,7 +894,7 @@ ggplot(
 
 ```{r local_aes, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight,  
                 y = height)) +   
   geom_point(aes(color = gender)) + #<<
@@ -941,7 +940,7 @@ Aesthetic property can also be set to a single value (constant) by specifying it
 ### Mapping
 ```{r mapping, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight,  
                 y = height)) +   
   geom_point(aes(color = gender)) #<<
@@ -955,7 +954,7 @@ ggplot(
 ### Setting
 ```{r setting, echo = TRUE, fig.show = "hide"}
 ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight,  
                 y = height)) +   
   geom_point(color = "blue") #<<
@@ -972,7 +971,7 @@ class: middle center
 
 ```{r ggplotflipbook, echo = FALSE, eval = FALSE}
 ggplot(
-  drop_na(pancancer, weight, height)) +
+  data = tcga_clinical) +
   aes(
     x = height, y = weight, 
     color = gender) +
