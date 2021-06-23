@@ -1,0 +1,45 @@
+---
+title: "Data warangling : part III"
+output: html_document
+---
+
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Importing TCAG data 
+
+```{r}
+
+library(readr)
+clinical <- read_csv(here::here("data/tcga-clinical.csv"))
+gene_exp <- read_csv(here::here("data/tcga-gene-exp.csv"))
+
+```
+
+## Merging data 
+
+```{r}
+
+
+```
+
+## Transposing data 
+
+```{r}
+
+```
+
+## Working with NAs
+
+```{r}
+
+```
+
+## Working with strings
+
+```{r}
+
+```
