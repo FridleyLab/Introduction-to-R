@@ -4,7 +4,7 @@ subtitle: "ggplot2"
 author: 
   - Ram Thapa
 institute: "Moffitt Cancer Center"
-date: '`r strftime(Sys.time(), "%B %d, %Y")`'
+date: "June 30, 2021"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -128,7 +128,7 @@ Plotting with [{ggplot2}](https://ggplot2.tidyverse.org/) package.
 ]
 
 .pull-right[
-![](img/ggplot2_exploratory.png)
+![](04_slide-datavisualization_files/figure-html/ggplot2_exploratory.png)
 Artwork by @allison_horst
 ]
 
@@ -138,7 +138,7 @@ Artwork by @allison_horst
 The basic idea is that a statistical graphic can be created in a layered fashion, starting with a layer showing the data then adding layers of graphical objects, annotations and statistical summaries
 
 .w-40.center[
-![](img/ggplot_scheme.png)
+![](04_slide-datavisualization_files/figure-html/ggplot_scheme.png)
 ]
 
 ---
@@ -823,7 +823,7 @@ Set a default theme for the rest of your plots using `theme_set()` at the top of
 ]
 ---
 .w-70.center[
-![](img/theme_elements.png)
+![](04_slide-datavisualization_files/figure-html/theme_elements.png)
 ]
 
 .footnote[Source: https://henrywang.nl/ggplot2-theme-elements-demonstration/]
