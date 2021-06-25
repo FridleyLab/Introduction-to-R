@@ -193,8 +193,6 @@ ggplot(data = tcga_clinical)
 
 Aesthetic layer or `aes()` for short links variables in data to graphical objects (e.g. by describing position, size, color, etc)
 
-Aesthetic is a visual property of the objects in a plot and include attributes like size, shape, or color of the objects in your plot. 
-
 Each aesthetic can be mapped to a variable (or set to a constant value) by associating the name of the aesthetic to the name of the variable inside `aes()`
 
 `ggplot2` automatically assigns a unique level of the aesthetic to each unique value of the variable by a process called scaling, and adds a legend that explains which levels correspond to which values.
@@ -456,9 +454,6 @@ p2 <- ggplot(
 ```
 ]
 
-```{r}
-layer_data(p1, i = 1)
-```
 ---
 ### [stat catalogue](https://ggplot2.tidyverse.org/reference/index.html#section-layers)
 
@@ -569,14 +564,14 @@ Scale can be accessed by using function of form:
 
 
 - `scale_x_*()` 
-* `scale_x_continuous()`, `scale_x_log10()`
+  * `scale_x_continuous()`, `scale_x_log10()`
 - `scale_y_*()`
 - `scale_color_*()` 
-* `scale_color_discrete()`
+  * `scale_color_discrete()`
 - `scale_fill_*()`
 - `scale_shape_*()`
 - `scale_linetype_*()` 
-* `scale_linetype_manual()`
+  * `scale_linetype_manual()`
 - `scale_size_*()`
 - `scale_alpha_*()`
 
@@ -709,23 +704,6 @@ ggplot(
 ]
 ]
 
----
-### Coordinates layer
-
-Coordinate system, `coord` for short, maps the position of objects onto the plane of the plot
-
-Two types of coordinate systems:
-- Linear coordinate systems that preserve the shape of geoms
-* `coord_cartesian()`: the default Cartesian coordinate system, where the 2d position of an element is given by the combination of the x and y positions
-* `coord_flip()`: Cartesian coordinate system with x and y axes flipped
-* `coord_fixed()`: Cartesian coordinate system with a fixed aspect ratio
-
-- Non-linear coordinate systems that can change the shape of geoms
-* `coord_map()`, `coord_quickmap()`, `coord_sf()`: map projections
-* `coord_polar()`: polar coordinates
-* `coord_trans()`: apply arbitrary transformations to x and y positions, after the data has been processed by the `stat`
-
----
 ### Theme layer
 
 Controls all non-data plot elements and appearance

@@ -1,7 +1,7 @@
 ---
 title: "ggplot2 exercise"
 author: "Ram Thapa"
-date:  "April 21, 2021"
+date:  "June 30, 2021"
 output: 
   html_document:
     df_print: paged
@@ -25,11 +25,10 @@ Data visualization is important in most phases of data analysis workflow and bei
 ```{r packages, message = FALSE, warning = FALSE}
 library(tidyverse)
 library(patchwork)
-library(ggridges)
 
-pancancer <- readRDS(here::here("slides", "data", "pancancer.RDS"))
+tcga_clinical <- read_csv(here::here("data", "tcga-clinical-viz.csv"))
 
-head(pancancer)
+head(tcga_clinical)
 ```
 
 ## Visualizing associations among two or more variables
@@ -43,7 +42,7 @@ Relationship between height vs weight
 theme_set(theme_bw(base_size = 15))
 
 wt_ht_scatter <- ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight, y = height)) +
   geom_point()
 
@@ -54,7 +53,7 @@ Mapping `color` to `gender` variable from the data
 
 ```{r scatterplot2, fig.width = 7}
 wt_ht_scatter_gender <- ggplot(
-  data = pancancer,
+  data = tcga_clinical,
   mapping = aes(x = weight, y = height, color = gender)) +
   geom_point()
 
@@ -64,11 +63,10 @@ wt_ht_scatter_gender
 Avoid overplotting using jitter plot
 
 ```{r jitter,  fig.width = 7}
-pancancer %>% 
-  drop_na(stage_collapsed) %>% 
-  ggplot(mapping = aes(x = stage_collapsed, y = height)) +
+tcga_clinical %>% 
+  ggplot(mapping = aes(x = stage, y = height)) +
   geom_point() +
-  geom_jitter(aes(color = stage_collapsed), width = 0.2, size = 2, alpha = 0.7) +
+  geom_jitter(aes(color = stage), width = 0.2, size = 2, alpha = 0.7) +
   labs(x = NULL, y = "Height (cm)") +
   scale_color_brewer(NULL, palette = "Paired") 
 ```
@@ -81,16 +79,16 @@ Line plot of mean age by Karnofsky Performance Score for each stage
 
 ```{r line, fig.width = 7}
 # mean age
-mean_age_kps <- pancancer %>% 
-  drop_na(stage_collapsed, karnofsky_performance_score) %>% 
-  group_by(stage_collapsed, karnofsky_performance_score) %>% 
-  summarise(mean = mean(age_at_initial_pathologic_diagnosis, na.rm = TRUE))
+mean_age_kps <- tcga_clinical %>% 
+  drop_na(stage, karnofsky_performance_score) %>% 
+  group_by(stage, karnofsky_performance_score) %>% 
+  summarise(mean_age = mean(age_at_initial_pathologic_diagnosis, na.rm = TRUE))
 
 # plot
 mean_age_kps_line <- mean_age_kps %>% 
-  ggplot(aes(x = factor(karnofsky_performance_score), y = mean, 
-             group = stage_collapsed, color = stage_collapsed)) +
-  # geom_point(size = 4) +
+  ggplot(aes(x = factor(karnofsky_performance_score), y = mean_age, 
+             group = stage, color = stage)) +
+  geom_point(size = 2) +
   geom_line() +
   scale_x_discrete("Karnofsky Performance Score") +
   scale_y_continuous("Mean age at diagnosis") +
@@ -107,8 +105,8 @@ We might be interested in visualizing amounts i.e. numerical values for some set
 ### Bar plot
 
 ```{r barplot}
-pancancer %>% 
-  ggplot(aes(x = stage_collapsed)) +
+tcga_clinical %>% 
+  ggplot(aes(x = stage)) +
   geom_bar(fill = "gray60")
 ```
 
@@ -116,11 +114,11 @@ You could also calculate counts in advance and plot it but you need to use `stat
 
 ```{r count}
 # Count by stage
-stage_count <- pancancer %>% 
-  count(stage_collapsed, .drop = TRUE)
+stage_count <- tcga_clinical %>% 
+  count(stage, .drop = TRUE)
 
 # use stat = "identity"
-ggplot(data = stage_count, aes(x = stage_collapsed, y = n)) +
+ggplot(data = stage_count, aes(x = stage, y = n)) +
   geom_bar(stat = "identity", fill = "gray60") +
   labs(x = "Stage", y = "Number of patients")
 ```
@@ -128,7 +126,7 @@ ggplot(data = stage_count, aes(x = stage_collapsed, y = n)) +
 Or, just use `geom_col()`
 
 ```{r count2}
-ggplot(data = stage_count, aes(x = stage_collapsed, y = n)) +
+ggplot(data = stage_count, aes(x = stage, y = n)) +
   geom_col(fill = "gray60") +
   labs(x = "Stage", y = "Number of patients")
 ```
@@ -136,9 +134,7 @@ ggplot(data = stage_count, aes(x = stage_collapsed, y = n)) +
 Sometimes x-axis labels identifying each bar take up a lot of horizontal space
 
 ```{r}
-drop_na(stage_count, stage_collapsed) %>% 
-  ggplot(
-    aes(y = fct_reorder(stage_collapsed, n), x = n)) +
+ggplot(data = stage_count, aes(y = fct_reorder(stage, n), x = n)) +
   geom_bar(stat = "identity", fill = "gray60") +
   labs(x = "Stage", y = NULL) 
 ```
@@ -146,9 +142,8 @@ drop_na(stage_count, stage_collapsed) %>%
 Grouped bar plot
 
 ```{r grouped_bar, fig.width = 7}
-groupedbar_gender <- pancancer %>% 
-  drop_na(stage_collapsed) %>% 
-  ggplot(aes(x = stage_collapsed, fill = gender)) +
+groupedbar_gender <- tcga_clinical %>% 
+  ggplot(aes(x = stage, fill = gender)) +
   geom_bar(position = "dodge") +
   labs(x = NULL, y = "Number of patients") +
   scale_fill_viridis_d(NULL)
@@ -159,9 +154,8 @@ groupedbar_gender
 Stacked bar plot
 
 ```{r stacked_bar, fig.width = 6}
-stackedbar_gender <- pancancer %>% 
-  drop_na(stage_collapsed) %>% 
-  ggplot(aes(x = stage_collapsed, fill = gender)) +
+stackedbar_gender <- tcga_clinical %>% 
+  ggplot(aes(x = stage, fill = gender)) +
   geom_bar(position = "stack") +
   labs(x = NULL, y = "Number of patients") +
   scale_fill_viridis_d(NULL)
@@ -175,28 +169,15 @@ To understand how a particular variable is distributed in a dataset
 
 ### Boxplot
 
-```{r boxplot}
-ggplot(
-  data = pancancer, 
-  aes(x = gender, y = weight, fill = gender)) +
-  geom_boxplot(show.legend = FALSE) +
-  labs(x = NULL, y = "Weight (kg)") +
-  scale_fill_brewer(palette = "Dark2")
-```
-
-### Violin plot
-
-Similar to box plots except they also show the kernel probability density of the data at different values
-
-```{r violin, fig.width = 8}
-pancancer %>% 
-  drop_na(stage_collapsed) %>% 
-  ggplot(
-    aes(x = stage_collapsed, y = weight, fill = gender)) +
+```{r boxplot, fig.width = 8}
+boxplot_gender <- ggplot(
+  data = tcga_clinical, 
+  aes(x = stage, y = weight, fill = gender)) +
   geom_boxplot() +
   labs(x = NULL, y = "Weight (kg)") +
-  scale_fill_brewer(NULL, palette = "Dark2")
+  scale_fill_brewer(palette = "Dark2")
 
+boxplot_gender
 ```
 
 
@@ -205,7 +186,7 @@ pancancer %>%
 Histogram count plot for single distribution
 
 ```{r histogram}
-hist_age <- ggplot(pancancer, aes(x = age_at_initial_pathologic_diagnosis)) +
+hist_age <- ggplot(tcga_clinical, aes(x = age_at_initial_pathologic_diagnosis)) +
   geom_histogram(fill = "gray60", color = "gray80") +
   labs(x = "Age at diagnosis")
 
@@ -216,31 +197,11 @@ Density plot for visualizing multiple distributions at the same time
 
 ```{r density, fig.width = 7}
 ggplot(
-  pancancer, 
+  tcga_clinical, 
   aes(x = height, fill = gender)) +
   geom_density(alpha = 0.8, color = "transparent") +
   labs(x = "Height (cm)") +
   scale_fill_viridis_d(NULL) 
-```
-
-### Ridge plot
-
-Visualizing multiple distributions along the horizontal axis by staggering the distribution plots in the vertical direction
-
-You need `{ggridges}` package for this plot
-
-```{r ridge, fig.width = 7}
-ridge_height <- pancancer %>% 
-  drop_na(stage_collapsed) %>% 
-  ggplot(
-  aes(x = height, y = fct_rev(factor(stage_collapsed)))) +
-  geom_density_ridges(
-    scale = 1.5, fill = "skyblue", color = "white") +
-  geom_density(alpha = 0.8, color = "transparent") +
-  labs(x = "Height (cm)", y = NULL) +
-  scale_fill_viridis_d(NULL) 
-
-ridge_height
 ```
 
 ## Combining plots
@@ -260,7 +221,7 @@ or you can use "|" too
 
 ```{r, message = FALSE, fig.height = 6}
 # stack two plots
-ridge_height / hist_age
+boxplot_gender / hist_age
 ```
 
 ### Nested layout
@@ -278,7 +239,7 @@ Be careful with the operator precedence rule (e.g. / is evaluated before |)
 ### Annotating plots
 
 ```{r, message = FALSE, fig.height = 6, fig.width = 8}
-(ridge_height / (wt_ht_scatter | hist_age)) +
+(boxplot_gender / (wt_ht_scatter | hist_age)) +
   plot_annotation(
     title = "Combining three plots",
     subtitle = "Annotating each plot",

@@ -11,7 +11,7 @@
     <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xa7f2dd370f8488a8f23d4b3cbfca91c","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"b84ef310f65442678625fca41c46ec1d","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -175,8 +175,6 @@ ggplot(data = tcga_clinical)
 
 Aesthetic layer or `aes()` for short links variables in data to graphical objects (e.g. by describing position, size, color, etc)
 
-Aesthetic is a visual property of the objects in a plot and include attributes like size, shape, or color of the objects in your plot. 
-
 Each aesthetic can be mapped to a variable (or set to a constant value) by associating the name of the aesthetic to the name of the variable inside `aes()`
 
 `ggplot2` automatically assigns a unique level of the aesthetic to each unique value of the variable by a process called scaling, and adds a legend that explains which levels correspond to which values.
@@ -291,8 +289,8 @@ ggplot(
 
 
 
-<div id="htmlwidget-ba4157417e487d802a36" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ba4157417e487d802a36">{"x":{"filter":"none","fillContainer":false,"data":[["geom_abline(), geom_hline(), geom_vline()","geom_bar(), geom_col()","geom_bin2d()","geom_blank()","geom_boxplot()","geom_contour(), geom_contour_filled()","geom_count()","geom_density()","geom_density_2d(), geom_density_2d_filled()","geom_dotplot()","geom_errorbarh()","geom_function()","geom_hex()","geom_freqpoly(), geom_histogram()","geom_jitter()","geom_crossbar(), geom_errorbar(), geom_linerange(), geom_pointrange()","geom_map()","geom_path(), geom_line(), geom_step()","geom_point()","geom_polygon()","geom_qq_line(), geom_qq()","geom_quantile()","geom_ribbon(), geom_area()","geom_rug()","geom_segment(), geom_curve()","geom_smooth()","geom_spoke()","geom_label(), geom_text()","geom_raster(), geom_rect(), geom_tile()","geom_violin()","coord_sf(), geom_sf(), geom_sf_label(), geom_sf_text()"],["Reference lines: horizontal, vertical, and diagonal","Bar charts","Heatmap of 2d bin counts","Draw nothing","A box and whiskers plot (in the style of Tukey)","2D contours of a 3D surface","Count overlapping points","Smoothed density estimates","Contours of a 2D density estimate","Dot plot","Horizontal error bars","Draw a function as a continuous curve","Hexagonal heatmap of 2d bin counts","Histograms and frequency polygons","Jittered points","Vertical intervals: lines, crossbars &amp; errorbars","Polygons from a reference map","Connect observations","Points","Polygons","A quantile-quantile plot","Quantile regression","Ribbons and area plots","Rug plots in the margins","Line segments and curves","Smoothed conditional means","Line segments parameterised by location, direction and distance","Text","Rectangles","Violin plot","Visualise sf objects"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>geom<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":6,"dom":"ftp","order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f22d68252bf76585676d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f22d68252bf76585676d">{"x":{"filter":"none","fillContainer":false,"data":[["geom_abline(), geom_hline(), geom_vline()","geom_bar(), geom_col()","geom_bin2d()","geom_blank()","geom_boxplot()","geom_contour(), geom_contour_filled()","geom_count()","geom_density()","geom_density_2d(), geom_density_2d_filled()","geom_dotplot()","geom_errorbarh()","geom_function()","geom_hex()","geom_freqpoly(), geom_histogram()","geom_jitter()","geom_crossbar(), geom_errorbar(), geom_linerange(), geom_pointrange()","geom_map()","geom_path(), geom_line(), geom_step()","geom_point()","geom_polygon()","geom_qq_line(), geom_qq()","geom_quantile()","geom_ribbon(), geom_area()","geom_rug()","geom_segment(), geom_curve()","geom_smooth()","geom_spoke()","geom_label(), geom_text()","geom_raster(), geom_rect(), geom_tile()","geom_violin()","coord_sf(), geom_sf(), geom_sf_label(), geom_sf_text()"],["Reference lines: horizontal, vertical, and diagonal","Bar charts","Heatmap of 2d bin counts","Draw nothing","A box and whiskers plot (in the style of Tukey)","2D contours of a 3D surface","Count overlapping points","Smoothed density estimates","Contours of a 2D density estimate","Dot plot","Horizontal error bars","Draw a function as a continuous curve","Hexagonal heatmap of 2d bin counts","Histograms and frequency polygons","Jittered points","Vertical intervals: lines, crossbars &amp; errorbars","Polygons from a reference map","Connect observations","Points","Polygons","A quantile-quantile plot","Quantile regression","Ribbons and area plots","Rug plots in the margins","Line segments and curves","Smoothed conditional means","Line segments parameterised by location, direction and distance","Text","Rectangles","Violin plot","Visualise sf objects"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>geom<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":6,"dom":"ftp","order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 ### Statistics layer
@@ -341,31 +339,14 @@ p2 &lt;- ggplot(
 ```
 ]
 
-
-```r
-layer_data(p1, i = 1)
-```
-
-```
-##     y count prop x flipped_aes PANEL group ymin ymax xmin xmax colour
-## 1 452   452    1 1       FALSE     1     1    0  452 0.55 1.45   &lt;NA&gt;
-## 2 302   302    1 2       FALSE     1     2    0  302 1.55 2.45   &lt;NA&gt;
-## 3 323   323    1 3       FALSE     1     3    0  323 2.55 3.45   &lt;NA&gt;
-## 4 157   157    1 4       FALSE     1     4    0  157 3.55 4.45   &lt;NA&gt;
-##      fill size linetype alpha
-## 1 #A6A6A6  0.5        1    NA
-## 2 #A6A6A6  0.5        1    NA
-## 3 #A6A6A6  0.5        1    NA
-## 4 #A6A6A6  0.5        1    NA
-```
 ---
 ### [stat catalogue](https://ggplot2.tidyverse.org/reference/index.html#section-layers)
 
 
 
 
-<div id="htmlwidget-d9faa9aff63f89dec48d" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d9faa9aff63f89dec48d">{"x":{"filter":"none","fillContainer":false,"data":[["stat_count()","stat_bin_2d()","stat_boxplot()","stat_contour(), stat_contour_filled()","stat_sum()","stat_density()","stat_density_2d(), stat_density_2d_filled()","stat_function()","stat_bin_hex()","stat_bin()","stat_qq_line(), stat_qq()","stat_quantile()","stat_smooth()","stat_ydensity()","stat_sf()","stat_ecdf()","stat_ellipse()","geom_function(), stat_function()","stat_identity()","stat_summary_2d(), stat_summary_hex()","stat_summary_bin(), stat_summary()","stat_unique()","stat_sf_coordinates()","after_stat(), after_scale(), stage()"],["Bar charts","Heatmap of 2d bin counts","A box and whiskers plot (in the style of Tukey)","2D contours of a 3D surface","Count overlapping points","Smoothed density estimates","Contours of a 2D density estimate","Draw a function as a continuous curve","Hexagonal heatmap of 2d bin counts","Histograms and frequency polygons","A quantile-quantile plot","Quantile regression","Smoothed conditional means","Violin plot","Visualise sf objects","Compute empirical cumulative distribution","Compute normal data ellipses","Draw a function as a continuous curve","Leave data as is","Bin and summarise in 2d (rectangle &amp; hexagons)","Summarise y values at unique/binned x","Remove duplicates","Extract coordinates from 'sf' objects","Control aesthetic evaluation"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>stat<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":6,"dom":"ftp","order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bbd41cef886f54fb86ee" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bbd41cef886f54fb86ee">{"x":{"filter":"none","fillContainer":false,"data":[["stat_count()","stat_bin_2d()","stat_boxplot()","stat_contour(), stat_contour_filled()","stat_sum()","stat_density()","stat_density_2d(), stat_density_2d_filled()","stat_function()","stat_bin_hex()","stat_bin()","stat_qq_line(), stat_qq()","stat_quantile()","stat_smooth()","stat_ydensity()","stat_sf()","stat_ecdf()","stat_ellipse()","geom_function(), stat_function()","stat_identity()","stat_summary_2d(), stat_summary_hex()","stat_summary_bin(), stat_summary()","stat_unique()","stat_sf_coordinates()","after_stat(), after_scale(), stage()"],["Bar charts","Heatmap of 2d bin counts","A box and whiskers plot (in the style of Tukey)","2D contours of a 3D surface","Count overlapping points","Smoothed density estimates","Contours of a 2D density estimate","Draw a function as a continuous curve","Hexagonal heatmap of 2d bin counts","Histograms and frequency polygons","A quantile-quantile plot","Quantile regression","Smoothed conditional means","Violin plot","Visualise sf objects","Compute empirical cumulative distribution","Compute normal data ellipses","Draw a function as a continuous curve","Leave data as is","Bin and summarise in 2d (rectangle &amp; hexagons)","Summarise y values at unique/binned x","Remove duplicates","Extract coordinates from 'sf' objects","Control aesthetic evaluation"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>stat<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":6,"dom":"ftp","order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 ### Scales layer
@@ -391,14 +372,14 @@ Scale can be accessed by using function of form:
 
 
 - `scale_x_*()` 
-* `scale_x_continuous()`, `scale_x_log10()`
+  * `scale_x_continuous()`, `scale_x_log10()`
 - `scale_y_*()`
 - `scale_color_*()` 
-* `scale_color_discrete()`
+  * `scale_color_discrete()`
 - `scale_fill_*()`
 - `scale_shape_*()`
 - `scale_linetype_*()` 
-* `scale_linetype_manual()`
+  * `scale_linetype_manual()`
 - `scale_size_*()`
 - `scale_alpha_*()`
 
@@ -431,7 +412,7 @@ ggplot(
 
 .panel[.panel-name[Plot] 
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-16-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-15-1.png" width="100%" /&gt;
 ]
 ]
 
@@ -458,7 +439,7 @@ ggplot(
 
 .panel[.panel-name[Plot] 
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-17-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-16-1.png" width="100%" /&gt;
 ]
 ]
 
@@ -503,7 +484,7 @@ ggplot(
 
 .panel[.panel-name[Plot] 
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-19-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-18-1.png" width="100%" /&gt;
 ]
 ]
 
@@ -527,27 +508,10 @@ ggplot(
 
 .panel[.panel-name[Plot] 
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-20-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-19-1.png" width="100%" /&gt;
 ]
 ]
 
----
-### Coordinates layer
-
-Coordinate system, `coord` for short, maps the position of objects onto the plane of the plot
-
-Two types of coordinate systems:
-- Linear coordinate systems that preserve the shape of geoms
-* `coord_cartesian()`: the default Cartesian coordinate system, where the 2d position of an element is given by the combination of the x and y positions
-* `coord_flip()`: Cartesian coordinate system with x and y axes flipped
-* `coord_fixed()`: Cartesian coordinate system with a fixed aspect ratio
-
-- Non-linear coordinate systems that can change the shape of geoms
-* `coord_map()`, `coord_quickmap()`, `coord_sf()`: map projections
-* `coord_polar()`: polar coordinates
-* `coord_trans()`: apply arbitrary transformations to x and y positions, after the data has been processed by the `stat`
-
----
 ### Theme layer
 
 Controls all non-data plot elements and appearance
@@ -580,7 +544,7 @@ ggplot(
 
 .panel[.panel-name[Plot] 
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-21-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-20-1.png" width="100%" /&gt;
 ]
 ]
 
@@ -614,7 +578,7 @@ ggplot(
 
 .panel[.panel-name[Plot] 
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-22-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-21-1.png" width="100%" /&gt;
 ]
 ]
 
@@ -640,7 +604,7 @@ Set a default theme for the rest of your plots using `theme_set()` at the top of
 
 .panel[.panel-name[Plot] 
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-23-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-22-1.png" width="100%" /&gt;
 ]
 ]
 ---
@@ -706,7 +670,7 @@ ggplot(
 
 .panel[.panel-name[Plot] 
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-26-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-25-1.png" width="100%" /&gt;
 ]
 ]
 ---
@@ -731,7 +695,7 @@ Since `color` aesthetic is defined inside `geom_point()` only, this mapping is a
 
 .panel[.panel-name[Plot] 
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-27-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-26-1.png" width="100%" /&gt;
 ]
 ]
 
@@ -773,7 +737,7 @@ ggplot(
 * geom_point(aes(color = gender))
 ```
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-30-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-29-1.png" width="100%" /&gt;
 ]
 
 .pull-right[
@@ -787,7 +751,7 @@ ggplot(
 * geom_point(color = "blue")
 ```
 
-&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-31-1.png" width="100%" /&gt;
+&lt;img src="04_slide-datavisualization_files/figure-html/unnamed-chunk-30-1.png" width="100%" /&gt;
 ]
 
 ---
