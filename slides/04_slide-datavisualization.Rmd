@@ -703,7 +703,7 @@ ggplot(
 ```
 ]
 ]
-
+---
 ### Theme layer
 
 Controls all non-data plot elements and appearance
