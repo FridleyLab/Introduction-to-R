@@ -304,7 +304,9 @@ ggplot(
 ]
 ]
 ---
-### [geom catalogue](https://ggplot2.tidyverse.org/reference/index.html#section-layers)
+### [`r icons::icon_style(icons::fontawesome("link", style = "solid"), scale = 0.7, fill = "skyblue")` geom catalogue](https://ggplot2.tidyverse.org/reference/index.html#section-layers)
+
+
 
 ```{r, echo = FALSE}
 geom_table <- tribble(
@@ -455,7 +457,7 @@ p2 <- ggplot(
 ]
 
 ---
-### [stat catalogue](https://ggplot2.tidyverse.org/reference/index.html#section-layers)
+### [`r icons::icon_style(icons::fontawesome("link", style = "solid"), scale = 0.7, fill = "skyblue")` stat catalogue](https://ggplot2.tidyverse.org/reference/index.html#section-layers)
 
 ```{r, echo = FALSE}
 stat_table <- tribble(
@@ -958,8 +960,8 @@ ggplot(
   geom_smooth(
     method = "lm", se = FALSE, 
     show.legend = FALSE) +
-  scale_color_brewer(
-    palette = "Set1") +
+  scale_color_viridis_d(
+    begin = 0.5, end = 1) +
   labs(
     x = "Weight (kg)",
     y = "Height (cm)") +
