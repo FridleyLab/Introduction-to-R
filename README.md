@@ -147,7 +147,7 @@ Add links to personal websites and double check personal info
 
 This course is taught by members of Moffitt staff including Jordan
 Creed, a data analyst in the Department of Health Informatics, Zachary
-Thompson and Ram Thappa, biostatisticians in the Bioinformatics and
+Thompson and Ram Thapa, biostatisticians in the Bioinformatics and
 Biostatistics Core.
 
 -----
