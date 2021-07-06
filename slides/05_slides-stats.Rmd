@@ -56,7 +56,8 @@ options(width = 70)
 #MERGE and making smoking variable 
 clinical <- read.csv(file = "F:\\myGitRepo\\Introduction-to-R\\data\\tcga-clinical.csv", header = TRUE)
 geneexp <- read.csv(file = "F:\\myGitRepo\\Introduction-to-R\\data\\tcga-gene-exp.csv", header = TRUE)
-# 
+
+ 
 # intersect(names(clinical), names(geneexp))
 # 
 # dim(clinical)
@@ -68,7 +69,7 @@ tcga <- left_join(clinical, geneexp, by = "bcr_patient_barcode")
 
 
 tcga <- tcga %>% mutate(
-  smoking = tobacco_smoking_history,
+  #smoking = tobacco_smoking_history,
   smoking = case_when(
     tobacco_smoking_history %in% c(
       "Current reformed smoker for < or = 15 years",
@@ -171,7 +172,6 @@ or to force either to be shown
 
 - Two-sample tests (t-test, wilcoxon test)
 
-- Simple linear regression
 
 ---
 
@@ -846,126 +846,6 @@ t.test( tcga$PTEN_exp ~ tcga$gender,
 
 
 
----
-
-## Simple Linear Regression
- 
- A linear regression is a statistical model that analyzes the
- relationship between a response variable (often called y) and 
- one or more variables (often called predictor or
- explanatory variables). Simple linear regression is the case when 
- there is only one predictor variable. 
-
-
-
----
-
-## Simple Linear Regression Assumptions
- 
-- Linearity: The relationship between X and the mean of Y is linear.
-
-- Homoscedasticity: The variance of residual is the same for any value of X.
-
-- Independence: Observations are independent of each other.
-
-- Normality: For any fixed value of X, Y is normally distributed
-
-
----
- 
-
-## Simple Linear Regression Examples
- 
- Examples: 
-  
- Tempature conversion: $F = \frac{9}{5} C + 32$ 
-
- In general: $Y$ = $\beta_0$ + $\beta_1$ X
- 
- where $\beta_0$ is the intercept, and $\beta_1$ is the regression coefficient for the predictor.
-
----
-
-## Simple Linear Regression Scatterplot
- 
-```{r echo=FALSE, comment=NA}
- 
-ggplot(tcga) + 
-  aes(DUOXA1_exp, DUOX1_exp ) + 
-  geom_point() + 
-  annotate(geom = "text", x = 10, y = 25000, 
-           label = paste("r = ", round(r1$r,2), sep = ""),
-           color = "red")
-```
-
----
-
-#### Base R output 
-
-mod <- lm(DUOX1_exp ~  DUOXA1_exp, data = tcga)
-print(summary(mod))
-
- ```{r echo=FALSE, comment=NA}
-
-mod <- lm(DUOX1_exp ~  DUOXA1_exp, data = tcga)
-
-print(summary(mod))
-
-```
-
-
----
-
-#### Broom output 
-
-
-```{r  comment=NA}
-
-mod <- lm(DUOX1_exp ~  DUOXA1_exp, data = tcga)
-
-tidy(mod)
-
-```
- 
- 
-
----
- 
-#### Kable and Broom output 
-
-```{r comment=NA}
- knitr::kable(tidy(mod), format = 'html', digits = 3) %>%
-  kable_styling(font_size = 22)
-
-``` 
- 
----
-
-## Simple Linear Regression 
-```{r echo=FALSE, comment=NA}
- 
-ggplot(tcga, aes(DUOXA1_exp, DUOX1_exp )) + 
-  geom_point() + 
-  annotate(geom = "text", x = 10, y = 25000, 
-           label = paste("r = ", round(r1$r,2), sep = ""),
-           color = "red") + 
-   geom_smooth(method = 'lm')
-
-```
-
----
-
-## Simple Linear Regression 
- 
- The regression coefficient (slope of the line) is 3.03 which means that for every unit increase
- in DUOXA1 the DUOX1 gene expression is increased by 3. 
- 
- $DUOX1$ = $84.9$ + $3.03DUOXA1$
- 
- ```{r echo=FALSE, comment=NA}
- 
- knitr::kable(tidy(mod), format = 'html', digits = 3) %>%   kable_styling(font_size = 22)
-```
 
 ---
 
