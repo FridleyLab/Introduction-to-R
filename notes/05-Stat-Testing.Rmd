@@ -1,0 +1,445 @@
+---
+title: "StatsTesting"
+author: "Z Thompson"
+date: "June 30, 2021"
+output:
+  html_document:
+    df_print: paged
+    code_folding: show
+    toc: yes
+    toc_depth: 3
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+always_allow_html: yes
+editor_options:
+  chunk_output_type: console
+---
+
+
+```{r setup, include=FALSE, message = FALSE, warning = FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE, 
+  hiline = TRUE,
+   comment = NA 
+)
+options(width = 70)
+
+
+  #library(easystats)
+  library(tidyverse)
+  library(kableExtra)
+  library(ggplot2)
+  library(janitor)
+  library(gridExtra)
+  library(broom)  
+  library(patchwork)
+  
+# MERGE and making smoking variable 
+clinical <- read.csv(file = "F:\\myGitRepo\\Introduction-to-R\\data\\tcga-clinical.csv", header = TRUE)
+geneexp <- read.csv(file = "F:\\myGitRepo\\Introduction-to-R\\data\\tcga-gene-exp.csv", header = TRUE)
+
+# clinical <- read_csv(here::here("data", "tcga-clinical.csv"))
+# geneexp <- read_csv(here::here("data", "tcga-gene-exp.csv"))
+#  
+ 
+ 
+# intersect(names(clinical), names(geneexp))
+ 
+# dim(clinical)
+# dim(geneexp)
+ 
+tcga <- left_join(clinical, geneexp, by = "bcr_patient_barcode")
+#dim(tcga)
+
+
+
+tcga <- tcga %>% mutate(
+  #smoking = tobacco_smoking_history,
+  smoking = case_when(
+    tobacco_smoking_history %in% c(
+      "Current reformed smoker for < or = 15 years",
+      "Current reformed smoker for > 15 years",
+      "Current Reformed Smoker, Duration Not Specified"
+    ) ~ "Former",
+    tobacco_smoking_history %in% c("Current smoker") ~ "Current",
+    tobacco_smoking_history %in% c("Lifelong Non-smoker") ~ "Never",
+    is.na(tobacco_smoking_history) ~ NA_character_
+  )
+)
+
+#table(tcga$smoking, useNA = "always")
+
+
+```
+
+## What you will learn to run
+ 
+  
+- Review of tables with janitor package
+  
+- Chi square test
+
+- Correlation
+
+- Two-sample tests (t-test, wilcoxon test)
+
+ 
+
+## Review of tables
+ 
+```{r table1, comment=NA}
+janitor::tabyl(tcga, radiation_therapy, vital_status )
+```
+
+```{r table2, comment=NA}
+janitor::tabyl(tcga, radiation_therapy, vital_status, show_na = FALSE )
+```
+ 
+```{r table3, comment=NA}
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE )
+```
+
+```{r table4, comment=NA}
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col"))
+```
+
+```{r table5, comment=NA}
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col")) %>% 
+  adorn_percentages(denominator = "col") 
+```
+
+```{r table6, comment=NA}
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col")) %>% 
+  adorn_percentages(denominator = "col") %>% 
+  adorn_pct_formatting(digits = 0)  
+```
+
+```{r table7, comment=NA}
+tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col")) %>% 
+  adorn_percentages(denominator = "col") %>% 
+  adorn_pct_formatting(digits = 0) %>% 
+  adorn_ns(position = "front") 
+```
+
+
+# Pearson’s chi-squared test
+ 
+The chi squared test is a non-parametric test that can be applied to contingency tables with various dimensions. The name of the test originates from the chi-squared distribution, which is the distribution for the squares of independent standard normal variables. This is the distribution of the test statistic of the chi squared test, which is defined by the sum of chi-square values for all cells arising from the difference between a cell’s observed value and the expected value, normalized by the expected value.
+ 
+$\chi ^{2}$ = $\sum_{ij}$ $\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}$ 
+
+
+*   $\chi ^{2}$ = chi square statistic
+*   $O_{ij}$ = observed value
+*   $E_{ij}$ = expected value
+
+## Pearson’s chi-squared test
+ 
+The null hypothesis of the Chi-Square test is that no relationship exists between the categorical variables in the population; they are independent.
+
+ 
+```{r chisqtest, echo=FALSE ,  include=TRUE}
+ tcga %>% 
+  tabyl(smoking, gender, show_na = FALSE ) %>% 
+  adorn_totals(where = c("row","col")) %>% 
+  adorn_percentages(denominator = "col") %>% 
+  adorn_pct_formatting(digits = 0)   %>% 
+  adorn_ns(position = "front") 
+ 
+```
+ 
+The null hypothesis of the Chi-Square test is that no relationship exists between the categorical variables in the population; they are independent.
+
+```{r chisqtest1, eval=TRUE,  include=TRUE}
+ 
+tcga %>% tabyl( smoking, gender , show_na = FALSE ) %>%
+  chisq.test()
+
+```
+
+
+```{r geombar, echo = TRUE, fig.show = "hide"}
+ggplot(tcga %>% filter(!is.na(smoking)),
+       aes(x = gender, fill = smoking )) +  
+  geom_bar(position = "fill") +
+  labs(y = "proportion")
+
+```
+
+# Correlation 
+ 
+A correlation coefficient is a numerical measure of some type of correlation, meaning a statistical relationship between two variables.  
+
+Several types of correlation coefficient exist, each with their own definition and own range of usability and characteristics. They all assume values in the range from −1 to +1, where ±1 indicates the strongest possible agreement and 0 no agreement.
+
+ Pearson
+ 
+ Spearman
+
+
+
+## Pearson Correlation 
+
+ The .bg-orange.white[Pearson product-moment correlation coefficient], also known as r or Pearson's r, is a measure of the strength and direction of the linear relationship between two variables that is defined as the covariance of the variables divided by the product of their standard deviations.  Pearson's r is the best-known and most commonly used type of correlation coefficient. A relationship is linear when a change in one variable is associated with a proportional change in the other variable.
+ 
+$r_{xy}$ = $\frac{ \sum_{i = 1}^{n}  (x_{i}-  \overline{x} )(y_{i}- \overline{y})}{\sqrt(\sum_{i = 1}^{n}  (x_{i}-  \overline{x} )^{2})\sqrt(\sum_{i = 1}^{n}  (y_{i}-  \overline{y} )^{2})}$ 
+
+*   n is the sample size
+*   $x_{i}$ and $y_{i}$  are the individual sample points indexed with i
+*   $\overline{x} = \frac{1}{n}\sum_{i = 1}^{n} x_{i}$ is the smaple mean of x (similarly y)
+
+
+```{r cors, comment=NA}
+
+ 
+r1 <- tcga %>% correlation::cor_test("DUOXA1_exp", 
+                                          "DUOX1_exp", 
+                                          method = c("pearson") ) 
+ 
+r2 <- tcga %>% correlation::cor_test("BUB1_exp",
+                                          "C10orf32_exp",
+                                          method = c("pearson") ) 
+ 
+r3 <- tcga %>% correlation::cor_test("BRAF_exp", 
+                                          "DTL_exp", 
+                                          method = c("pearson") )
+ 
+```
+
+```{r rtable, comment=NA}
+ knitr::kable(bind_rows(r1,r2,r3 ), format = 'html', digits = 3) %>%
+  kable_styling(font_size = 12)
+
+```
+
+```{r geom, echo = TRUE, fig.show = "hide"}
+ggplot(tcga) + 
+  aes(DUOXA1_exp, DUOX1_exp) + 
+  geom_point() + 
+  annotate(geom = "text", x = 10, y = 25000, 
+           label = paste("r = ", round(r1$r, 2), sep = ""),
+           color = "red")
+
+```
+
+```{r geom2, echo = TRUE, fig.show = "hide"}
+
+ggplot(tcga) + 
+  aes(BUB1_exp, C10orf32_exp) + 
+  geom_point() + 
+  annotate(geom = "text", x = 1000, y = 4000, 
+           label = paste("r = ", round(r2$r, 2), sep = ""),
+           color = "red")
+```
+
+```{r geom3, echo = TRUE, fig.show = "hide"}
+ggplot(tcga) + 
+  aes(BRAF_exp, DTL_exp) + 
+  geom_point() + 
+  annotate(geom = "text", x = 0, y = 1100, 
+           label = paste("r = ", round(r3$r, 2), sep = ""),  
+           color = "red")
+
+```
+
+
+## Correllation Matrix 
+ 
+
+```{r comment=NA}
+tcga %>% 
+  select(DUOXA1_exp, DUOX1_exp, BUB1_exp, BRAF_exp, DTL_exp ) %>%
+  cor() %>% round(.,2)
+
+```
+
+
+## Spearman Correlation 
+
+The Spearman correlation evaluates the monotonic relationship between two continuous or ordinal variables. It is a nonparametric measure of rank correlation (statistical dependence between the rankings of two variables). In a monotonic relationship, the variables tend to change together, but not necessarily at a constant rate. The Spearman correlation coefficient is based on the ranked values for each variable rather than the raw data.
+ 
+
+## Spearman Correlation example of monotonic relationship
+
+
+ 
+```{r echo=FALSE, comment=NA}
+ 
+
+x <- seq(10,20,.25)
+y <- (x-15)^3 + 100
+pdata <-  data.frame(x,y)
+ 
+ggplot(pdata, aes(x,y)) + geom_point()  
+
+```
+
+```{r  comment=NA}
+
+ 
+r1 <- tcga %>% correlation::cor_test("DUOXA1_exp", 
+                                          "DUOX1_exp", 
+                                          method = c("spearman") ) 
+ 
+r2 <- tcga %>% correlation::cor_test("BUB1_exp",
+                                          "C10orf32_exp",
+                                          method = c("spearman") ) 
+ 
+r3 <- tcga %>% correlation::cor_test("BRAF_exp", 
+                                          "DTL_exp", 
+                                          method = c("spearman") )
+ 
+```
+
+
+```{r comment=NA}
+ knitr::kable(bind_rows(r1, r2, r3), format = 'html', digits = 3) %>%
+  kable_styling(font_size = 12)
+
+```
+
+# Two sample tests
+
+
+- T - test
+
+- Mann Whitney U Test (Wilcoxon Rank Sum Test) 
+
+ 
+
+## T-test
+ 
+A t-test is a method used to determine if there 
+is a significant difference between the means 
+of two groups based on a sample of data.
+
+The test relies on a set of assumptions for it
+to be interpreted properly and with validity.
+Among these assumptions, the data must be randomly
+sampled from the population of interest and 
+that the data variables follow a normal
+distribution.
+
+ 
+## T-test assumptions
+
+1. The data are continuous (not discrete).
+
+2. The data follow the normal probability distribution.
+
+3. The variances of the two populations are equal. (If not, the Aspin-Welch Unequal-Variance test is used.)
+
+4. The two samples are independent. There is no relationship between the individuals in one sample as compared to the other (as there is in the paired t-test). 
+
+5. Both samples are simple random samples from their respective populations. Each individual in the population has an equal probability of being selected in the sample.
+ 
+ 
+## T-test formula
+
+Test Statistic (equal variances):
+
+$T  = \frac{\overline{x}_{1} - \overline{x}_{2}}{S_{p}\sqrt(1/N_{1} + 1/N_{2})}$ 
+
+where:
+$S^{2}_{p}$ = $\frac{(N_{1}-1)s^{2}_{1} + (N_{1}-1)s^{2}_{1}}{N_{1}+N_{2}-2}$
+
+ 
+```{r t2boxplots, echo = TRUE, fig.show = "hide"}
+  
+  ggplot(tcga , aes(gender, PTEN_exp, fill = gender))  +
+  geom_boxplot() +
+  scale_fill_manual( values = c("yellow", "blue")) + 
+  theme(legend.position = "none") +
+  labs(title = "PTEN expression" , x = "Gender", y = "expression")  
+
+```
+
+```{r t2hist, echo = TRUE, fig.show = "hide"}
+  
+  ggplot(tcga, aes(x=PTEN_exp, fill=gender)) +
+  scale_fill_manual( values = c("red", "blue")) + 
+  geom_histogram( alpha=0.6, position="identity")
+ 
+```
+
+```{r comment=NA}
+
+t.test( tcga$PTEN_exp ~ tcga$gender, alternative = c("two.sided"))
+ 
+```
+
+
+
+
+## Mann Whitney U Test (Wilcoxon Rank Sum Test) 
+
+ 
+A popular non-parametric test to compare outcomes between two independent groups is the Mann Whitney U test. The Mann Whitney U test, sometimes called the Mann Whitney Wilcoxon Test or the Wilcoxon Rank Sum Test, is used to test whether two samples are likely to derive from the same population (i.e., that the two populations have the same shape). 
+
+It can also be used on related samples or matched samples to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student's t-test when the distribution of the difference between two samples' means cannot be assumed to be normally distributed.   
+
+ 
+
+## Wilcoxon test: Histograms
+
+```{r wilcoxonhists, echo = TRUE, fig.show = "hide"}
+mplot <- ggplot(tcga %>% filter(gender == "MALE"), 
+                aes(x = BUB1_exp )) +
+  geom_histogram(  colour = "black", position = "dodge") +
+  ggtitle("Males") 
+
+wplot <- ggplot(tcga  %>% filter(gender == "FEMALE"), 
+                aes(x = BUB1_exp)) +
+  geom_histogram(  colour= "black", position = "dodge")  +
+  ggtitle("Females") 
+  
+grid.arrange(mplot,wplot, ncol=2) 
+ 
+
+```
+## Wilcoxon test visulize boxplots gender
+  
+ 
+```{r wilcoxonboxplots, echo = TRUE, fig.show = "hide"}
+  
+ggplot(tcga , aes(gender, BUB1_exp, fill = gender))  +
+  geom_boxplot() +
+  scale_fill_manual( values = c("yellow", "blue")) + 
+  theme(legend.position = "none") +
+  labs(title = "BUB1 expression" , x = "Gender", y = "expression")  
+
+```
+
+## Wilcoxon test gender
+```{r comment=NA}
+ 
+ wilcox.test(BUB1_exp ~ gender, data = tcga,
+                   alternative = c("two.sided"))
+ 
+ 
+```
+
+The p-value is very low so we reject the null hypothesis of no difference (0 location shift). 
+
+
+
+# Thank you! 
+  
+  - The end
+ 

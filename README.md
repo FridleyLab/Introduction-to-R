@@ -11,7 +11,7 @@
 
 :alarm_clock: 3:00 pm 
 
-:office: via Zoom (link coming soon) 
+:office: via Zoom (see links below) 
 
 :computer: [Moffitt](https://moffitt.org/)
 
@@ -19,7 +19,8 @@
 
 ## Setup
 
-The course will be hosted through ….
+The course will be hosted through Zoom with video recordings posted on 
+Ponopto after. Links to recorded lectures will be emailed out after class.
 
 <!-- 
 * When you're done, put a green post-it on your computer. 
@@ -108,14 +109,35 @@ Final coding project
   - Create a reproducible workflow
   - Setting up your own R installation 
 
-## Materials
+## Materials/RStudio Cloud
 
 Materials will be made available on
-[github](https://github.com/FridleyLab/Introduction-to-R/). If you are
+[GitHub](https://github.com/FridleyLab/Introduction-to-R/). If you are
 using an organization-issued laptop, you may want to verify before you
-arrive that you can access GitHub.
+arrive that you can access GitHub. 
 
-## Schedule
+In this course, we will be using a version of RStudio available online. The class
+workspace can be accessed [here](https://rstudio.cloud/spaces/146648/join?access_code=lwgMkLa2E%2BSSKGUFRhilRqgJW1lz7OCF9pZVjhxf). Please create a user account before the first day of class 
+(or connect with either a GitHub account or Google account). 
+
+## Schedule and Links
+
+*   June 09 - `rmarkdown`
+    * [Zoom link](https://moffitt.zoom.us/j/95042034701)
+    * [Ponopto lecture recording](https://moffitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8103b91c-cc09-4aba-8874-ad4201619398)
+*   June 16 - Data import and wrangling part I
+    * [Zoom link](https://moffitt.zoom.us/j/99077101114)
+    * [Ponopto lecture recording](https://moffitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0aff114d-147d-48fc-b241-ad490155aef7)
+*   June 23 - Data import and wrangling part II
+    * [Zoom link](https://moffitt.zoom.us/j/92170925460)
+    * [Ponopto lecture recording](https://moffitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0af5ea17-4cb0-411d-9581-ad5001511d1f)
+*   June 30 - Visualizations with `ggplot2`
+    * [Zoom link](https://moffitt.zoom.us/j/96225512559)
+    * [Ponopto lecture recording](https://moffitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=283efc11-7a25-4ff3-a70a-ad570150e00b)
+*   July 07 - Basic statistics
+    * [Zoom link](https://moffitt.zoom.us/j/91931267792)
+*   July 17 - Best practices 
+    * [Zoom link](https://moffitt.zoom.us/j/96050438861)
 
 ## Instructors
 
@@ -126,7 +148,7 @@ Add links to personal websites and double check personal info
 
 This course is taught by members of Moffitt staff including Jordan
 Creed, a data analyst in the Department of Health Informatics, Zachary
-Thompson and Ram Thappa, biostatisticians in the Bioinformatics and
+Thompson and Ram Thapa, biostatisticians in the Bioinformatics and
 Biostatistics Core.
 
 -----
