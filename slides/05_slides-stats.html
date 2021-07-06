@@ -4,7 +4,7 @@
     <title>Lea.orange[R]ning about Statistics -YEAH!!!</title>
     <meta charset="utf-8" />
     <meta name="author" content="Zachary Thompson" />
-    <meta name="date" content="2021-04-27" />
+    <meta name="date" content="2021-07-06" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
@@ -48,7 +48,7 @@ Zachary Thompson&lt;br&gt;
 ]
 
 .talk-date.moffitt-gray[
-April 27, 2021
+July 06, 2021
 ]
 ]
 
@@ -91,13 +91,12 @@ or to force either to be shown
   
 - Review of tables with janitor package
   
-- Chi square and Fisher’s test
+- Chi square test
 
-- Correlations
+- Correlation
 
 - Two-sample tests (t-test, wilcoxon test)
 
-- Simple linear regression
 
 ---
 
@@ -285,7 +284,7 @@ data:  .
 X-squared = 30.182, df = 2, p-value = 0.0000002793
 ```
  
-The p-value is very low so we reject the null hyposthesis that there is no association between the variables. 
+The p-value is very low so we reject the null hypothesis that there is no association between the variables. 
 
 ---
 
@@ -312,83 +311,6 @@ ggplot(tcga %&gt;% filter(!is.na(smoking)),
 ]
  
 
-
-
-
- 
----
-
-
-
-# Fisher’s exact test
- 
-Fisher's exact test is practically applied only in analysis of small samples but actually it is valid for all sample sizes. While the chi-squared test relies on an approximation, Fisher's exact test is one of exact tests. Especially when more than 20% of cells have expected frequencies &lt; 5, we need to use Fisher's exact test because applying approximation method is inadequate. Fisher's exact test assesses the null hypothesis of independence applying hypergeometric distribution of the numbers in the cells of the table. Many packages provide the results of Fisher's exact test for 2 × 2 contingency tables 
- 
----
- 
-
-##  Fisher’s exact test
- 
-
-
-```r
- tcga %&gt;% 
-  tabyl( gender, vital_status , show_na = FALSE ) %&gt;% 
-  adorn_totals(where = c("row","col")) %&gt;% 
-  adorn_percentages(denominator = "col") %&gt;% 
-  adorn_pct_formatting(digits = 0) %&gt;% 
-  adorn_ns(position = "front") 
-```
-
-```
- gender      Alive       Dead       Total
- FEMALE 190  (29%) 133  (34%)  323  (31%)
-   MALE 460  (71%) 260  (66%)  720  (69%)
-  Total 650 (100%) 393 (100%) 1043 (100%)
-```
-
-
----
-
-
-##  Fisher’s exact test
- 
-  Since the p-value is 0.1285 we fail to reject the null hyposthesis. 
-
-
-```r
-tcga  %&gt;% tabyl( gender, vital_status , show_na = FALSE ) %&gt;% 
-  fisher.test()
-```
-
-```
-
-	Fisher's Exact Test for Count Data
-
-data:  .
-p-value = 0.1285
-alternative hypothesis: true odds ratio is not equal to 1
-95 percent confidence interval:
- 0.6119839 1.0669560
-sample estimates:
-odds ratio 
- 0.8076311 
-```
- 
----
- 
-## Fisher’s exact test: Bar graph
-  
-
-
-```r
-ggplot(tcga %&gt;% filter(!is.na(vital_status)), 
-       aes(x = gender, fill = vital_status )) +  
-       geom_bar(position = "fill") + labs(y = "proportion")
-```
-
-&lt;img src="05_slides-stats_files/figure-html/geombar2-1.png" width="100%" /&gt;
- 
 
 
 ---
@@ -530,7 +452,7 @@ ggplot(tcga) +
 
 .panel[.panel-name[Plot]
 
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-14-1.png" width="100%" /&gt;
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-12-1.png" width="100%" /&gt;
 ]
 ]
  
@@ -558,7 +480,7 @@ ggplot(tcga) +
 
 .panel[.panel-name[Plot]
 
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-15-1.png" width="100%" /&gt;
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-13-1.png" width="100%" /&gt;
 ]
 ]
 
@@ -584,7 +506,7 @@ ggplot(tcga) +
 
 .panel[.panel-name[Plot]
 
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-16-1.png" width="100%" /&gt;
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-14-1.png" width="100%" /&gt;
 ]
 ]
 
@@ -636,7 +558,7 @@ The Spearman correlation evaluates the monotonic relationship between two contin
 
 
  
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-19-1.png" width="100%" /&gt;
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-17-1.png" width="100%" /&gt;
 
 
 ---
@@ -735,101 +657,9 @@ r3 &lt;- tcga %&gt;% correlation::cor_test("BRAF_exp",
 # Two sample tests
 
 
-- Mann Whitney U Test (Wilcoxon Rank Sum Test) 
-
 - T - test
 
----
-
-## Mann Whitney U Test (Wilcoxon Rank Sum Test) 
-
- 
-A popular non-parametric test to compare outcomes between two independent groups is the Mann Whitney U test. The Mann Whitney U test, sometimes called the Mann Whitney Wilcoxon Test or the Wilcoxon Rank Sum Test, is used to test whether two samples are likely to derive from the same population (i.e., that the two populations have the same shape). 
-
-It can also be used on related samples or matched samples to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student's t-test when the distribution of the difference between two samples' means cannot be assumed to be normally distributed.   
-
-
-
----
-
-## Wilcoxon test: Histograms
-  
-.panelset[
-
-.panel[.panel-name[Plot]
-
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-22-1.png" width="100%" /&gt;
-]
-
-.panel[.panel-name[R Code]
-
-
-```r
-mplot &lt;- ggplot(tcga %&gt;% filter(gender == "MALE"), 
-                aes(x = BUB1_exp )) +
-  geom_histogram(  colour = "black", position = "dodge") +
-  ggtitle("Males") 
-
-wplot &lt;- ggplot(tcga  %&gt;% filter(gender == "FEMALE"), 
-                aes(x = BUB1_exp)) +
-  geom_histogram(  colour= "black", position = "dodge")  +
-  ggtitle("Females") 
-  
-grid.arrange(mplot,wplot, ncol=2) 
-```
-]
-]
-
-
-
----
- 
-## Wilcoxon test visulize boxplots gender
-  
-.panelset[
-.panel[.panel-name[R Code]
-
-
-
-```r
-ggplot(tcga , aes(gender, BUB1_exp, fill = gender))  +
-  geom_boxplot() +
-  scale_fill_manual( values = c("yellow", "blue")) + 
-  theme(legend.position = "none") +
-  labs(title = "BUB1 expression" , x = "Gender", y = "expression")  
-```
-]
-
-.panel[.panel-name[Plot]
-
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-23-1.png" width="100%" /&gt;
-]
-]
-
-
-
-
----
-
-
-## Wilcoxon test gender
-
-```r
- wilcox.test(BUB1_exp ~ gender, data = tcga,
-                   alternative = c("two.sided"))
-```
-
-```
-
-	Wilcoxon rank sum test with continuity correction
-
-data:  BUB1_exp by gender
-W = 93990, p-value = 0.0000007221
-alternative hypothesis: true location shift is not equal to 0
-```
-
-The p-value is very low so we reject the null hypostheis of no difference (0 location shift). 
-
+- Mann Whitney U Test (Wilcoxon Rank Sum Test) 
 
 
 ---
@@ -897,37 +727,9 @@ ggplot(tcga , aes(gender, PTEN_exp, fill = gender))  +
 
 .panel[.panel-name[Plot]
 
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-25-1.png" width="100%" /&gt;
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-20-1.png" width="100%" /&gt;
 ]
 ]
-
-
-
-
-
-
-
----
-
-## T-test remove extreme observations
-
-
-```r
-print(dim(tcga))
-```
-
-```
-[1]  1043 20564
-```
-
-```r
-tcga &lt;- tcga %&gt;% filter(PTEN_exp &lt; 4000)  
-print(dim(tcga))
-```
-
-```
-[1]  1028 20564
-```
 
 
 
@@ -950,7 +752,7 @@ print(dim(tcga))
 
 .panel[.panel-name[Plot]
 
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-27-1.png" width="100%" /&gt;
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-21-1.png" width="100%" /&gt;
 ]
 ]
 
@@ -964,7 +766,7 @@ print(dim(tcga))
 
 
 ```r
-t.test( tcga$PTEN_exp ~ tcga$gender, 
+t.test( PTEN_exp ~ gender, data = tcga,
         alternative = c("two.sided"))
 ```
 
@@ -972,195 +774,115 @@ t.test( tcga$PTEN_exp ~ tcga$gender,
 
 	Welch Two Sample t-test
 
-data:  tcga$PTEN_exp by tcga$gender
-t = 3.1324, df = 695.46, p-value = 0.001806
+data:  PTEN_exp by gender
+t = 3.1297, df = 702.6, p-value = 0.001822
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
-  47.58525 207.41900
+  46.83934 204.52754
 sample estimates:
 mean in group FEMALE   mean in group MALE 
-            2057.590             1930.088 
+            2057.036             1931.353 
 ```
 
 
 
----
-
-## Simple Linear Regression
- 
- A linear regression is a statistical model that analyzes the
- relationship between a response variable (often called y) and 
- one or more variables (often called predictor or
- explanatory variables). Simple linear regression is the case when 
- there is only one predictor variable. 
-
-
 
 ---
 
-## Simple Linear Regression Assumptions
+
+## Mann Whitney U Test (Wilcoxon Rank Sum Test) 
+
  
-- Linearity: The relationship between X and the mean of Y is linear.
+A popular non-parametric test to compare outcomes between two independent groups is the Mann Whitney U test. The Mann Whitney U test, sometimes called the Mann Whitney Wilcoxon Test or the Wilcoxon Rank Sum Test, is used to test whether two samples are likely to derive from the same population (i.e., that the two populations have the same shape). 
 
-- Homoscedasticity: The variance of residual is the same for any value of X.
+It can also be used on related samples or matched samples to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student's t-test when the distribution of the difference between two samples' means cannot be assumed to be normally distributed.   
 
-- Independence: Observations are independent of each other.
-
-- Normality: For any fixed value of X, Y is normally distributed
 
 
 ---
- 
 
-## Simple Linear Regression Examples
- 
- Examples: 
+## Wilcoxon test: Histograms
   
- Tempature conversion: `\(F = \frac{9}{5} C + 32\)` 
+.panelset[
 
- In general: `\(Y\)` = `\(\beta_0\)` + `\(\beta_1\)` X
- 
- where `\(\beta_0\)` is the intercept, and `\(\beta_1\)` is the regression coefficient for the predictor.
+.panel[.panel-name[Plot]
 
----
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-23-1.png" width="100%" /&gt;
+]
 
-## Simple Linear Regression Scatterplot
- 
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-29-1.png" width="100%" /&gt;
+.panel[.panel-name[R Code]
 
----
 
-#### Base R output 
+```r
+mplot &lt;- ggplot(tcga %&gt;% filter(gender == "MALE"), 
+                aes(x = BUB1_exp )) +
+  geom_histogram(  colour = "black", position = "dodge") +
+  ggtitle("Males") 
 
-mod &lt;- lm(DUOX1_exp ~  DUOXA1_exp, data = tcga)
-print(summary(mod))
+wplot &lt;- ggplot(tcga  %&gt;% filter(gender == "FEMALE"), 
+                aes(x = BUB1_exp)) +
+  geom_histogram(  colour= "black", position = "dodge")  +
+  ggtitle("Females") 
+  
+grid.arrange(mplot,wplot, ncol=2) 
+```
+]
+]
 
- 
- ```
- 
- Call:
- lm(formula = DUOX1_exp ~ DUOXA1_exp, data = tcga)
- 
- Residuals:
-     Min      1Q  Median      3Q     Max 
- -8921.5   -86.9   -72.0    44.3  5917.0 
- 
- Coefficients:
-             Estimate Std. Error t value             Pr(&gt;|t|)    
- (Intercept)   86.200     31.556   2.732              0.00641 ** 
- DUOXA1_exp     3.033      0.041  73.977 &lt; 0.0000000000000002 ***
- ---
- Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
- 
- Residual standard error: 830.8 on 1026 degrees of freedom
- Multiple R-squared:  0.8421,	Adjusted R-squared:  0.842 
- F-statistic:  5473 on 1 and 1026 DF,  p-value: &lt; 0.00000000000000022
- ```
 
 
 ---
-
-#### Broom output 
+ 
+## Wilcoxon test visulize boxplots gender
+  
+.panelset[
+.panel[.panel-name[R Code]
 
 
 
 ```r
-mod &lt;- lm(DUOX1_exp ~  DUOXA1_exp, data = tcga)
+ggplot(tcga , aes(gender, BUB1_exp, fill = gender))  +
+  geom_boxplot() +
+  scale_fill_manual( values = c("yellow", "blue")) + 
+  theme(legend.position = "none") +
+  labs(title = "BUB1 expression" , x = "Gender", y = "expression")  
+```
+]
 
-tidy(mod)
-```
+.panel[.panel-name[Plot]
 
-```
-# A tibble: 2 x 5
-  term        estimate std.error statistic p.value
-  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;
-1 (Intercept)    86.2    31.6         2.73 0.00641
-2 DUOXA1_exp      3.03    0.0410     74.0  0      
-```
- 
- 
+&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-24-1.png" width="100%" /&gt;
+]
+]
+
+
 
 ---
- 
-#### Kable and Broom output 
 
+
+## Wilcoxon test gender
 
 ```r
- knitr::kable(tidy(mod), format = 'html', digits = 3) %&gt;%
-  kable_styling(font_size = 22)
+ wilcox.test(BUB1_exp ~ gender, data = tcga,
+                   alternative = c("two.sided"))
 ```
 
-&lt;table class="table" style="font-size: 22px; margin-left: auto; margin-right: auto;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; term &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; estimate &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; std.error &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; statistic &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; p.value &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; (Intercept) &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 86.200 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 31.556 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2.732 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.006 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; DUOXA1_exp &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.033 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.041 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 73.977 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
- 
----
+```
 
-## Simple Linear Regression 
-&lt;img src="05_slides-stats_files/figure-html/unnamed-chunk-33-1.png" width="100%" /&gt;
+	Wilcoxon rank sum test with continuity correction
+
+data:  BUB1_exp by gender
+W = 93990, p-value = 0.0000007221
+alternative hypothesis: true location shift is not equal to 0
+```
+
+The p-value is very low so we reject the null hypothesis of no difference (0 location shift). 
+
+
 
 ---
 
-## Simple Linear Regression 
- 
- The regression coefficient (slope of the line) is 3.03 which means that for every unit increase
- in DUOXA1 the DUOX1 gene expression is increased by 3. 
- 
- `\(DUOX1\)` = `\(84.9\)` + `\(3.03DUOXA1\)`
- 
- &lt;table class="table" style="font-size: 22px; margin-left: auto; margin-right: auto;"&gt;
-  &lt;thead&gt;
-   &lt;tr&gt;
-    &lt;th style="text-align:left;"&gt; term &lt;/th&gt;
-    &lt;th style="text-align:right;"&gt; estimate &lt;/th&gt;
-    &lt;th style="text-align:right;"&gt; std.error &lt;/th&gt;
-    &lt;th style="text-align:right;"&gt; statistic &lt;/th&gt;
-    &lt;th style="text-align:right;"&gt; p.value &lt;/th&gt;
-   &lt;/tr&gt;
-  &lt;/thead&gt;
- &lt;tbody&gt;
-   &lt;tr&gt;
-    &lt;td style="text-align:left;"&gt; (Intercept) &lt;/td&gt;
-    &lt;td style="text-align:right;"&gt; 86.200 &lt;/td&gt;
-    &lt;td style="text-align:right;"&gt; 31.556 &lt;/td&gt;
-    &lt;td style="text-align:right;"&gt; 2.732 &lt;/td&gt;
-    &lt;td style="text-align:right;"&gt; 0.006 &lt;/td&gt;
-   &lt;/tr&gt;
-   &lt;tr&gt;
-    &lt;td style="text-align:left;"&gt; DUOXA1_exp &lt;/td&gt;
-    &lt;td style="text-align:right;"&gt; 3.033 &lt;/td&gt;
-    &lt;td style="text-align:right;"&gt; 0.041 &lt;/td&gt;
-    &lt;td style="text-align:right;"&gt; 73.977 &lt;/td&gt;
-    &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
-   &lt;/tr&gt;
- &lt;/tbody&gt;
- &lt;/table&gt;
 
----
 
 ## Thank you! 
   

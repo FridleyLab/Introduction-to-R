@@ -37,12 +37,8 @@ knitr::opts_chunk$set(
 )
 options(width = 70)
 
-#Load data...
-  #load(file = "Z:/Projects/Fridley_Brooke/2813_R_Programming_Course_2020/data/alldata.RData")
-  #load(file = "Z:/Projects/Fridley_Brooke/2813_R_Programming_Course_2020/data/Rclassdata.RData")
-  
-  #library(here)
-  library(easystats)
+
+  #library(easystats)
   library(tidyverse)
   library(kableExtra)
   library(ggplot2)
@@ -50,19 +46,18 @@ options(width = 70)
   library(gridExtra)
   library(broom)
    
-   #Rclassdata %>% filter(acronym %in% c("KIRC","HNSC")) -> tcga
 
    
-#MERGE and making smoking variable 
+# MERGE and making smoking variable 
 clinical <- read.csv(file = "F:\\myGitRepo\\Introduction-to-R\\data\\tcga-clinical.csv", header = TRUE)
 geneexp <- read.csv(file = "F:\\myGitRepo\\Introduction-to-R\\data\\tcga-gene-exp.csv", header = TRUE)
 
  
 # intersect(names(clinical), names(geneexp))
-# 
+ 
 # dim(clinical)
 # dim(geneexp)
-#  
+ 
 tcga <- left_join(clinical, geneexp, by = "bcr_patient_barcode")
 #dim(tcga)
 
@@ -166,9 +161,9 @@ or to force either to be shown
   
 - Review of tables with janitor package
   
-- Chi square and Fisher’s test
+- Chi square test
 
-- Correlations
+- Correlation
 
 - Two-sample tests (t-test, wilcoxon test)
 
@@ -308,7 +303,7 @@ tcga %>% tabyl( smoking, gender , show_na = FALSE ) %>%
 
 ```
  
-The p-value is very low so we reject the null hyposthesis that there is no association between the variables. 
+The p-value is very low so we reject the null hypothesis that there is no association between the variables. 
 
 ---
 
@@ -336,60 +331,6 @@ ggplot(tcga %>% filter(!is.na(smoking)),
 ]
  
 
-
-
-
- 
----
-
-
-
-# Fisher’s exact test
- 
-Fisher's exact test is practically applied only in analysis of small samples but actually it is valid for all sample sizes. While the chi-squared test relies on an approximation, Fisher's exact test is one of exact tests. Especially when more than 20% of cells have expected frequencies < 5, we need to use Fisher's exact test because applying approximation method is inadequate. Fisher's exact test assesses the null hypothesis of independence applying hypergeometric distribution of the numbers in the cells of the table. Many packages provide the results of Fisher's exact test for 2 × 2 contingency tables 
- 
----
- 
-
-##  Fisher’s exact test
- 
-
-```{r comment=NA}
- tcga %>% 
-  tabyl( gender, vital_status , show_na = FALSE ) %>% 
-  adorn_totals(where = c("row","col")) %>% 
-  adorn_percentages(denominator = "col") %>% 
-  adorn_pct_formatting(digits = 0) %>% 
-  adorn_ns(position = "front") 
-
-```
-
-
----
-
-
-##  Fisher’s exact test
- 
-  Since the p-value is 0.1285 we fail to reject the null hyposthesis. 
-
-```{r comment=NA}
-tcga  %>% tabyl( gender, vital_status , show_na = FALSE ) %>% 
-  fisher.test()
-
-```
- 
----
- 
-## Fisher’s exact test: Bar graph
-  
-
-```{r geombar2, echo = TRUE }
-ggplot(tcga %>% filter(!is.na(vital_status)), 
-       aes(x = gender, fill = vital_status )) +  
-       geom_bar(position = "fill") + labs(y = "proportion")
-
-```
- 
 
 
 ---
@@ -637,98 +578,9 @@ r3 <- tcga %>% correlation::cor_test("BRAF_exp",
 # Two sample tests
 
 
-- Mann Whitney U Test (Wilcoxon Rank Sum Test) 
-
 - T - test
 
----
-
-## Mann Whitney U Test (Wilcoxon Rank Sum Test) 
-
- 
-A popular non-parametric test to compare outcomes between two independent groups is the Mann Whitney U test. The Mann Whitney U test, sometimes called the Mann Whitney Wilcoxon Test or the Wilcoxon Rank Sum Test, is used to test whether two samples are likely to derive from the same population (i.e., that the two populations have the same shape). 
-
-It can also be used on related samples or matched samples to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student's t-test when the distribution of the difference between two samples' means cannot be assumed to be normally distributed.   
-
-
-
----
-
-## Wilcoxon test: Histograms
-  
-.panelset[
-
-.panel[.panel-name[Plot]
-
-```{r ref.label = "wilcoxonhists", echo = FALSE}
-```
-]
-
-.panel[.panel-name[R Code]
-
-```{r wilcoxonhists, echo = TRUE, fig.show = "hide"}
-mplot <- ggplot(tcga %>% filter(gender == "MALE"), 
-                aes(x = BUB1_exp )) +
-  geom_histogram(  colour = "black", position = "dodge") +
-  ggtitle("Males") 
-
-wplot <- ggplot(tcga  %>% filter(gender == "FEMALE"), 
-                aes(x = BUB1_exp)) +
-  geom_histogram(  colour= "black", position = "dodge")  +
-  ggtitle("Females") 
-  
-grid.arrange(mplot,wplot, ncol=2) 
- 
-
-```
-]
-]
-
-
-
----
- 
-## Wilcoxon test visulize boxplots gender
-  
-.panelset[
-.panel[.panel-name[R Code]
-
-
-```{r wilcoxonboxplots, echo = TRUE, fig.show = "hide"}
-  
-ggplot(tcga , aes(gender, BUB1_exp, fill = gender))  +
-  geom_boxplot() +
-  scale_fill_manual( values = c("yellow", "blue")) + 
-  theme(legend.position = "none") +
-  labs(title = "BUB1 expression" , x = "Gender", y = "expression")  
-
-```
-]
-
-.panel[.panel-name[Plot]
-
-```{r ref.label = "wilcoxonboxplots", echo = FALSE}
-```
-]
-]
-
-
-
-
----
-
-
-## Wilcoxon test gender
-```{r comment=NA}
- 
- wilcox.test(BUB1_exp ~ gender, data = tcga,
-                   alternative = c("two.sided"))
- 
- 
-```
-
-The p-value is very low so we reject the null hypostheis of no difference (0 location shift). 
-
+- Mann Whitney U Test (Wilcoxon Rank Sum Test) 
 
 
 ---
@@ -838,9 +690,10 @@ ggplot(tcga , aes(gender, PTEN_exp, fill = gender))  +
 
 ```{r comment=NA}
 
-
-t.test( tcga$PTEN_exp ~ tcga$gender, 
+ 
+t.test( PTEN_exp ~ gender, data = tcga,
         alternative = c("two.sided"))
+ 
  
 ```
 
@@ -848,6 +701,98 @@ t.test( tcga$PTEN_exp ~ tcga$gender,
 
 
 ---
+
+
+## Mann Whitney U Test (Wilcoxon Rank Sum Test) 
+
+ 
+A popular non-parametric test to compare outcomes between two independent groups is the Mann Whitney U test. The Mann Whitney U test, sometimes called the Mann Whitney Wilcoxon Test or the Wilcoxon Rank Sum Test, is used to test whether two samples are likely to derive from the same population (i.e., that the two populations have the same shape). 
+
+It can also be used on related samples or matched samples to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student's t-test when the distribution of the difference between two samples' means cannot be assumed to be normally distributed.   
+
+
+
+---
+
+## Wilcoxon test: Histograms
+  
+.panelset[
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "wilcoxonhists", echo = FALSE}
+```
+]
+
+.panel[.panel-name[R Code]
+
+```{r wilcoxonhists, echo = TRUE, fig.show = "hide"}
+mplot <- ggplot(tcga %>% filter(gender == "MALE"), 
+                aes(x = BUB1_exp )) +
+  geom_histogram(  colour = "black", position = "dodge") +
+  ggtitle("Males") 
+
+wplot <- ggplot(tcga  %>% filter(gender == "FEMALE"), 
+                aes(x = BUB1_exp)) +
+  geom_histogram(  colour= "black", position = "dodge")  +
+  ggtitle("Females") 
+  
+grid.arrange(mplot,wplot, ncol=2) 
+ 
+
+```
+]
+]
+
+
+
+---
+ 
+## Wilcoxon test visulize boxplots gender
+  
+.panelset[
+.panel[.panel-name[R Code]
+
+
+```{r wilcoxonboxplots, echo = TRUE, fig.show = "hide"}
+  
+ggplot(tcga , aes(gender, BUB1_exp, fill = gender))  +
+  geom_boxplot() +
+  scale_fill_manual( values = c("yellow", "blue")) + 
+  theme(legend.position = "none") +
+  labs(title = "BUB1 expression" , x = "Gender", y = "expression")  
+
+```
+]
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "wilcoxonboxplots", echo = FALSE}
+```
+]
+]
+
+
+
+---
+
+
+## Wilcoxon test gender
+```{r comment=NA}
+ 
+ wilcox.test(BUB1_exp ~ gender, data = tcga,
+                   alternative = c("two.sided"))
+ 
+ 
+```
+
+The p-value is very low so we reject the null hypothesis of no difference (0 location shift). 
+
+
+
+---
+
+
 
 ## Thank you! 
   
