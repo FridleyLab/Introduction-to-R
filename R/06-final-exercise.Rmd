@@ -1,0 +1,50 @@
+---
+title: "06-final-workflow"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+## Loading and cleaning data 
+
+Import the files `CIplus-cases.txt` and `CIplus-population.txt` and combine 
+them into a single dataframe called ciplus. Create a new variable for the proportion (%) of cases in the specific population (not total population). 
+
+Using the tidyverse, which cancers are most common in men and women 
+who are aged 30-39 in the year 2012? 
+
+**Hint:** You may need to use multiple `group_by` statements and a `slice`
+statement to take a specific value.
+
+```{r}
+
+```
+
+## Plotting
+
+Plot total number of cases by total population for all cancers 
+(excluding the All cancers excluding non-melanoma skin group) in 2000 in Non-Hispanic White subjects - calculate total counts first. 
+
+Use a different color for each cancer type. 
+
+**Hint:** You will need to following line to clean up cancer names: `mutate(cancer = str_extract(cancer, "^.*(?=:)"))`
+
+```{r}
+
+```
+
+## Analysis
+
+For all cancers excluding non-melanoma skin in 1992 in Hispanic-White subjects was there a statistical association between gender and cancer cases?
+Use fishers exact test or a chi-square test.
+
+```{r}
+
+```
+
+
+
