@@ -134,10 +134,12 @@ workspace can be accessed [here](https://rstudio.cloud/spaces/146648/join?access
 *   June 30 - Visualizations with `ggplot2`
     * [Zoom link](https://moffitt.zoom.us/j/96225512559)
     * [Ponopto lecture recording](https://moffitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=283efc11-7a25-4ff3-a70a-ad570150e00b)
-*   July 07 - Basic statistics
+*   July 14 - Basic statistics
     * [Zoom link](https://moffitt.zoom.us/j/91931267792)
-*   July 17 - Best practices 
+    * [Ponopto lecture](https://moffitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18ad4a4c-49aa-488d-8f6f-ad65014f15ce)
+*   July 21 - Best practices 
     * [Zoom link](https://moffitt.zoom.us/j/96050438861)
+    * [Ponopto lecture](https://moffitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a7b3d48c-0f91-4e62-8043-ad6c0156bfae)
 
 ## Instructors
 
