@@ -1,5 +1,5 @@
 ---
-title: "Lea.orange[R]ning about Statistics -YEAH!!!"
+title: "Lea.orange[R]ning about Statistics"
 subtitle: "Tables, Chi Square and Fisher's exact test, KM curves and log rank tests"
 author: 
   - Zachary Thompson 
